@@ -408,6 +408,15 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "06a165cb-987d-4515-950b-4b68772ab4b3",
+      "Root"
+    ],
+    [
+      "c49a6983-c4dd-4457-a09b-a398a4b03e4a",
+      "LED matrix"
+    ]
+  ],
   "text_variables": {}
 }

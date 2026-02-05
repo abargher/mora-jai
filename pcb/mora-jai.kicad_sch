@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "06a165cb-987d-4515-950b-4b68772ab4b3")
 	(paper "A4")
+	(title_block
+		(title "Project Mora Jai")
+		(date "2026-02-04")
+		(rev "1")
+		(comment 1 "CERN-OHL-S-2.0")
+	)
 	(lib_symbols
 		(symbol "74xx:CD74HC4067M"
 			(exclude_from_sim no)

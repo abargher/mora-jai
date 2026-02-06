@@ -99,6 +99,26 @@ void setup()
     pixels.show();
 }
 
+typedef enum
+{
+    GRAY,
+    BLACK,
+    RED,
+    YELLOW,
+    VIOLET,
+    ORANGE,
+    WHITE,
+    PINK,
+    GREEN,
+    BLUE,
+    COLOR_COUNT // number of distinct button colors
+} ButtonColor;
+
+typedef struct
+{
+
+} PuzzleState;
+
 // the loop function runs over and over again forever
 void loop()
 {
@@ -123,6 +143,17 @@ void loop()
         pixels.setBrightness(10);
     }
     pixels.show();
+
+    /*
+        - Set initial state of puzzle
+
+        interaction loop:
+        - write LED colors from puzzle state
+        - Poll state of all buttons
+        - if button pressed, update state of puzzle
+
+
+    */
 
     // Serial.printf("b1 = %d, b2 = %d\n", b1, b2);
     // pixels.clear();

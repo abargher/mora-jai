@@ -632,65 +632,162 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 45.72 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "094cf0c2-2ffd-4330-a0a0-50939fd7c8fb")
+	(rectangle
+		(start 21.59 148.59)
+		(end 175.26 193.04)
+		(stroke
+			(width 0.508)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 76510886-44d2-4565-b82a-60b636c6c66b)
+	)
+	(rectangle
+		(start 15.24 13.97)
+		(end 259.08 139.7)
+		(stroke
+			(width 0.508)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid bc51f6aa-fe7c-4d99-9045-50089efdb69d)
+	)
+	(text "Questions:\n- Is one LED per corner acceptable?"
+		(exclude_from_sim no)
+		(at 126.746 152.4 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left)
+		)
+		(uuid "3d1dfd2f-723c-4362-a9ef-fd627d616c25")
+	)
+	(text "Corner Buttons, 1 LED each (1x4 = 4 total)"
+		(exclude_from_sim no)
+		(at 64.262 152.654 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "7b1d8d9c-944f-4e5f-b125-be1a57d2e359")
+	)
+	(text "Center Buttons, 2 LEDs each (2x9 = 18 total)"
+		(exclude_from_sim no)
+		(at 107.696 54.356 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+				(thickness 0.3048)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "934a95ca-6b65-43ee-815b-15a8708df26b")
 	)
 	(junction
-		(at 116.84 104.14)
+		(at 232.41 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "221e3948-d3ef-4558-a5fb-ca27ce585092")
+		(uuid "1dbcacd1-892b-4169-93b4-6e3fc0adc3ae")
 	)
 	(junction
-		(at 81.28 66.04)
+		(at 199.39 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2295ed04-154d-46fb-914a-7ec48a224bcd")
+		(uuid "3fe64dca-0c12-4ab8-872c-40df58b4e780")
 	)
 	(junction
-		(at 218.44 35.56)
+		(at 199.39 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "443c9323-25cf-4cc4-8a72-004c346c4a50")
+	)
+	(junction
+		(at 86.36 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "44412f8e-4885-439e-9714-e0e4224be16f")
 	)
 	(junction
-		(at 115.57 26.67)
+		(at 44.45 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "78210e35-35db-4b46-9433-64ad67557248")
+		(uuid "4e30d6f6-1fc8-4d40-8110-2d35447efceb")
 	)
 	(junction
-		(at 116.84 66.04)
+		(at 154.94 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7914c5ab-d94a-4d31-94f0-dcdf96d3bf10")
+		(uuid "52c93cf3-09eb-46f7-90fd-02ad2353cbbe")
 	)
 	(junction
-		(at 45.72 104.14)
+		(at 199.39 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8c60f535-9645-4ce1-bdb1-390105a72b60")
+		(uuid "618efcc1-9f78-443d-9547-ad0fcb8af027")
 	)
 	(junction
-		(at 80.01 26.67)
+		(at 121.92 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ce4b09e-fa70-4d44-923f-2b3c84ee97e7")
+	)
+	(junction
+		(at 121.92 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70326d85-43c6-44e2-88a4-c55b262e3667")
+	)
+	(junction
+		(at 154.94 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "71ef1cf3-26ec-4d32-84b4-987e29308138")
+	)
+	(junction
+		(at 121.92 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a775a0a-ea3c-4f7a-846b-fa251eac8c4d")
+	)
+	(junction
+		(at 77.47 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "966c2a4d-a20c-4603-a918-af32543d989c")
 	)
 	(junction
-		(at 218.44 73.66)
+		(at 77.47 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96841f5e-16be-4149-b37f-01cb11b72a49")
+	)
+	(junction
+		(at 157.48 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "99045db0-5c06-4aba-91d4-5348fa039c6b")
 	)
 	(junction
-		(at 81.28 104.14)
+		(at 232.41 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b3203c23-8f4d-462c-b126-2eeb39bb98e0")
+		(uuid "aba4dda8-4d8f-4528-b5aa-7f970162847d")
+	)
+	(junction
+		(at 77.47 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfacc90d-e81c-449b-a128-1994dd5c3e5d")
 	)
 	(junction
 		(at 44.45 26.67)
@@ -699,24 +796,92 @@
 		(uuid "c17c29e6-455b-4bc5-aabb-56a0157097d5")
 	)
 	(junction
-		(at 182.88 73.66)
+		(at 232.41 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c90855f4-0b19-49ec-ac5e-2f0e086c569e")
+	)
+	(junction
+		(at 121.92 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dde58682-2c12-4a3e-ad6f-38082eaaaf4b")
 	)
 	(junction
-		(at 182.88 35.56)
+		(at 50.8 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7c15916-5ce9-4114-9c44-d9e2278a2652")
 	)
+	(junction
+		(at 44.45 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee189e16-bbbf-4de1-8657-f47c7c5763d0")
+	)
+	(junction
+		(at 154.94 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f593dd4d-1153-49db-9c4d-4386912773dd")
+	)
 	(no_connect
-		(at 226.06 83.82)
+		(at 165.1 175.26)
 		(uuid "fb9844cc-21c2-4571-9864-308b7d607c34")
 	)
 	(wire
 		(pts
-			(xy 190.5 83.82) (xy 210.82 83.82)
+			(xy 52.07 36.83) (xy 69.85 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0119f391-e73d-4abf-b130-a94fac697948")
+	)
+	(wire
+		(pts
+			(xy 154.94 69.85) (xy 154.94 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0186df66-af0d-4e30-aef0-2d5248395a30")
+	)
+	(wire
+		(pts
+			(xy 199.39 26.67) (xy 199.39 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0201ae72-4bdc-4225-ae83-a66ae34c9218")
+	)
+	(wire
+		(pts
+			(xy 85.09 36.83) (xy 114.3 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02317e3e-ea09-4468-a5dd-3e558c32a8e6")
+	)
+	(wire
+		(pts
+			(xy 119.38 26.67) (xy 121.92 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07293fad-eb17-46a9-a834-bddc5387d244")
+	)
+	(wire
+		(pts
+			(xy 129.54 175.26) (xy 149.86 175.26)
 		)
 		(stroke
 			(width 0)
@@ -726,7 +891,47 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 35.56) (xy 205.74 36.83)
+			(xy 243.84 55.88) (xy 26.67 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0785e5a0-27fd-4248-ad75-34866135cdbc")
+	)
+	(wire
+		(pts
+			(xy 129.54 123.19) (xy 147.32 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "082c3041-cbf5-4354-932d-36133f674e9d")
+	)
+	(wire
+		(pts
+			(xy 240.03 36.83) (xy 243.84 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08a426dd-52c6-47be-b6b9-0ca16e3cc0c9")
+	)
+	(wire
+		(pts
+			(xy 121.92 26.67) (xy 121.92 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09a4dd9b-dd70-4b18-822d-d4d123fb696c")
+	)
+	(wire
+		(pts
+			(xy 73.66 165.1) (xy 73.66 166.37)
 		)
 		(stroke
 			(width 0)
@@ -736,37 +941,47 @@
 	)
 	(wire
 		(pts
-			(xy 127 76.2) (xy 124.46 76.2)
+			(xy 245.11 123.19) (xy 245.11 144.78)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0eaa9377-fe7a-45ca-b598-6c9d63b38870")
+		(uuid "0c489f67-c086-46dd-a305-a9a7a7ed75ec")
 	)
 	(wire
 		(pts
-			(xy 53.34 76.2) (xy 73.66 76.2)
+			(xy 232.41 44.45) (xy 232.41 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "12341bb1-8a7e-4e8a-9303-f4ba0791312e")
+		(uuid "0e1d8e05-bf8d-4e03-acf7-9708b386f0e6")
 	)
 	(wire
 		(pts
-			(xy 78.74 66.04) (xy 81.28 66.04)
+			(xy 44.45 87.63) (xy 44.45 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "13b44a0e-45f6-4094-8912-fb35022894c3")
+		(uuid "0e4c8106-cfd0-4c9d-ba0c-eafd078eacb3")
 	)
 	(wire
 		(pts
-			(xy 77.47 26.67) (xy 80.01 26.67)
+			(xy 186.69 69.85) (xy 186.69 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "137c8d6a-345c-48a9-ade2-52024f1d8e86")
+	)
+	(wire
+		(pts
+			(xy 74.93 26.67) (xy 77.47 26.67)
 		)
 		(stroke
 			(width 0)
@@ -776,7 +991,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 73.66) (xy 170.18 74.93)
+			(xy 109.22 165.1) (xy 109.22 166.37)
 		)
 		(stroke
 			(width 0)
@@ -786,17 +1001,37 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 104.14) (xy 81.28 104.14)
+			(xy 121.92 44.45) (xy 121.92 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "191ecec3-2053-415a-8546-8e1db55eed96")
+		(uuid "14c61e7a-fa34-4d6a-aef0-1ddc64c0c877")
 	)
 	(wire
 		(pts
-			(xy 182.88 33.02) (xy 182.88 35.56)
+			(xy 44.45 67.31) (xy 44.45 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18c93a4f-dd4f-4995-9f10-50a34e62406c")
+	)
+	(wire
+		(pts
+			(xy 162.56 123.19) (xy 191.77 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19e988db-e1e6-4fca-8037-d11143ba5ee0")
+	)
+	(wire
+		(pts
+			(xy 50.8 162.56) (xy 50.8 165.1)
 		)
 		(stroke
 			(width 0)
@@ -806,7 +1041,37 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 73.66) (xy 205.74 73.66)
+			(xy 85.09 80.01) (xy 114.3 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b74e078-17e3-4836-9d40-880ca8753048")
+	)
+	(wire
+		(pts
+			(xy 142.24 113.03) (xy 142.24 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c449df3-8d2f-4f9b-86f5-c7c4a1a6a591")
+	)
+	(wire
+		(pts
+			(xy 229.87 26.67) (xy 232.41 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e6283a9-76fb-432c-a2c1-8aa749711a2f")
+	)
+	(wire
+		(pts
+			(xy 147.32 165.1) (xy 144.78 165.1)
 		)
 		(stroke
 			(width 0)
@@ -816,17 +1081,27 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 121.92) (xy 116.84 123.19)
+			(xy 196.85 113.03) (xy 199.39 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f4cc336-11a8-4a67-a159-92d95cc6a417")
+		(uuid "1fcede91-5a42-4ea1-a8b3-82f6db80ed2d")
 	)
 	(wire
 		(pts
-			(xy 205.74 73.66) (xy 205.74 74.93)
+			(xy 144.78 69.85) (xy 142.24 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "213a0444-348f-48d5-b0e8-fad9a803f87a")
+	)
+	(wire
+		(pts
+			(xy 144.78 165.1) (xy 144.78 166.37)
 		)
 		(stroke
 			(width 0)
@@ -836,47 +1111,57 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 92.71) (xy 127 92.71)
+			(xy 154.94 24.13) (xy 154.94 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "26aba8d5-0342-4ecc-8187-a1cdf2b20af6")
+		(uuid "2644afd6-e6fc-4f57-b059-15f2b98f4038")
 	)
 	(wire
 		(pts
-			(xy 114.3 66.04) (xy 116.84 66.04)
+			(xy 232.41 24.13) (xy 232.41 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27ffb220-04b3-4d2b-90bf-38ba40e5fbb8")
+		(uuid "283d8178-6b06-45e3-9350-7d952a481402")
 	)
 	(wire
 		(pts
-			(xy 68.58 66.04) (xy 68.58 67.31)
+			(xy 162.56 80.01) (xy 191.77 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "294cdb51-9425-4997-8798-bcfa207d70fc")
+		(uuid "2a78917d-9537-49a1-aa1c-d3347d2dd92d")
 	)
 	(wire
 		(pts
-			(xy 231.14 45.72) (xy 226.06 45.72)
+			(xy 219.71 69.85) (xy 219.71 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2d17166a-efde-4e9d-98a2-8f713ca027da")
+		(uuid "2c5c3142-03ed-41d7-9435-2cddec98167f")
 	)
 	(wire
 		(pts
-			(xy 218.44 71.12) (xy 218.44 73.66)
+			(xy 67.31 113.03) (xy 64.77 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dcbd67d-2e54-48bc-a98d-ba2d2b6e7937")
+	)
+	(wire
+		(pts
+			(xy 157.48 162.56) (xy 157.48 165.1)
 		)
 		(stroke
 			(width 0)
@@ -886,7 +1171,17 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 26.67) (xy 67.31 26.67)
+			(xy 229.87 113.03) (xy 232.41 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f9e76a2-7ce5-415a-bf99-9033cfc978de")
+	)
+	(wire
+		(pts
+			(xy 67.31 26.67) (xy 64.77 26.67)
 		)
 		(stroke
 			(width 0)
@@ -896,27 +1191,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 104.14) (xy 116.84 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3114738c-5005-4bd6-adae-cc443ab4de70")
-	)
-	(wire
-		(pts
-			(xy 38.1 114.3) (xy 22.86 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3117e209-5f0e-4749-b76b-537a173e5139")
-	)
-	(wire
-		(pts
-			(xy 80.01 26.67) (xy 80.01 29.21)
+			(xy 77.47 26.67) (xy 77.47 29.21)
 		)
 		(stroke
 			(width 0)
@@ -936,7 +1211,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 35.56) (xy 182.88 38.1)
+			(xy 50.8 165.1) (xy 50.8 167.64)
 		)
 		(stroke
 			(width 0)
@@ -946,7 +1221,27 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 35.56) (xy 218.44 38.1)
+			(xy 77.47 113.03) (xy 77.47 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34a650c0-d7f0-4c36-99f0-68df4a2cd30e")
+	)
+	(wire
+		(pts
+			(xy 162.56 36.83) (xy 191.77 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "350a8a51-678f-4072-9329-8ee60235538d")
+	)
+	(wire
+		(pts
+			(xy 86.36 165.1) (xy 86.36 167.64)
 		)
 		(stroke
 			(width 0)
@@ -956,13 +1251,23 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 45.72) (xy 175.26 45.72)
+			(xy 77.47 67.31) (xy 77.47 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b014c16-3932-4164-b37c-7f1c3b64896a")
+		(uuid "3b15583d-abb9-485c-9723-5b1e8c6bcae0")
+	)
+	(wire
+		(pts
+			(xy 199.39 24.13) (xy 199.39 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d331ae7-c3ec-48c4-8e6a-26a4222c8130")
 	)
 	(wire
 		(pts
@@ -976,13 +1281,13 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 54.61) (xy 127 54.61)
+			(xy 207.01 123.19) (xy 224.79 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3fd48a9e-a74e-4ee8-b327-83f2ddf35227")
+		(uuid "4092ba44-d63f-43bd-88f7-f3c51cb24764")
 	)
 	(wire
 		(pts
@@ -996,17 +1301,27 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 26.67) (xy 115.57 29.21)
+			(xy 119.38 69.85) (xy 121.92 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "41c60d5e-ffbc-4dcd-b452-199a1d4ce0e2")
+		(uuid "4397f4f9-601a-4127-978d-b46ba90d0e09")
 	)
 	(wire
 		(pts
-			(xy 67.31 26.67) (xy 67.31 27.94)
+			(xy 52.07 123.19) (xy 69.85 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44f64c63-a09a-41b8-842e-ae4f2f2a8a0f")
+	)
+	(wire
+		(pts
+			(xy 64.77 26.67) (xy 64.77 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1016,63 +1331,63 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 66.04) (xy 33.02 67.31)
+			(xy 219.71 26.67) (xy 219.71 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4b07fb9a-72ec-473f-86f0-0ca13d8a4e00")
+		(uuid "45ba2f67-2fcc-472e-8844-558caaa1354e")
 	)
 	(wire
 		(pts
-			(xy 105.41 26.67) (xy 102.87 26.67)
+			(xy 232.41 130.81) (xy 232.41 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c3d97b8-22b1-4030-baae-9c0755ad1407")
+		(uuid "48e596c8-6962-4692-90c9-7838b274a601")
 	)
 	(wire
 		(pts
-			(xy 88.9 114.3) (xy 109.22 114.3)
+			(xy 34.29 113.03) (xy 31.75 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d3c7a21-2be9-49a5-b839-c1e85d2e33c9")
+		(uuid "4b045c05-ae4f-4319-88b4-fe94b7c7f437")
 	)
 	(wire
 		(pts
-			(xy 127 54.61) (xy 127 36.83)
+			(xy 52.07 80.01) (xy 69.85 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4da4388f-2025-448f-b101-82e6bc348212")
+		(uuid "4b10bc78-9b53-44e3-b1d7-5abe1389bd6b")
 	)
 	(wire
 		(pts
-			(xy 43.18 104.14) (xy 45.72 104.14)
+			(xy 26.67 175.26) (xy 43.18 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5094649d-61af-46cf-8b2f-c28b9493d06e")
+		(uuid "4b64fa5c-6383-4ee0-90f0-e7ae2791632d")
 	)
 	(wire
 		(pts
-			(xy 81.28 63.5) (xy 81.28 66.04)
+			(xy 186.69 26.67) (xy 186.69 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "513a8d36-4a2a-4a0a-bdb0-4e63e5b147f0")
+		(uuid "4b8138c4-d7cf-4f47-9d59-a3aef38b94fe")
 	)
 	(wire
 		(pts
@@ -1086,17 +1401,17 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 104.14) (xy 68.58 104.14)
+			(xy 41.91 69.85) (xy 44.45 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "546ab778-8e3d-4de9-91f1-824c3530d57d")
+		(uuid "53116081-3e8b-4b22-b799-7ebf1433f1b1")
 	)
 	(wire
 		(pts
-			(xy 182.88 73.66) (xy 182.88 76.2)
+			(xy 121.92 165.1) (xy 121.92 167.64)
 		)
 		(stroke
 			(width 0)
@@ -1106,17 +1421,27 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 63.5) (xy 231.14 63.5)
+			(xy 207.01 80.01) (xy 224.79 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55eb782b-ceb4-48cc-9f80-b11aa4a8d438")
+		(uuid "5502cf9d-75c4-49ab-9f5f-5b204de3ac5e")
 	)
 	(wire
 		(pts
-			(xy 215.9 73.66) (xy 218.44 73.66)
+			(xy 93.98 175.26) (xy 114.3 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57068bd9-350d-4134-94ab-68b08780ea44")
+	)
+	(wire
+		(pts
+			(xy 154.94 165.1) (xy 157.48 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1126,27 +1451,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 104.14) (xy 81.28 106.68)
+			(xy 77.47 130.81) (xy 77.47 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a8c739f-97f5-4e1c-afa0-fc3410b899a5")
+		(uuid "5a865998-ac1a-464d-a1f5-a706b83348a3")
 	)
 	(wire
 		(pts
-			(xy 114.3 104.14) (xy 116.84 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ae20aef-9b33-4fee-8d12-2ae80b36f228")
-	)
-	(wire
-		(pts
-			(xy 218.44 73.66) (xy 218.44 76.2)
+			(xy 157.48 165.1) (xy 157.48 167.64)
 		)
 		(stroke
 			(width 0)
@@ -1156,17 +1471,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 101.6) (xy 81.28 104.14)
+			(xy 196.85 69.85) (xy 199.39 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5dce8c15-b174-455e-923a-6236cb8ea14d")
+		(uuid "5dfc17c7-5cda-4675-b236-96f6ba73cb1a")
 	)
 	(wire
 		(pts
-			(xy 182.88 71.12) (xy 182.88 73.66)
+			(xy 121.92 162.56) (xy 121.92 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1176,27 +1491,147 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 83.82) (xy 81.28 85.09)
+			(xy 44.45 110.49) (xy 44.45 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5ec43ccb-5b7d-4278-8a8a-1cc029d0771a")
+		(uuid "5e863066-ffa7-4bb9-9e11-85f37b4e6538")
 	)
 	(wire
 		(pts
-			(xy 45.72 121.92) (xy 45.72 123.19)
+			(xy 26.67 55.88) (xy 26.67 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "66f66b28-a7fc-4417-ad7a-365571ac978f")
+		(uuid "5f2c9569-62ab-4af4-8dba-356657f6d2a7")
 	)
 	(wire
 		(pts
-			(xy 190.5 45.72) (xy 210.82 45.72)
+			(xy 111.76 26.67) (xy 109.22 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f42a8de-32f8-4d8f-8408-8e75976111fb")
+	)
+	(wire
+		(pts
+			(xy 129.54 36.83) (xy 147.32 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fdfec49-dad4-48be-af49-74a097c2edae")
+	)
+	(wire
+		(pts
+			(xy 44.45 113.03) (xy 44.45 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "604849b2-08c2-46d5-89ff-dfb8061c3aa0")
+	)
+	(wire
+		(pts
+			(xy 67.31 69.85) (xy 64.77 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "663fc79f-c7c6-4f4f-910a-dddf087e7e8b")
+	)
+	(wire
+		(pts
+			(xy 74.93 113.03) (xy 77.47 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66f78cec-bbbd-457a-8309-d14d7e662772")
+	)
+	(wire
+		(pts
+			(xy 64.77 113.03) (xy 64.77 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a00fc8f-9577-475c-872f-364b9c4300f9")
+	)
+	(wire
+		(pts
+			(xy 154.94 44.45) (xy 154.94 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a836bd0-0f74-45a1-9484-49df58d2075f")
+	)
+	(wire
+		(pts
+			(xy 121.92 67.31) (xy 121.92 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ac59a2a-0d74-45d8-881c-12c09f2c86fe")
+	)
+	(wire
+		(pts
+			(xy 232.41 26.67) (xy 232.41 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c5847cb-68a9-452f-b07c-712732674356")
+	)
+	(wire
+		(pts
+			(xy 121.92 24.13) (xy 121.92 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72af876b-168e-4561-9da9-9b78429dd04f")
+	)
+	(wire
+		(pts
+			(xy 154.94 110.49) (xy 154.94 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72b6ef36-5a9a-4b2a-b9f8-c378153b1632")
+	)
+	(wire
+		(pts
+			(xy 109.22 113.03) (xy 109.22 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73568fe9-ea60-40ea-a9d2-4ce1403db2f4")
+	)
+	(wire
+		(pts
+			(xy 58.42 175.26) (xy 78.74 175.26)
 		)
 		(stroke
 			(width 0)
@@ -1206,17 +1641,87 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 66.04) (xy 45.72 66.04)
+			(xy 34.29 69.85) (xy 31.75 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7a276fdb-2063-4a6b-959e-32e51badc0e6")
+		(uuid "74371d58-e8d4-4ba4-8412-e7d3705f194b")
 	)
 	(wire
 		(pts
-			(xy 182.88 53.34) (xy 182.88 54.61)
+			(xy 199.39 113.03) (xy 199.39 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78a4132a-f2e1-4ca2-9dd7-5d73afa65f73")
+	)
+	(wire
+		(pts
+			(xy 240.03 123.19) (xy 245.11 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79015af7-2c8d-48b3-a33c-ca7b48c6009f")
+	)
+	(wire
+		(pts
+			(xy 64.77 69.85) (xy 64.77 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a8a012a-6a1f-4a52-92e8-4a13def7978c")
+	)
+	(wire
+		(pts
+			(xy 129.54 80.01) (xy 147.32 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b9a8ae3-08be-4d6e-ad6a-ccee1d40114c")
+	)
+	(wire
+		(pts
+			(xy 189.23 69.85) (xy 186.69 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7de7b6ca-ac89-492d-8646-b5cb57cda7f5")
+	)
+	(wire
+		(pts
+			(xy 243.84 36.83) (xy 243.84 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e751f0e-b578-4284-8e07-f2b61ddc7f1f")
+	)
+	(wire
+		(pts
+			(xy 199.39 67.31) (xy 199.39 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f92aca7-756c-4be7-ad87-d5c169dd82df")
+	)
+	(wire
+		(pts
+			(xy 50.8 182.88) (xy 50.8 184.15)
 		)
 		(stroke
 			(width 0)
@@ -1226,57 +1731,47 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 63.5) (xy 231.14 45.72)
+			(xy 121.92 113.03) (xy 121.92 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "803c5866-57bb-49d7-96ee-0c6291a1e9b2")
+		(uuid "7fdf8c29-22c8-4b37-8d1f-4ce82ed5f4c0")
 	)
 	(wire
 		(pts
-			(xy 116.84 63.5) (xy 116.84 66.04)
+			(xy 196.85 26.67) (xy 199.39 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "80d31fd4-2345-4a6c-b88e-1be1dc7476f7")
+		(uuid "825df3fe-570d-4ee5-acea-10d82ac184bc")
 	)
 	(wire
 		(pts
-			(xy 45.72 63.5) (xy 45.72 66.04)
+			(xy 232.41 110.49) (xy 232.41 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84a99c65-8df3-49c1-8575-6d3d4179dd48")
+		(uuid "851bcee8-708f-415f-b068-226e4c0df718")
 	)
 	(wire
 		(pts
-			(xy 71.12 66.04) (xy 68.58 66.04)
+			(xy 121.92 110.49) (xy 121.92 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86f18cbb-f75f-4cc6-aa03-a91531d85c56")
+		(uuid "87ead12b-2fa6-480f-b09d-641383e4fe0c")
 	)
 	(wire
 		(pts
-			(xy 115.57 24.13) (xy 115.57 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87e3aa0d-f7e4-4a54-997d-4f57f317619e")
-	)
-	(wire
-		(pts
-			(xy 172.72 35.56) (xy 170.18 35.56)
+			(xy 40.64 165.1) (xy 38.1 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1286,27 +1781,67 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 76.2) (xy 22.86 76.2)
+			(xy 41.91 113.03) (xy 44.45 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "90740ec7-eb0e-4791-aef6-e7e9c57ceb66")
+		(uuid "88fa449a-9634-4dcd-b83a-60198f4b52ff")
 	)
 	(wire
 		(pts
-			(xy 68.58 104.14) (xy 68.58 105.41)
+			(xy 232.41 87.63) (xy 232.41 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94c3a7ae-2690-4880-9cf2-9befa7eefdd9")
+		(uuid "8cae0eec-a9c6-4252-a0b0-93e70f11a227")
 	)
 	(wire
 		(pts
-			(xy 180.34 35.56) (xy 182.88 35.56)
+			(xy 207.01 36.83) (xy 224.79 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9175a3f0-b170-4ec3-afc6-becdc316f35d")
+	)
+	(wire
+		(pts
+			(xy 199.39 69.85) (xy 199.39 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91941515-73e7-48a1-a6a7-1bc7ac126fbd")
+	)
+	(wire
+		(pts
+			(xy 144.78 113.03) (xy 142.24 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91bc5a0f-9316-45dc-93b0-4d3524ea48cd")
+	)
+	(wire
+		(pts
+			(xy 154.94 26.67) (xy 154.94 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96f8a238-7478-447d-8ce3-b4f41e32a1ba")
+	)
+	(wire
+		(pts
+			(xy 48.26 165.1) (xy 50.8 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1316,67 +1851,107 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 26.67) (xy 115.57 26.67)
+			(xy 189.23 113.03) (xy 186.69 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1006724-347e-425b-b274-b0e897af36a7")
+		(uuid "9e652721-699b-4347-8d30-b67b0276ffc0")
 	)
 	(wire
 		(pts
-			(xy 33.02 104.14) (xy 33.02 105.41)
+			(xy 111.76 113.03) (xy 109.22 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a18b6db0-65c3-472d-bdb3-a62b55b004a5")
+		(uuid "a00a8e5c-cb30-439a-8690-d364dc387778")
 	)
 	(wire
 		(pts
-			(xy 81.28 66.04) (xy 81.28 68.58)
+			(xy 152.4 113.03) (xy 154.94 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1df4177-a6f0-49bb-b5a9-29f6c5d98617")
+		(uuid "a2dc42a5-5fdd-4034-ae7b-c726151b7513")
 	)
 	(wire
 		(pts
-			(xy 87.63 36.83) (xy 107.95 36.83)
+			(xy 31.75 113.03) (xy 31.75 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a2e67515-c624-43f1-abda-1a2dae9f5750")
+		(uuid "a471ce99-f278-4580-8dd9-9b1a61346038")
 	)
 	(wire
 		(pts
-			(xy 142.24 114.3) (xy 124.46 114.3)
+			(xy 232.41 67.31) (xy 232.41 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a7fc0713-a15f-4c6f-b70b-ee459411b207")
+		(uuid "a63eb63a-bb2d-446b-a172-f85764782dc9")
 	)
 	(wire
 		(pts
-			(xy 52.07 36.83) (xy 72.39 36.83)
+			(xy 229.87 69.85) (xy 232.41 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ab2533af-0ec5-46df-85e8-4c6b5aa98107")
+		(uuid "a6e83a07-691e-440d-9880-be7218cbc61b")
 	)
 	(wire
 		(pts
-			(xy 218.44 33.02) (xy 218.44 35.56)
+			(xy 199.39 130.81) (xy 199.39 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a718d1e1-21b5-4c73-8ec6-48f90accf3cc")
+	)
+	(wire
+		(pts
+			(xy 199.39 110.49) (xy 199.39 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7cc4ba3-95bd-4fbc-9b7e-2340e7a1bd74")
+	)
+	(wire
+		(pts
+			(xy 222.25 69.85) (xy 219.71 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaa25f83-de37-4102-a132-c896fc6d05ed")
+	)
+	(wire
+		(pts
+			(xy 219.71 113.03) (xy 219.71 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aade65c6-1f3f-4eab-9d6a-30e5b3414306")
+	)
+	(wire
+		(pts
+			(xy 86.36 162.56) (xy 86.36 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1386,33 +1961,23 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 83.82) (xy 154.94 63.5)
+			(xy 245.11 99.06) (xy 26.67 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad901972-8792-4d41-8679-4906eafba35f")
+		(uuid "ae24ae32-dd83-4429-bfe6-119f2a1bef76")
 	)
 	(wire
 		(pts
-			(xy 45.72 66.04) (xy 45.72 68.58)
+			(xy 26.67 99.06) (xy 26.67 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b40b0562-9dae-4ddb-8dff-0ab532aeb05f")
-	)
-	(wire
-		(pts
-			(xy 35.56 66.04) (xy 33.02 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b60589e4-8663-4247-b41a-9f5bbfedbccf")
+		(uuid "b4932569-7905-4ed8-8454-fb108d225527")
 	)
 	(wire
 		(pts
@@ -1436,7 +2001,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 73.66) (xy 182.88 73.66)
+			(xy 119.38 165.1) (xy 121.92 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1446,7 +2011,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 73.66) (xy 170.18 73.66)
+			(xy 111.76 165.1) (xy 109.22 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1456,37 +2021,27 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 66.04) (xy 104.14 67.31)
+			(xy 77.47 110.49) (xy 77.47 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c2fc3751-20bd-441a-bdf9-9dc509adb5d2")
+		(uuid "be6e49d2-7c06-4ce6-8af4-4b85badd7b76")
 	)
 	(wire
 		(pts
-			(xy 81.28 121.92) (xy 81.28 123.19)
+			(xy 152.4 69.85) (xy 154.94 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c325cd4e-9f72-487f-adb6-e1f693fb96e6")
+		(uuid "c13b03a8-02a9-4758-97fa-f920de0415bd")
 	)
 	(wire
 		(pts
-			(xy 115.57 44.45) (xy 115.57 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3f2ec55-3217-473b-a9a0-5f58d05b387c")
-	)
-	(wire
-		(pts
-			(xy 170.18 35.56) (xy 170.18 36.83)
+			(xy 38.1 165.1) (xy 38.1 166.37)
 		)
 		(stroke
 			(width 0)
@@ -1496,7 +2051,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 91.44) (xy 218.44 92.71)
+			(xy 157.48 182.88) (xy 157.48 184.15)
 		)
 		(stroke
 			(width 0)
@@ -1506,27 +2061,47 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 83.82) (xy 175.26 83.82)
+			(xy 77.47 69.85) (xy 77.47 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c754ccf0-7fa6-48f4-aed1-8daafd137794")
+		(uuid "c6b5ddfd-940a-45fa-b79b-44b68ce08e9b")
 	)
 	(wire
 		(pts
-			(xy 106.68 66.04) (xy 104.14 66.04)
+			(xy 232.41 69.85) (xy 232.41 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c7abe3c5-b85f-4aa0-b5e1-0c23b5883d9e")
+		(uuid "c86b2e6e-8fb5-47b4-80a3-c016412cce75")
 	)
 	(wire
 		(pts
-			(xy 80.01 44.45) (xy 80.01 45.72)
+			(xy 109.22 26.67) (xy 109.22 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89f1dcc-8a1a-4070-a8ea-feabc992b60c")
+	)
+	(wire
+		(pts
+			(xy 245.11 80.01) (xy 245.11 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9537524-9f0e-447e-a078-35260263df78")
+	)
+	(wire
+		(pts
+			(xy 77.47 44.45) (xy 77.47 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1536,47 +2111,117 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 83.82) (xy 116.84 85.09)
+			(xy 77.47 87.63) (xy 77.47 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cabea07f-fb87-4b0c-bddf-1f646a6996f2")
+		(uuid "ca3d4946-65c6-4421-8534-d5d2e82bc448")
 	)
 	(wire
 		(pts
-			(xy 35.56 104.14) (xy 33.02 104.14)
+			(xy 111.76 69.85) (xy 109.22 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cfcdb6fe-4ff4-4e56-bde8-7d9cf422c5c1")
+		(uuid "cb4fe3c6-7e56-412a-b188-de162273ae22")
 	)
 	(wire
 		(pts
-			(xy 116.84 66.04) (xy 116.84 68.58)
+			(xy 44.45 130.81) (xy 44.45 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d1f4cbc2-a3c1-4e0e-939c-327076822490")
+		(uuid "cbacbb25-c6d9-43e4-8a87-736046d0f150")
 	)
 	(wire
 		(pts
-			(xy 142.24 45.72) (xy 142.24 114.3)
+			(xy 240.03 80.01) (xy 245.11 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3794515-6f83-4772-b1a6-6a34e6215059")
+		(uuid "cc10ec43-b28c-484c-b3ef-076f85e1dbc2")
 	)
 	(wire
 		(pts
-			(xy 215.9 35.56) (xy 218.44 35.56)
+			(xy 31.75 69.85) (xy 31.75 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce074bb1-11b7-465d-afde-79458a70ab32")
+	)
+	(wire
+		(pts
+			(xy 119.38 113.03) (xy 121.92 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d16392a2-6187-4959-aa33-4939b4c0411d")
+	)
+	(wire
+		(pts
+			(xy 144.78 26.67) (xy 142.24 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4281edc-449f-48a3-941a-2f287f04fc41")
+	)
+	(wire
+		(pts
+			(xy 186.69 113.03) (xy 186.69 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6ac8c67-b835-441f-8ef5-f5ce8c2ac383")
+	)
+	(wire
+		(pts
+			(xy 232.41 113.03) (xy 232.41 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7e3532e-1e0e-4cc0-8fd7-6dc421ee4739")
+	)
+	(wire
+		(pts
+			(xy 44.45 69.85) (xy 44.45 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8591f18-1114-4829-a5c6-c5fc39b2e6bb")
+	)
+	(wire
+		(pts
+			(xy 152.4 26.67) (xy 154.94 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d90202a7-c1c5-40b7-8cd4-de00dba7d0b5")
+	)
+	(wire
+		(pts
+			(xy 83.82 165.1) (xy 86.36 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1586,17 +2231,17 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 114.3) (xy 22.86 92.71)
+			(xy 189.23 26.67) (xy 186.69 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db7d8c27-e7d8-4294-b315-cb3e8c3879ec")
+		(uuid "dc1e76bb-52fc-41ba-93b7-b3c3358f1dc1")
 	)
 	(wire
 		(pts
-			(xy 218.44 53.34) (xy 218.44 54.61)
+			(xy 86.36 182.88) (xy 86.36 184.15)
 		)
 		(stroke
 			(width 0)
@@ -1606,7 +2251,17 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 35.56) (xy 205.74 35.56)
+			(xy 74.93 69.85) (xy 77.47 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd871ade-3f8d-4755-b504-7aed9d8096db")
+	)
+	(wire
+		(pts
+			(xy 76.2 165.1) (xy 73.66 165.1)
 		)
 		(stroke
 			(width 0)
@@ -1616,67 +2271,87 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 76.2) (xy 109.22 76.2)
+			(xy 26.67 123.19) (xy 36.83 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e0327f4a-eda1-415d-91eb-a660e1f855cd")
+		(uuid "dee9c870-2cf2-4d0a-a0ed-e35509845bd9")
 	)
 	(wire
 		(pts
-			(xy 104.14 104.14) (xy 104.14 105.41)
+			(xy 154.94 130.81) (xy 154.94 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e5adf3ad-abeb-40c1-a80a-711a40438b9f")
+		(uuid "deec8d8e-5a01-4c6d-a380-4698faf5bee2")
 	)
 	(wire
 		(pts
-			(xy 53.34 114.3) (xy 73.66 114.3)
+			(xy 142.24 69.85) (xy 142.24 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e601fb2e-c0ea-47c7-815e-4384ded94670")
+		(uuid "e21f01c1-146e-40ec-a430-203e1fec5d8f")
 	)
 	(wire
 		(pts
-			(xy 22.86 76.2) (xy 22.86 54.61)
+			(xy 142.24 26.67) (xy 142.24 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6914d47-aaa2-438d-9e10-d65f0cabd8a8")
+		(uuid "e4f9043e-b634-4c01-b147-bb5685dfaf4a")
 	)
 	(wire
 		(pts
-			(xy 123.19 36.83) (xy 127 36.83)
+			(xy 154.94 87.63) (xy 154.94 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e6a8972d-fef5-4e61-a785-e3d6ed550421")
+		(uuid "e7d77d5b-9e24-4f1e-8b3b-31983281ba7e")
 	)
 	(wire
 		(pts
-			(xy 45.72 104.14) (xy 45.72 106.68)
+			(xy 121.92 69.85) (xy 121.92 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e78c7acb-9d40-4213-a7cd-8884c74a2a42")
+		(uuid "e979578e-36a3-488d-a7ed-a013a7cf81ae")
 	)
 	(wire
 		(pts
-			(xy 80.01 24.13) (xy 80.01 26.67)
+			(xy 121.92 87.63) (xy 121.92 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9cf535a-da0b-41f0-ae91-483df1524479")
+	)
+	(wire
+		(pts
+			(xy 85.09 123.19) (xy 114.3 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea164c42-c466-4ace-bd1a-98434cd8967f")
+	)
+	(wire
+		(pts
+			(xy 77.47 24.13) (xy 77.47 26.67)
 		)
 		(stroke
 			(width 0)
@@ -1686,47 +2361,37 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 83.82) (xy 45.72 85.09)
+			(xy 121.92 130.81) (xy 121.92 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed34dd4d-889b-43d9-af07-8469f7bcb81d")
+		(uuid "f151c1af-5297-4806-a2a6-f6717967ef74")
 	)
 	(wire
 		(pts
-			(xy 45.72 101.6) (xy 45.72 104.14)
+			(xy 222.25 26.67) (xy 219.71 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed7c0ca8-d34d-4ba1-8479-c59a1986439d")
+		(uuid "f5be37fe-9f2b-4a6c-809f-abbc6cfcff81")
 	)
 	(wire
 		(pts
-			(xy 102.87 26.67) (xy 102.87 27.94)
+			(xy 154.94 67.31) (xy 154.94 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0574262-d696-4082-95ff-90218a7301a6")
+		(uuid "f63a633b-ea2a-4627-96b0-f5f0afbe65b5")
 	)
 	(wire
 		(pts
-			(xy 106.68 104.14) (xy 104.14 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0aa3307-0a7b-4f0d-8d1b-37717994a0d0")
-	)
-	(wire
-		(pts
-			(xy 182.88 91.44) (xy 182.88 92.71)
+			(xy 121.92 182.88) (xy 121.92 184.15)
 		)
 		(stroke
 			(width 0)
@@ -1736,23 +2401,83 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 101.6) (xy 116.84 104.14)
+			(xy 109.22 69.85) (xy 109.22 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd552eb1-7da1-4d79-9e4c-965de2516050")
+		(uuid "f8a7cd4d-52f9-43cb-bc3d-34d9c757eb67")
 	)
 	(wire
 		(pts
-			(xy 127 92.71) (xy 127 76.2)
+			(xy 199.39 44.45) (xy 199.39 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ff088969-4a07-403d-8857-0ddb7f9d2ffd")
+		(uuid "f8c496de-1e13-4699-bf5c-6d98fa2349ba")
+	)
+	(wire
+		(pts
+			(xy 154.94 113.03) (xy 154.94 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f92894c2-75a1-4c2d-9d1a-a76a3d4a8d6b")
+	)
+	(wire
+		(pts
+			(xy 222.25 113.03) (xy 219.71 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbc7148e-c44f-4d69-963e-afe456614b35")
+	)
+	(wire
+		(pts
+			(xy 26.67 144.78) (xy 26.67 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbea7c99-d222-4792-aeae-d188353cb790")
+	)
+	(wire
+		(pts
+			(xy 26.67 80.01) (xy 36.83 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcdae0ce-7a0d-43f8-90e5-f1b553abbedc")
+	)
+	(wire
+		(pts
+			(xy 199.39 87.63) (xy 199.39 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe0914db-ebbb-4949-8ba7-2336effce273")
+	)
+	(wire
+		(pts
+			(xy 245.11 144.78) (xy 26.67 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fedd3c86-f4f7-485e-8d9f-ad8a5d61d3c5")
 	)
 	(global_label "LED_DATA_IN"
 		(shape input)
@@ -1777,17 +2502,93 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 81.28 63.5 0)
+		(lib_id "LED:WS2812B")
+		(at 154.94 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0030aa37-8de5-4430-8c18-7ed9c0eb7e18")
-		(property "Reference" "#PWR016"
-			(at 81.28 67.31 0)
+		(uuid "01c018d6-faaa-4d4b-9261-696c00b194fb")
+		(property "Reference" "D4"
+			(at 166.37 30.4098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 166.37 32.9498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 156.21 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 157.48 46.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 154.94 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "408d60d2-abe4-4ed3-8feb-2c09e2ba063c")
+		)
+		(pin "4"
+			(uuid "eb0a4c13-5907-418b-b220-fd67ab160c88")
+		)
+		(pin "3"
+			(uuid "c19681ba-ee91-4d2b-a234-be969943bd5c")
+		)
+		(pin "1"
+			(uuid "205eefd6-ef78-46fc-9797-d39e65839e2a")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 232.41 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02feab08-e41b-4ecc-bcf7-fbd56f85201a")
+		(property "Reference" "#PWR039"
+			(at 232.41 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1796,7 +2597,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 81.28 58.42 0)
+			(at 232.41 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1804,7 +2605,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 63.5 0)
+			(at 232.41 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1813,7 +2614,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 63.5 0)
+			(at 232.41 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1822,7 +2623,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 81.28 63.5 0)
+			(at 232.41 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1831,78 +2632,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5afc251b-ccd5-4c4b-9545-e9b6e105fab7")
+			(uuid "89f7050f-6ed9-422f-831e-636396c75730")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 104.14 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "027e295f-c394-4a87-bd72-1ae988d393e3")
-		(property "Reference" "#PWR038"
-			(at 104.14 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 104.14 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6bd9a2d5-9eaf-4081-911a-06064a559b93")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR038")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -1910,16 +2645,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 45.72 63.5 0)
+		(at 154.94 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "02eaec87-fc72-4462-b7fc-11425d0ed24d")
-		(property "Reference" "#PWR013"
-			(at 45.72 67.31 0)
+		(uuid "0673e15a-05de-40ed-8bc0-c053ec659d26")
+		(property "Reference" "#PWR063"
+			(at 154.94 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1928,7 +2663,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 45.72 58.42 0)
+			(at 154.94 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,7 +2671,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 63.5 0)
+			(at 154.94 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1945,7 +2680,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 63.5 0)
+			(at 154.94 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1954,7 +2689,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 45.72 63.5 0)
+			(at 154.94 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1963,12 +2698,80 @@
 			)
 		)
 		(pin "1"
-			(uuid "99b7bd04-9011-4a70-a8bc-9d9e9563ca77")
+			(uuid "c1e8aef0-7f4c-4d49-90e7-5958c5a05d3c")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR013")
+					(reference "#PWR063")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 148.59 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "067f93ed-2b26-4a65-9278-67772a709cbe")
+		(property "Reference" "C15"
+			(at 148.59 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 148.59 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 152.4 68.8848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c80d034b-096c-4b73-996a-c376c74d5db5")
+		)
+		(pin "1"
+			(uuid "cca3a05d-4c6e-49e2-a6e3-1771ec836b0a")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C15")
 					(unit 1)
 				)
 			)
@@ -1976,16 +2779,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 115.57 45.72 0)
+		(at 199.39 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "06aff4d4-096e-454a-bff8-356983ceeff3")
-		(property "Reference" "#PWR028"
-			(at 115.57 52.07 0)
+		(uuid "06d503c0-0ef2-4e3e-b48e-07200d9b088f")
+		(property "Reference" "#PWR067"
+			(at 199.39 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1994,7 +2797,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 115.57 50.8 0)
+			(at 199.39 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2002,7 +2805,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 115.57 45.72 0)
+			(at 199.39 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2011,7 +2814,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 115.57 45.72 0)
+			(at 199.39 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2020,7 +2823,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 115.57 45.72 0)
+			(at 199.39 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2029,12 +2832,144 @@
 			)
 		)
 		(pin "1"
-			(uuid "7773e0a2-1251-493a-8f45-b0981c01e0f9")
+			(uuid "b8d981b8-64ba-480b-87d2-4577c02c4b27")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR028")
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0951c3b2-07ba-46aa-99d6-8ec708bfad16")
+		(property "Reference" "#PWR062"
+			(at 142.24 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 142.24 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6634377-9b21-4ecb-a3f5-fec2c780def0")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ac875cb-4275-495c-ad7e-98d5c7240e17")
+		(property "Reference" "#PWR088"
+			(at 121.92 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bbb85b0-5907-483f-81ee-57a6b2476365")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -2110,7 +3045,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 212.09 35.56 90)
+		(at 80.01 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2119,7 +3054,7 @@
 		(fields_autoplaced yes)
 		(uuid "0f1c1bdd-711a-4afc-9a1d-092b5411f63b")
 		(property "Reference" "C11"
-			(at 212.09 27.94 90)
+			(at 80.01 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2127,7 +3062,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 212.09 30.48 90)
+			(at 80.01 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2135,7 +3070,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 215.9 34.5948 0)
+			(at 83.82 164.1348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2144,7 +3079,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 35.56 0)
+			(at 80.01 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2153,7 +3088,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 212.09 35.56 0)
+			(at 80.01 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2177,51 +3112,53 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 39.37 66.04 90)
+		(lib_id "LED:WS2812B")
+		(at 121.92 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "0f9cb92f-f789-478e-b829-c02a757178cd")
-		(property "Reference" "C4"
-			(at 39.37 58.42 90)
+		(uuid "129ef361-ccdf-4977-bd18-b5b0bcb708a2")
+		(property "Reference" "D3"
+			(at 133.35 30.4098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100nF"
-			(at 39.37 60.96 90)
+		(property "Value" "WS2812B"
+			(at 133.35 32.9498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 43.18 65.0748 0)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 123.19 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 39.37 66.04 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 39.37 66.04 0)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2230,10 +3167,216 @@
 			)
 		)
 		(pin "2"
-			(uuid "decf8355-fd0b-450a-b4b7-b4f8eb2a7553")
+			(uuid "ed90ba70-0676-4830-a7a4-b1815c1850fb")
+		)
+		(pin "4"
+			(uuid "7c4732b0-2e3e-40e9-97b7-b4336f0a98b3")
+		)
+		(pin "3"
+			(uuid "6f0e42f8-e0ac-407c-bac0-a6bc46f2440b")
 		)
 		(pin "1"
-			(uuid "f1a276ad-4753-4d3c-9c6d-7b7b540cbac3")
+			(uuid "e33be0af-c6ff-40df-8348-687189364f0c")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 77.47 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "132d37f1-f534-417e-b5a2-795e50489e3f")
+		(property "Reference" "#PWR082"
+			(at 77.47 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9bf94323-3d36-415f-9631-380edd16b7ea")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 232.41 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14041619-d9c1-4ca3-a57a-d7f0b7196bb0")
+		(property "Reference" "#PWR069"
+			(at 232.41 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 232.41 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 232.41 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9320e7fe-3973-4b86-9711-50461751fe64")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR069")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 115.57 26.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "148df048-9bcd-4805-82e9-9203ae446485")
+		(property "Reference" "C4"
+			(at 115.57 19.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 115.57 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 119.38 25.7048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 115.57 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b850579e-dbdb-46eb-87f5-6b57ed1a1242")
+		)
+		(pin "1"
+			(uuid "56466769-faa1-478f-b503-5f3a766e379c")
 		)
 		(instances
 			(project "mora-jai"
@@ -2245,17 +3388,85 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 102.87 27.94 0)
+		(lib_id "Device:C")
+		(at 71.12 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1d2b2280-803e-4c1c-a8eb-d2c5749b8772")
-		(property "Reference" "#PWR026"
-			(at 102.87 34.29 0)
+		(uuid "1bbb2c2b-86cb-469c-b2f2-9f1e3932de5a")
+		(property "Reference" "C21"
+			(at 71.12 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 71.12 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 74.93 112.0648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 71.12 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "28dbe927-ac4e-4544-a341-424fb65e2f75")
+		)
+		(pin "1"
+			(uuid "5bb22d63-8060-4d72-a8dd-14023ff7af8b")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 219.71 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cc5e08c-aeea-4dbd-802e-dc0d2467a82c")
+		(property "Reference" "#PWR068"
+			(at 219.71 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2264,7 +3475,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 102.87 33.02 0)
+			(at 219.71 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2272,7 +3483,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 102.87 27.94 0)
+			(at 219.71 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2281,7 +3492,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 102.87 27.94 0)
+			(at 219.71 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2290,7 +3501,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 102.87 27.94 0)
+			(at 219.71 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2299,12 +3510,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4d887c73-3002-4cd6-b8a8-e4326305929e")
+			(uuid "5ce269c5-7f18-487e-93bb-afcfcc7b8414")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR026")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -2312,7 +3523,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 182.88 33.02 0)
+		(at 50.8 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2321,7 +3532,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d40ac85-de6a-4989-a76e-3447860cfcf1")
 		(property "Reference" "#PWR042"
-			(at 182.88 36.83 0)
+			(at 50.8 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2330,7 +3541,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 182.88 27.94 0)
+			(at 50.8 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2338,7 +3549,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 33.02 0)
+			(at 50.8 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2347,7 +3558,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 33.02 0)
+			(at 50.8 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2356,7 +3567,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 182.88 33.02 0)
+			(at 50.8 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2377,74 +3588,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 68.58 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e0f22f4-bad6-4c59-b09b-ea6887bd2186")
-		(property "Reference" "#PWR035"
-			(at 68.58 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 68.58 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bd235cb3-1fa9-4266-aeb3-d2cef8209e65")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:WS2812B")
-		(at 80.01 36.83 0)
+		(at 77.47 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2453,7 +3598,7 @@
 		(fields_autoplaced yes)
 		(uuid "1e114ec6-a9d5-4003-9d9d-3749f64024ef")
 		(property "Reference" "D2"
-			(at 91.44 30.4098 0)
+			(at 88.9 30.4098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2461,7 +3606,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 91.44 32.9498 0)
+			(at 88.9 32.9498 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2469,7 +3614,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 81.28 44.45 0)
+			(at 78.74 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2479,7 +3624,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 82.55 46.355 0)
+			(at 80.01 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2489,7 +3634,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 80.01 36.83 0)
+			(at 77.47 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2519,17 +3664,161 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 45.72 85.09 0)
+		(lib_id "Device:C")
+		(at 148.59 26.67 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "272e565d-3cb5-4339-b8e0-ca090a3f5192")
+		(uuid "1e479764-a77f-4968-ada9-5db9afb01d0a")
+		(property "Reference" "C5"
+			(at 148.59 19.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 148.59 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 152.4 25.7048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "99d1ff07-65f7-4d12-806c-04d68964bdbf")
+		)
+		(pin "1"
+			(uuid "32094c74-b08b-43cf-80f0-9c0631935024")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 77.47 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e7cb36c-199d-4169-84f9-96a2b41f22ab")
+		(property "Reference" "D21"
+			(at 88.9 116.7698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 88.9 119.3098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 78.74 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 80.01 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 77.47 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "11a0657b-ad8f-4a85-9dab-a581ef61fe34")
+		)
+		(pin "4"
+			(uuid "26eff625-f8e6-4486-b851-7421574407bf")
+		)
+		(pin "3"
+			(uuid "be0cee0c-f86c-437e-bdab-430a2620f2fb")
+		)
+		(pin "1"
+			(uuid "51a871a8-4d95-4544-9972-78428c622497")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2718a71e-7a03-4b51-a2eb-00e5239c594c")
 		(property "Reference" "#PWR014"
-			(at 45.72 91.44 0)
+			(at 121.92 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2538,7 +3827,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 90.17 0)
+			(at 121.92 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2546,7 +3835,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 85.09 0)
+			(at 121.92 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2555,7 +3844,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 85.09 0)
+			(at 121.92 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2564,7 +3853,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 85.09 0)
+			(at 121.92 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2573,7 +3862,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "1c5326d5-ee3c-49ef-bc6a-671a895a87c7")
+			(uuid "f3bbd86b-4a1b-43f6-ba87-7d8f0962c42e")
 		)
 		(instances
 			(project "mora-jai"
@@ -2586,16 +3875,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 33.02 105.41 0)
+		(at 154.94 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "2d7d8c53-169a-4146-ba98-e429cc115805")
-		(property "Reference" "#PWR032"
-			(at 33.02 111.76 0)
+		(uuid "282a27bd-93c2-4d89-b179-b3db4e39791d")
+		(property "Reference" "#PWR094"
+			(at 154.94 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2604,7 +3893,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 33.02 110.49 0)
+			(at 154.94 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2612,7 +3901,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 105.41 0)
+			(at 154.94 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2621,7 +3910,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 105.41 0)
+			(at 154.94 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2630,7 +3919,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 105.41 0)
+			(at 154.94 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,12 +3928,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "984aa4be-08c9-4ec7-9356-df5e005fd388")
+			(uuid "9776efea-ef73-43d6-9e3e-91f6ba22a30e")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR032")
+					(reference "#PWR094")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ef9a031-c80c-4368-977e-7d6010d41b6a")
+		(property "Reference" "#PWR070"
+			(at 232.41 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59884dda-9b5f-4b00-80f1-f75d68dd51c9")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -2652,16 +4007,16 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 45.72 76.2 0)
+		(at 199.39 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "34353e1c-61dd-47a5-9606-18d4f16961cf")
-		(property "Reference" "D3"
-			(at 57.15 69.7798 0)
+		(uuid "308371d1-206a-4c10-a768-637835e3aa98")
+		(property "Reference" "D16"
+			(at 210.82 73.5898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2669,7 +4024,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 57.15 72.3198 0)
+			(at 210.82 76.1298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2677,7 +4032,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 46.99 83.82 0)
+			(at 200.66 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2687,7 +4042,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 48.26 85.725 0)
+			(at 201.93 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2697,7 +4052,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 45.72 76.2 0)
+			(at 199.39 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2706,21 +4061,173 @@
 			)
 		)
 		(pin "2"
-			(uuid "61521d8b-430f-4998-a6d4-e4d5acfc9b93")
+			(uuid "0bd5430e-f3cf-40f0-874e-761c4325c318")
 		)
 		(pin "4"
-			(uuid "af2f4343-b81b-4bf4-960a-7745dafcd57e")
+			(uuid "5955b8db-7543-4a92-8795-0d670f576fc1")
 		)
 		(pin "3"
-			(uuid "7ec15968-ed6d-4e2f-9b11-830b4749e85b")
+			(uuid "ee66d314-ba03-4b8a-b75d-29593bbd0d31")
 		)
 		(pin "1"
-			(uuid "0c47037c-0ba5-4092-a4be-774ab00abe07")
+			(uuid "2f5c2ca8-e8fa-40bb-b635-4e9e4579ce7b")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "D3")
+					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 232.41 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31b16d6e-ec96-4415-bc9c-d7271c8c0810")
+		(property "Reference" "D29"
+			(at 243.84 116.7698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 243.84 119.3098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 233.68 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 234.95 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 232.41 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "026e22ff-afc0-4051-a0de-373ab0735f73")
+		)
+		(pin "4"
+			(uuid "17752fe4-bbdd-485f-93de-29497f778a84")
+		)
+		(pin "3"
+			(uuid "e09612a6-191b-41b2-bdc5-10e5b3643b85")
+		)
+		(pin "1"
+			(uuid "e4f634b7-b31b-45d8-bcd3-66b8fb6b7921")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 199.39 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34fc1642-31ff-4f19-a050-5beb1c278a13")
+		(property "Reference" "D8"
+			(at 210.82 30.4098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 210.82 32.9498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 200.66 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 201.93 46.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 199.39 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6b3b7585-8f39-4763-b75a-5e6ee29ec80d")
+		)
+		(pin "4"
+			(uuid "deef4172-6533-469b-8719-c7e90c3781a1")
+		)
+		(pin "3"
+			(uuid "f8cbcb6b-216a-46b4-b126-d3bc33e38ff4")
+		)
+		(pin "1"
+			(uuid "536dfe85-2a56-4ad6-a7a3-82c91312a212")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -2794,16 +4301,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 68.58 67.31 0)
+		(at 154.94 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "38b72c4b-1479-481d-9b6c-60aa6675dff1")
-		(property "Reference" "#PWR015"
-			(at 68.58 73.66 0)
+		(uuid "37067841-8246-4883-8650-2f884245efd0")
+		(property "Reference" "#PWR017"
+			(at 154.94 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,7 +4319,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 68.58 72.39 0)
+			(at 154.94 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2820,7 +4327,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 68.58 67.31 0)
+			(at 154.94 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2829,7 +4336,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 68.58 67.31 0)
+			(at 154.94 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2838,7 +4345,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 68.58 67.31 0)
+			(at 154.94 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2847,12 +4354,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "550c170a-5673-4d4e-9ea2-c89009250e7c")
+			(uuid "5214b36c-2793-436a-8c81-d678916818d5")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR015")
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37074462-fb88-4447-8b15-f9d0b1c01006")
+		(property "Reference" "#PWR096"
+			(at 186.69 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c67ad16-f2f4-4274-ab9d-1040a2da5da6")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -2860,7 +4433,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 73.66 26.67 90)
+		(at 71.12 26.67 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2869,7 +4442,7 @@
 		(fields_autoplaced yes)
 		(uuid "39e7daae-dc03-4dd7-80c0-824737a3e07c")
 		(property "Reference" "C2"
-			(at 73.66 19.05 90)
+			(at 71.12 19.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2877,7 +4450,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 73.66 21.59 90)
+			(at 71.12 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2885,7 +4458,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 77.47 25.7048 0)
+			(at 74.93 25.7048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2894,7 +4467,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 73.66 26.67 0)
+			(at 71.12 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2903,7 +4476,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 26.67 0)
+			(at 71.12 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2927,8 +4500,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 186.69 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3dc77221-4f60-4afe-8b31-4c229a642105")
+		(property "Reference" "#PWR065"
+			(at 186.69 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8cfe36bd-808b-45ad-ac41-ebd5e2102b07")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
-		(at 212.09 73.66 90)
+		(at 151.13 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2937,7 +4576,7 @@
 		(fields_autoplaced yes)
 		(uuid "4241ce78-d8c5-4c67-9756-648832304f82")
 		(property "Reference" "C13"
-			(at 212.09 66.04 90)
+			(at 151.13 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2945,7 +4584,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 212.09 68.58 90)
+			(at 151.13 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2953,7 +4592,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 215.9 72.6948 0)
+			(at 154.94 164.1348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2962,7 +4601,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 212.09 73.66 0)
+			(at 151.13 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2971,7 +4610,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 212.09 73.66 0)
+			(at 151.13 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2995,17 +4634,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 218.44 54.61 0)
+		(lib_id "Device:C")
+		(at 115.57 69.85 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5608e8c8-4d22-47e1-b7de-1d3d9900858a")
-		(property "Reference" "#PWR046"
-			(at 218.44 60.96 0)
+		(uuid "44bea69a-0777-4a8b-a8e7-9c43a9773e36")
+		(property "Reference" "C14"
+			(at 115.57 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 115.57 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 119.38 68.8848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,8 +4668,60 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 218.44 59.69 0)
+		(property "Datasheet" "~"
+			(at 115.57 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 115.57 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2ed394d2-5a89-42d7-8831-f5ead5cbdaba")
+		)
+		(pin "1"
+			(uuid "db252743-f7c6-480d-b638-7df069725b10")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 44.45 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4706e881-cbf4-45f3-b5ba-2a4b16e5d19c")
+		(property "Reference" "#PWR075"
+			(at 44.45 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 44.45 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,7 +4729,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 54.61 0)
+			(at 44.45 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3031,7 +4738,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 54.61 0)
+			(at 44.45 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 44.45 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6e14487-bfb7-4eed-97b1-fe9686913fc8")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR075")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4a67ae3d-a003-40f3-991f-90ef825762ab")
+		(property "Reference" "#PWR015"
+			(at 142.24 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3040,7 +4813,405 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 54.61 0)
+			(at 142.24 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6cee778b-e5c7-4eae-a47c-27402ba672c3")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 44.45 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50787806-8115-4d17-8bdd-a474902c4d68")
+		(property "Reference" "#PWR076"
+			(at 44.45 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 44.45 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 44.45 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41b19da8-f98d-47ed-85ae-b633af0c3bef")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "50c372a0-1b4a-49dd-867d-eddc08c6e5c9")
+		(property "Reference" "#PWR0106"
+			(at 232.41 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00cc16ba-6a0f-4de1-93d8-964fb2c852c4")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 232.41 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51465605-32c2-405c-983d-519562915772")
+		(property "Reference" "#PWR0105"
+			(at 232.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 232.41 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 232.41 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "23340976-e0e1-4fbb-ba6b-de0bb42fc4b4")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR0105")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 199.39 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "525e80cc-f49f-456e-96ef-f18a56bc2322")
+		(property "Reference" "#PWR0100"
+			(at 199.39 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 199.39 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 199.39 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "77b87055-4bbb-470f-bd10-c01635852e34")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR0100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 115.57 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5600889d-e721-4d4b-a71c-efccc2c18dde")
+		(property "Reference" "C23"
+			(at 115.57 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 115.57 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 119.38 112.0648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 115.57 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7a9b56bd-1a79-45c2-bbf7-427b4d664ee4")
+		)
+		(pin "1"
+			(uuid "214c04a5-f788-4cb4-969a-a4b7437e0dc9")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5608e8c8-4d22-47e1-b7de-1d3d9900858a")
+		(property "Reference" "#PWR046"
+			(at 86.36 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 86.36 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3062,16 +5233,16 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 116.84 63.5 0)
+		(at 77.47 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "56fa60bb-2e47-44ed-9546-b59e5890c896")
-		(property "Reference" "#PWR030"
-			(at 116.84 67.31 0)
+		(uuid "5815e881-6dc9-417d-b964-fdd1c301284a")
+		(property "Reference" "#PWR081"
+			(at 77.47 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3080,7 +5251,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 116.84 58.42 0)
+			(at 77.47 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3088,7 +5259,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 63.5 0)
+			(at 77.47 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3097,7 +5268,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 63.5 0)
+			(at 77.47 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3106,7 +5277,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 116.84 63.5 0)
+			(at 77.47 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3115,222 +5286,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "89f5546c-56e3-4800-8ffb-42ff4ecb83ba")
+			(uuid "58f149e3-ad12-4d55-9025-009aacf876c2")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 115.57 36.83 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59070a32-65d5-45bb-8e8c-e442bd560d13")
-		(property "Reference" "D5"
-			(at 127 30.4098 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 127 32.9498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 116.84 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 118.11 46.355 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 115.57 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "166e5aa0-2b7c-425b-a2d0-55440fad6277")
-		)
-		(pin "4"
-			(uuid "b1dad261-db23-4d1d-8aaa-66724b4df137")
-		)
-		(pin "3"
-			(uuid "ee41191e-2c13-4b06-9567-5b4c2bc36aff")
-		)
-		(pin "1"
-			(uuid "d7258107-7fe3-4c5f-b97e-fdca18ca701e")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 110.49 66.04 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5957ad57-3572-4ef9-a435-d08339818551")
-		(property "Reference" "C6"
-			(at 110.49 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 110.49 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 114.3 65.0748 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "dbc29f05-4acf-44c0-8ac6-ee8c243fa752")
-		)
-		(pin "1"
-			(uuid "a87d6fe2-84d2-47ea-941c-249461322214")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 81.28 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5caa85a9-2e67-4f85-b4b5-0b7601e986e1")
-		(property "Reference" "#PWR036"
-			(at 81.28 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 81.28 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 81.28 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cbbf0e8e-df89-438e-b7c0-b757507801d3")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR036")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -3338,7 +5299,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 170.18 36.83 0)
+		(at 38.1 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3347,7 +5308,7 @@
 		(fields_autoplaced yes)
 		(uuid "5cf4323f-fc3b-4b0b-b7bd-31a0847f666a")
 		(property "Reference" "#PWR041"
-			(at 170.18 43.18 0)
+			(at 38.1 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3356,7 +5317,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.18 41.91 0)
+			(at 38.1 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3364,7 +5325,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 36.83 0)
+			(at 38.1 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3373,7 +5334,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 36.83 0)
+			(at 38.1 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3382,7 +5343,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 36.83 0)
+			(at 38.1 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3403,150 +5364,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 115.57 24.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ea50355-2088-4cc9-b088-56a151b82070")
-		(property "Reference" "#PWR027"
-			(at 115.57 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 115.57 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 115.57 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 115.57 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 115.57 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8f66aaf2-c916-4471-a7d6-ff7b44666db6")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 81.28 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5ecdb67e-382e-452e-aa28-f8bd32552c40")
-		(property "Reference" "D8"
-			(at 92.71 107.8798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 92.71 110.4198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 82.55 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 83.82 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 81.28 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "84950c91-aef1-47fb-8d9d-723e81175394")
-		)
-		(pin "4"
-			(uuid "cd6b50e6-c1ef-4b81-bfb0-19229ecb710c")
-		)
-		(pin "3"
-			(uuid "eda91d2d-b51a-4479-afe1-94b9e4026194")
-		)
-		(pin "1"
-			(uuid "cd0f6129-7ed7-4577-b644-4af02aa97718")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 176.53 35.56 90)
+		(at 44.45 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3555,7 +5374,7 @@
 		(fields_autoplaced yes)
 		(uuid "60f3225e-6ebf-49aa-9d46-fa0f06bcd5b6")
 		(property "Reference" "C10"
-			(at 176.53 27.94 90)
+			(at 44.45 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3563,7 +5382,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 176.53 30.48 90)
+			(at 44.45 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3571,7 +5390,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 180.34 34.5948 0)
+			(at 48.26 164.1348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3580,7 +5399,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 35.56 0)
+			(at 44.45 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3589,7 +5408,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 176.53 35.56 0)
+			(at 44.45 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3613,83 +5432,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 81.28 85.09 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69541617-04bc-4421-840b-06e3243494ad")
-		(property "Reference" "#PWR017"
-			(at 81.28 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 81.28 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d039a608-4d96-48fa-b2d4-a1b3367cfd96")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
-		(at 218.44 33.02 0)
+		(at 121.92 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6b73c88d-aeae-43d6-ad31-d3379455e7f5")
-		(property "Reference" "#PWR045"
-			(at 218.44 36.83 0)
+		(uuid "621f3780-93cd-466c-9a0a-9950c6547362")
+		(property "Reference" "#PWR060"
+			(at 121.92 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3698,7 +5451,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 218.44 27.94 0)
+			(at 121.92 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3706,7 +5459,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 33.02 0)
+			(at 121.92 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3715,7 +5468,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 33.02 0)
+			(at 121.92 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3724,7 +5477,215 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 218.44 33.02 0)
+			(at 121.92 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b5e536f-fa67-4428-8456-b03d34693fdd")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 154.94 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68c14cac-af2f-486a-9810-3210af65fa18")
+		(property "Reference" "D25"
+			(at 166.37 116.7698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 166.37 119.3098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 156.21 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 157.48 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 154.94 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c30e908c-0f00-41e6-a925-8fbbc95e257c")
+		)
+		(pin "4"
+			(uuid "65aa1f93-72a5-4d99-aff7-8108c7e80a2e")
+		)
+		(pin "3"
+			(uuid "4f67bba3-a888-474e-a37b-e82f3be5069a")
+		)
+		(pin "1"
+			(uuid "0199b4ae-a84f-4396-818e-0ac63a3578af")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69b3fe4d-8e35-4be6-b642-fa1e7cb7a550")
+		(property "Reference" "#PWR029"
+			(at 31.75 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "101e0d83-04a0-44f2-bff6-9059a8e0739f")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 86.36 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b73c88d-aeae-43d6-ad31-d3379455e7f5")
+		(property "Reference" "#PWR045"
+			(at 86.36 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 86.36 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 86.36 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3746,7 +5707,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 182.88 45.72 0)
+		(at 50.8 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3755,7 +5716,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e3abd9f-5b63-4032-ac8f-4ea46e87789b")
 		(property "Reference" "D10"
-			(at 194.31 39.2998 0)
+			(at 62.23 168.8398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3763,7 +5724,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 194.31 41.8398 0)
+			(at 62.23 171.3798 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3771,7 +5732,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 184.15 53.34 0)
+			(at 52.07 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3781,7 +5742,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 185.42 55.245 0)
+			(at 53.34 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3791,7 +5752,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 182.88 45.72 0)
+			(at 50.8 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3822,7 +5783,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 218.44 83.82 0)
+		(at 157.48 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3831,7 +5792,7 @@
 		(fields_autoplaced yes)
 		(uuid "6ec2fa04-a0ec-40f4-8d75-f1de983a113e")
 		(property "Reference" "D13"
-			(at 229.87 77.3998 0)
+			(at 168.91 168.8398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3839,7 +5800,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 229.87 79.9398 0)
+			(at 168.91 171.3798 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3847,7 +5808,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 219.71 91.44 0)
+			(at 158.75 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3857,7 +5818,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 220.98 93.345 0)
+			(at 160.02 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3867,7 +5828,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 218.44 83.82 0)
+			(at 157.48 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3898,7 +5859,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 205.74 36.83 0)
+		(at 73.66 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3907,7 +5868,7 @@
 		(fields_autoplaced yes)
 		(uuid "71a4f8c7-bce7-42f1-bdfd-16fe7fcf9b46")
 		(property "Reference" "#PWR044"
-			(at 205.74 43.18 0)
+			(at 73.66 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3916,7 +5877,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 41.91 0)
+			(at 73.66 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3924,7 +5885,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 36.83 0)
+			(at 73.66 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3933,7 +5894,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 36.83 0)
+			(at 73.66 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3942,7 +5903,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 36.83 0)
+			(at 73.66 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3963,149 +5924,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 33.02 67.31 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7750a973-d77f-4fd0-b86e-9635e13eb7c1")
-		(property "Reference" "#PWR012"
-			(at 33.02 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 33.02 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 33.02 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "739c5788-fda6-49b8-ae2b-f61a89f1cd9b")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 116.84 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "77cd38ae-b43e-4361-8472-7ecaaffd1903")
-		(property "Reference" "#PWR039"
-			(at 116.84 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 116.84 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 116.84 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a686d931-112a-45e4-b72f-d29c542b502c")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR039")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
-		(at 74.93 104.14 90)
+		(at 226.06 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "84aa1e99-b5d3-47be-9a9d-8b02179d3e43")
-		(property "Reference" "C8"
-			(at 74.93 96.52 90)
+		(uuid "731bc455-ca4b-4c38-a2f6-88f2ed96be53")
+		(property "Reference" "C29"
+			(at 226.06 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4113,7 +5942,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 74.93 99.06 90)
+			(at 226.06 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4121,7 +5950,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 78.74 103.1748 0)
+			(at 229.87 112.0648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4130,7 +5959,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 104.14 0)
+			(at 226.06 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4139,7 +5968,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 74.93 104.14 0)
+			(at 226.06 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4148,15 +5977,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "2f3903b3-92b1-4e77-8080-cb3cdbfcb8f6")
+			(uuid "0d103fe7-d2cc-429c-a30c-feb7c4d881d3")
 		)
 		(pin "1"
-			(uuid "61a47299-fcf5-481a-9152-04a8fa5329d2")
+			(uuid "989cab30-9297-48c6-8405-bc603806f9c2")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "C8")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -4164,16 +5993,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 205.74 74.93 0)
+		(at 121.92 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "89d31f00-7834-472e-ad7d-091e052accf8")
-		(property "Reference" "#PWR050"
-			(at 205.74 81.28 0)
+		(uuid "734b3130-cfa9-405e-8eab-7093267aabfe")
+		(property "Reference" "#PWR061"
+			(at 121.92 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4182,7 +6011,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 80.01 0)
+			(at 121.92 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4190,7 +6019,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 74.93 0)
+			(at 121.92 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4199,7 +6028,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 74.93 0)
+			(at 121.92 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4208,7 +6037,473 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 74.93 0)
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "74f7e6b7-37d0-4eeb-b733-2341ec56d14e")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 226.06 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "79023d8c-ce65-4a72-8806-e4bf583839c4")
+		(property "Reference" "C17"
+			(at 226.06 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 226.06 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 229.87 68.8848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 226.06 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0c24041e-8320-47ca-b0aa-a026e8652fe2")
+		)
+		(pin "1"
+			(uuid "a19b1f36-c0c5-4313-870d-56ba3095da4b")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 77.47 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a965ee4-61e0-4183-93ef-d6352e1e67dd")
+		(property "Reference" "#PWR034"
+			(at 77.47 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "157d949b-848c-435e-a87b-77d6d637c5bb")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 199.39 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7feb47cc-6623-4d8a-9c26-ab4a507a7724")
+		(property "Reference" "#PWR099"
+			(at 199.39 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 199.39 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 199.39 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 199.39 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 199.39 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95969838-453d-4e52-90d5-c53f021fdad3")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 232.41 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81e527bf-aed0-442b-93f1-318efa3c62e0")
+		(property "Reference" "#PWR040"
+			(at 232.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 232.41 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f76b3c04-eb6f-4809-9f8b-d2eed11422b0")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86fc8e90-194b-4552-82c3-3ef020ed8d87")
+		(property "Reference" "#PWR072"
+			(at 31.75 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63c3d3f4-0278-4dc6-8748-c42ca406c516")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 71.12 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88aa5cc4-388d-4393-86b8-c14751206403")
+		(property "Reference" "C7"
+			(at 71.12 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 71.12 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 74.93 68.8848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 71.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 71.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "933fd034-a4e4-4401-90b7-b549f497032e")
+		)
+		(pin "1"
+			(uuid "8950b7d4-4278-4d6d-8b0d-d2c4a0f1c49f")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 144.78 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89d31f00-7834-472e-ad7d-091e052accf8")
+		(property "Reference" "#PWR050"
+			(at 144.78 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4230,16 +6525,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 104.14 67.31 0)
+		(at 219.71 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8d113049-eea9-46a1-9c3d-b0917d06e5ef")
-		(property "Reference" "#PWR029"
-			(at 104.14 73.66 0)
+		(uuid "8f39e15f-358e-487e-a356-5c7c6efe30b2")
+		(property "Reference" "#PWR038"
+			(at 219.71 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4248,7 +6543,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 104.14 72.39 0)
+			(at 219.71 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4256,7 +6551,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 104.14 67.31 0)
+			(at 219.71 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4265,7 +6560,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 104.14 67.31 0)
+			(at 219.71 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4274,7 +6569,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 67.31 0)
+			(at 219.71 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,12 +6578,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "347954c2-ac59-4695-9a15-b770c8c60886")
+			(uuid "2211c975-b41b-42b7-bbaa-21ff22f45e4f")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR029")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -4296,7 +6591,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 170.18 74.93 0)
+		(at 109.22 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4305,7 +6600,7 @@
 		(fields_autoplaced yes)
 		(uuid "93a2962b-24ef-45a4-83d3-c0f36d901f81")
 		(property "Reference" "#PWR047"
-			(at 170.18 81.28 0)
+			(at 109.22 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4314,7 +6609,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 170.18 80.01 0)
+			(at 109.22 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,7 +6617,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 170.18 74.93 0)
+			(at 109.22 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4331,7 +6626,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 170.18 74.93 0)
+			(at 109.22 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4340,7 +6635,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 170.18 74.93 0)
+			(at 109.22 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4361,53 +6656,51 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 45.72 114.3 0)
+		(lib_id "Device:C")
+		(at 193.04 113.03 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9c6f97b9-eb77-4b0d-a789-d80f153149e5")
-		(property "Reference" "D7"
-			(at 57.15 107.8798 0)
+		(uuid "99b71a7d-42f8-4700-b1bf-0712ac283c2c")
+		(property "Reference" "C27"
+			(at 193.04 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "WS2812B"
-			(at 57.15 110.4198 0)
+		(property "Value" "100nF"
+			(at 193.04 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 46.99 121.92 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 196.85 112.0648 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 48.26 123.825 0)
+		(property "Datasheet" "~"
+			(at 193.04 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 45.72 114.3 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 193.04 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4416,21 +6709,81 @@
 			)
 		)
 		(pin "2"
-			(uuid "712d193b-32da-4e94-aef7-06c2e15ad94f")
-		)
-		(pin "4"
-			(uuid "d7ab6702-ba48-4369-a81e-e09dfc475cf5")
-		)
-		(pin "3"
-			(uuid "1530cf25-0e53-4086-a585-7f26e651a016")
+			(uuid "8e1f4ffc-2a79-48b3-82e1-774e0172ede3")
 		)
 		(pin "1"
-			(uuid "249c56b3-373f-4ff8-ad68-e5c9b299b931")
+			(uuid "fcc9df31-1154-43fc-b420-05d518ec1245")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "D7")
+					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99b9daf5-2a7c-4a4a-9025-0fc08e018d2c")
+		(property "Reference" "#PWR084"
+			(at 109.22 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0723fdbc-cbed-44a5-b89f-46439258859b")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -4438,16 +6791,16 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 218.44 45.72 0)
+		(at 121.92 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9debca1c-194d-4690-b09c-a0e245caa4e7")
-		(property "Reference" "D11"
-			(at 229.87 39.2998 0)
+		(uuid "9b1b6b70-0ab1-478e-89f2-2b807840e6e9")
+		(property "Reference" "D14"
+			(at 133.35 73.5898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4455,7 +6808,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 229.87 41.8398 0)
+			(at 133.35 76.1298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4463,7 +6816,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 219.71 53.34 0)
+			(at 123.19 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4473,7 +6826,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 220.98 55.245 0)
+			(at 124.46 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4483,7 +6836,359 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 218.44 45.72 0)
+			(at 121.92 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8ef0181f-5f46-4523-b885-4dcf0b87da8f")
+		)
+		(pin "4"
+			(uuid "76749521-4f10-4100-a057-24cc1fde36ed")
+		)
+		(pin "3"
+			(uuid "e57fe095-2bce-45e5-a513-fd5613d052b3")
+		)
+		(pin "1"
+			(uuid "aea1b155-a881-46db-a5d0-3fee509e66af")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 148.59 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9bdd6b6f-bf5b-4e74-9a06-cc5e9e5c4a04")
+		(property "Reference" "C25"
+			(at 148.59 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 148.59 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 152.4 112.0648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 148.59 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4f326516-eb94-4e27-9710-6fde28a12fe5")
+		)
+		(pin "1"
+			(uuid "be67fb5c-93b5-4e19-98bb-198803047ca2")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 44.45 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d2d1ac5-7c20-4cde-bfaf-26a87565ea55")
+		(property "Reference" "D6"
+			(at 55.88 73.5898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.88 76.1298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 45.72 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 46.99 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 44.45 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "58eabffd-1803-4bb6-afa8-39baba60846c")
+		)
+		(pin "4"
+			(uuid "fdf3c6cf-b1bc-4929-84f7-716fc49bd103")
+		)
+		(pin "3"
+			(uuid "a908d973-0b89-4bb1-9812-4576a0de9538")
+		)
+		(pin "1"
+			(uuid "6d4ca704-d16c-4aa0-b729-a941fa7e1aa3")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 109.22 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d7c5563-1459-4b9f-bed4-efb0db24f16f")
+		(property "Reference" "#PWR012"
+			(at 109.22 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 109.22 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3cd1ba0a-98c7-4759-b66f-dcff748fc064")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 44.45 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d7d627e-406e-46e7-b487-a3da6255b9be")
+		(property "Reference" "#PWR031"
+			(at 44.45 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 44.45 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 44.45 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7fecf717-81fd-4ac9-bbd7-6562d3cf0d32")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 86.36 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9debca1c-194d-4690-b09c-a0e245caa4e7")
+		(property "Reference" "D11"
+			(at 97.79 168.8398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 97.79 171.3798 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 87.63 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 88.9 184.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 86.36 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4513,17 +7218,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 116.84 123.19 0)
+		(lib_id "power:+5V")
+		(at 199.39 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9e6a9b5b-143c-44b9-8cb9-f88baf08ce23")
-		(property "Reference" "#PWR040"
-			(at 116.84 129.54 0)
+		(uuid "9ea96af8-a351-45fc-8224-3fb9e8efbeb0")
+		(property "Reference" "#PWR066"
+			(at 199.39 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,8 +7236,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 116.84 128.27 0)
+		(property "Value" "+5V"
+			(at 199.39 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4540,7 +7245,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 123.19 0)
+			(at 199.39 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4549,7 +7254,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 123.19 0)
+			(at 199.39 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,8 +7262,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 123.19 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 199.39 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4567,12 +7272,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb8959a8-7919-4989-b8a8-0bda7f8acc54")
+			(uuid "f81b8130-0ecb-4eac-987b-acf4c1f7e510")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR040")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -4580,7 +7285,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 176.53 73.66 90)
+		(at 115.57 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4589,7 +7294,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3b73a8a-c312-456f-944b-55c085154d61")
 		(property "Reference" "C12"
-			(at 176.53 66.04 90)
+			(at 115.57 157.48 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4597,7 +7302,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 176.53 68.58 90)
+			(at 115.57 160.02 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4605,7 +7310,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 180.34 72.6948 0)
+			(at 119.38 164.1348 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4614,7 +7319,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 73.66 0)
+			(at 115.57 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,7 +7328,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 176.53 73.66 0)
+			(at 115.57 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4647,169 +7352,17 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B")
-		(at 116.84 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a8ec4df2-a60c-45f5-8454-8f0b1b5593b9")
-		(property "Reference" "D9"
-			(at 128.27 107.8798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 128.27 110.4198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 118.11 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 119.38 123.825 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 116.84 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "48199b6a-52bf-4a3e-87b0-02239813f809")
-		)
-		(pin "4"
-			(uuid "57280b87-a7d7-488a-b9c3-0672b254ef08")
-		)
-		(pin "3"
-			(uuid "52a271f3-a549-4d41-8f01-d9376c487f0c")
-		)
-		(pin "1"
-			(uuid "01a3546b-a526-4399-b012-89e876973063")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 116.84 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "acda698f-8342-4f75-a7fa-103ba657af8f")
-		(property "Reference" "D6"
-			(at 128.27 69.7798 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 128.27 72.3198 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 118.11 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 119.38 85.725 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 116.84 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9828ffbe-c2a3-44b0-93ef-56ff7e90da06")
-		)
-		(pin "4"
-			(uuid "a59f2927-d485-4963-bb2a-d9fd9fe94144")
-		)
-		(pin "3"
-			(uuid "7fff7b9e-1831-4a68-9cfb-19727f88983a")
-		)
-		(pin "1"
-			(uuid "80487f20-a410-4b86-ace8-421150570834")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 67.31 27.94 0)
+		(at 199.39 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "af2db46d-06ce-4763-96bd-548cfc0cc13f")
-		(property "Reference" "#PWR09"
-			(at 67.31 34.29 0)
+		(uuid "a5f38840-4f5b-463f-8679-bca7f164f722")
+		(property "Reference" "#PWR037"
+			(at 199.39 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4818,7 +7371,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 67.31 33.02 0)
+			(at 199.39 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4826,7 +7379,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 67.31 27.94 0)
+			(at 199.39 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4835,7 +7388,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 67.31 27.94 0)
+			(at 199.39 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4844,7 +7397,139 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 67.31 27.94 0)
+			(at 199.39 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4939c96e-39f5-43fa-b0be-0cf2277ba8cb")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 154.94 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a98f30b3-8e99-49ea-a19a-228a34766ed2")
+		(property "Reference" "#PWR064"
+			(at 154.94 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 154.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 154.94 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7df3658-978e-4e83-8695-b96f2d9b74dc")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR064")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af2db46d-06ce-4763-96bd-548cfc0cc13f")
+		(property "Reference" "#PWR09"
+			(at 64.77 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4865,17 +7550,169 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 45.72 123.19 0)
+		(lib_id "LED:WS2812B")
+		(at 44.45 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b37fb0de-3185-4a8b-8355-9c9d388be8f0")
-		(property "Reference" "#PWR034"
-			(at 45.72 129.54 0)
+		(uuid "b407bad2-5b59-48ef-9c1d-5e0c226633af")
+		(property "Reference" "D19"
+			(at 55.88 116.7698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 55.88 119.3098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 45.72 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 46.99 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 44.45 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "43499327-b197-4ce1-9de0-0fbe971a2e99")
+		)
+		(pin "4"
+			(uuid "b2533391-ac17-4bf6-9a50-2da1b91aec3f")
+		)
+		(pin "3"
+			(uuid "0ac9bfad-67dc-47d5-a989-06a49e8f508e")
+		)
+		(pin "1"
+			(uuid "0a7ecb8b-ed5a-4758-b351-87b9bb00711d")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 232.41 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4593c96-bdd9-459f-857e-611d5b7ed7c0")
+		(property "Reference" "D9"
+			(at 243.84 30.4098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 243.84 32.9498 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 233.68 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 234.95 46.355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 232.41 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ac11f255-948b-4ee5-9764-663b2b5afd22")
+		)
+		(pin "4"
+			(uuid "06618cac-5276-4243-9848-b42b36c2b442")
+		)
+		(pin "3"
+			(uuid "f9468e18-c6fe-4c47-b6c2-e928ffd61187")
+		)
+		(pin "1"
+			(uuid "3b8a7660-16f8-44a1-8a8b-a4b58e317938")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 186.69 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7a671bc-49b6-40b6-b8a7-c19569bb3597")
+		(property "Reference" "#PWR035"
+			(at 186.69 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4884,7 +7721,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 128.27 0)
+			(at 186.69 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4892,7 +7729,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 123.19 0)
+			(at 186.69 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4901,7 +7738,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 123.19 0)
+			(at 186.69 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4910,7 +7747,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 123.19 0)
+			(at 186.69 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4919,29 +7756,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "ac696733-1cf5-4d71-9e6c-49445600e11e")
+			(uuid "74eba6cb-6efd-4633-957a-65b7454703ca")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR034")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 45.72 101.6 0)
+		(lib_id "power:GND")
+		(at 142.24 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b67f6d5e-3653-41cb-9fdb-f9103f7d6de3")
-		(property "Reference" "#PWR033"
-			(at 45.72 105.41 0)
+		(uuid "b7fcde52-ef88-454f-8252-1a3c476ce71d")
+		(property "Reference" "#PWR090"
+			(at 142.24 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4949,8 +7786,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 45.72 96.52 0)
+		(property "Value" "GND"
+			(at 142.24 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4958,7 +7795,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 101.6 0)
+			(at 142.24 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4967,7 +7804,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 101.6 0)
+			(at 142.24 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4975,8 +7812,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 45.72 101.6 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 142.24 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4985,12 +7822,148 @@
 			)
 		)
 		(pin "1"
-			(uuid "72490fb3-be64-44d0-9d05-58cc905b1723")
+			(uuid "ce147bc4-93ca-4e27-9eb1-07388c5a42b4")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR033")
+					(reference "#PWR090")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 226.06 26.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b84787d6-36e6-460f-8de3-77edb6f44785")
+		(property "Reference" "C9"
+			(at 226.06 19.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 226.06 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 229.87 25.7048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 226.06 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4e7d0e61-5603-4860-90e2-ebca06d0bd03")
+		)
+		(pin "1"
+			(uuid "701a5dab-90a1-44c8-b359-554852476042")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 38.1 113.03 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b968163e-736a-49f0-83e7-ff0905b05342")
+		(property "Reference" "C19"
+			(at 38.1 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 38.1 107.95 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 41.91 112.0648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 38.1 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cd900d5c-1dc8-4a86-970f-fbab2a4e2a8a")
+		)
+		(pin "1"
+			(uuid "9ead8877-803b-4a3f-b52f-215c782e1913")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -4998,7 +7971,73 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 218.44 92.71 0)
+		(at 64.77 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "baeb6dec-a499-4032-8df6-f727e022bc62")
+		(property "Reference" "#PWR032"
+			(at 64.77 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1871f77e-8550-4e6c-aa5e-92822f0c3c68")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5007,7 +8046,7 @@
 		(fields_autoplaced yes)
 		(uuid "bb49c2c7-dcae-4b59-b9e1-fca6b879e273")
 		(property "Reference" "#PWR052"
-			(at 218.44 99.06 0)
+			(at 157.48 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5016,7 +8055,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 218.44 97.79 0)
+			(at 157.48 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5024,7 +8063,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 92.71 0)
+			(at 157.48 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5033,7 +8072,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 92.71 0)
+			(at 157.48 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5042,7 +8081,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 92.71 0)
+			(at 157.48 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5063,8 +8102,84 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:WS2812B")
+		(at 154.94 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd983382-1151-4b40-bf9f-a084579b50d4")
+		(property "Reference" "D15"
+			(at 166.37 73.5898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 166.37 76.1298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 156.21 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 157.48 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 154.94 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5d9e9461-7152-49ef-b155-fa6d5192657a")
+		)
+		(pin "4"
+			(uuid "cf9bcc7a-1d8c-442f-914e-f31575a448fb")
+		)
+		(pin "3"
+			(uuid "abfc835b-5c70-494f-9974-521b2edb0584")
+		)
+		(pin "1"
+			(uuid "26dfc6a6-cb9e-4843-ade9-e064c6639f13")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
-		(at 182.88 71.12 0)
+		(at 121.92 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5073,7 +8188,7 @@
 		(fields_autoplaced yes)
 		(uuid "bdd05ca5-a122-42e0-b4ee-3196ba039801")
 		(property "Reference" "#PWR048"
-			(at 182.88 74.93 0)
+			(at 121.92 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5082,7 +8197,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 182.88 66.04 0)
+			(at 121.92 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5090,7 +8205,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 71.12 0)
+			(at 121.92 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5099,7 +8214,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 71.12 0)
+			(at 121.92 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5108,7 +8223,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 182.88 71.12 0)
+			(at 121.92 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5129,17 +8244,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 81.28 123.19 0)
+		(lib_id "power:+5V")
+		(at 121.92 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "bedbbc1b-2cd4-4c0f-b02c-e7ec05f554b8")
-		(property "Reference" "#PWR037"
-			(at 81.28 129.54 0)
+		(uuid "be1e8a15-ba19-4a59-b552-f7da6e40ac51")
+		(property "Reference" "#PWR087"
+			(at 121.92 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5147,8 +8262,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 81.28 128.27 0)
+		(property "Value" "+5V"
+			(at 121.92 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5156,7 +8271,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 123.19 0)
+			(at 121.92 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5165,7 +8280,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 123.19 0)
+			(at 121.92 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5173,8 +8288,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 123.19 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 121.92 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5183,12 +8298,80 @@
 			)
 		)
 		(pin "1"
-			(uuid "d9149e20-2dc7-4c9b-9431-ce87be9b51df")
+			(uuid "e14cb6fd-07ae-4e35-a3ff-5a756a5fb1a3")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR037")
+					(reference "#PWR087")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 193.04 26.67 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf2a2b07-fbb0-4793-825c-34ea18c41033")
+		(property "Reference" "C8"
+			(at 193.04 19.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 193.04 21.59 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 196.85 25.7048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 193.04 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3b374650-72ec-4a95-9145-9c5b07f243c4")
+		)
+		(pin "1"
+			(uuid "e7c58995-fd73-4b9d-8e18-9919d8e1fbd1")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -5196,7 +8379,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 45.72 0)
+		(at 77.47 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5205,7 +8388,7 @@
 		(fields_autoplaced yes)
 		(uuid "bff3aced-ec63-4444-b987-d0415fda7543")
 		(property "Reference" "#PWR011"
-			(at 80.01 52.07 0)
+			(at 77.47 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5214,7 +8397,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 50.8 0)
+			(at 77.47 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5222,7 +8405,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 45.72 0)
+			(at 77.47 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,7 +8414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 45.72 0)
+			(at 77.47 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5240,7 +8423,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 45.72 0)
+			(at 77.47 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5262,7 +8445,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 80.01 24.13 0)
+		(at 77.47 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5271,7 +8454,7 @@
 		(fields_autoplaced yes)
 		(uuid "c5355630-853b-4df9-952e-0793614bdda6")
 		(property "Reference" "#PWR010"
-			(at 80.01 27.94 0)
+			(at 77.47 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5280,7 +8463,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 80.01 19.05 0)
+			(at 77.47 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5288,7 +8471,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 24.13 0)
+			(at 77.47 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5297,7 +8480,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 24.13 0)
+			(at 77.47 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5306,7 +8489,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 80.01 24.13 0)
+			(at 77.47 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5321,6 +8504,150 @@
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 38.1 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c54d4298-c34a-4d21-92b1-c4d1fedc5574")
+		(property "Reference" "C6"
+			(at 38.1 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 38.1 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 41.91 68.8848 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 38.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 38.1 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "205d24f7-de8d-433e-8722-9b19d4fcd3f6")
+		)
+		(pin "1"
+			(uuid "02d317cc-1c90-4689-91df-cd724cb7d420")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 77.47 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c664a6a4-9f09-49ea-af33-421076e731fc")
+		(property "Reference" "D7"
+			(at 88.9 73.5898 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 88.9 76.1298 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 78.74 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 80.01 89.535 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 77.47 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8c1c2857-e632-436b-b855-5cb07141b1e4")
+		)
+		(pin "4"
+			(uuid "862fa4d0-e814-4f9f-8d35-66415d9c962c")
+		)
+		(pin "3"
+			(uuid "c8afe00d-8cb3-4fde-bfc8-6ae000612a8c")
+		)
+		(pin "1"
+			(uuid "85423d4d-a2b6-4681-bf2d-1ece4c8b0ab6")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -5393,85 +8720,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 110.49 104.14 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d345081c-1115-439f-8f38-534eb19393c1")
-		(property "Reference" "C9"
-			(at 110.49 96.52 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 110.49 99.06 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 114.3 103.1748 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 110.49 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9854a775-ee67-4eaa-b4a7-75c7d8496938")
-		)
-		(pin "1"
-			(uuid "65b7cfa1-10f1-420d-a257-dea37c79bd2f")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LED:WS2812B")
-		(at 81.28 76.2 0)
+		(at 199.39 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "da97582c-9852-4090-9f02-2a02221fab2c")
-		(property "Reference" "D4"
-			(at 92.71 69.7798 0)
+		(uuid "c7d47211-7ae4-4db4-b83c-e3f875030dc3")
+		(property "Reference" "D27"
+			(at 210.82 116.7698 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5479,7 +8738,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 92.71 72.3198 0)
+			(at 210.82 119.3098 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5487,7 +8746,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 82.55 83.82 0)
+			(at 200.66 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5497,7 +8756,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 83.82 85.725 0)
+			(at 201.93 132.715 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5507,7 +8766,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 81.28 76.2 0)
+			(at 199.39 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5516,21 +8775,285 @@
 			)
 		)
 		(pin "2"
-			(uuid "dfc11f16-a4d4-4598-9638-d7b859b9a08d")
+			(uuid "2afa53d3-be5b-4830-b2dd-0376d3a7f1cb")
 		)
 		(pin "4"
-			(uuid "94c726f0-5786-40ea-afec-ff15fa9e6846")
+			(uuid "66c93112-ad46-445d-9f64-3cb9a8ea5f34")
 		)
 		(pin "3"
-			(uuid "40cc88da-70de-48c6-8a88-0c3c679daf46")
+			(uuid "e0c73df9-dfab-427a-9405-223f2e4c0cc9")
 		)
 		(pin "1"
-			(uuid "59265383-0ef1-4237-a86f-1922bfa006a5")
+			(uuid "afa794a5-3239-4cf7-8f24-3a21c9d5f020")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "D4")
+					(reference "D27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 64.77 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ceb43f00-5671-4e4f-8acf-ab31d39245ee")
+		(property "Reference" "#PWR078"
+			(at 64.77 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 64.77 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 64.77 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55a78081-67e9-463d-9a3b-a3c2845e359c")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 154.94 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf7062cf-149e-402a-ae7d-ead7729af2b7")
+		(property "Reference" "#PWR016"
+			(at 154.94 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 154.94 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 154.94 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79d7c9a3-0558-4af1-bf95-cb1faa675291")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 44.45 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d106ac2d-bb40-4932-98e0-6d8e51963d5f")
+		(property "Reference" "#PWR030"
+			(at 44.45 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 44.45 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 44.45 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 44.45 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2eeb4c4-aa6a-4898-8a51-e6f15d813170")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 77.47 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "daa3e125-fd57-411c-9613-50be1f3a6371")
+		(property "Reference" "#PWR033"
+			(at 77.47 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 77.47 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 77.47 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9c10c27-adaa-46df-a1c6-48f5a412ee0e")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -5614,7 +9137,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 182.88 54.61 0)
+		(at 50.8 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5623,7 +9146,7 @@
 		(fields_autoplaced yes)
 		(uuid "df545d3b-f45d-4aa5-8322-075cdb61132c")
 		(property "Reference" "#PWR043"
-			(at 182.88 60.96 0)
+			(at 50.8 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5632,7 +9155,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 182.88 59.69 0)
+			(at 50.8 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5640,7 +9163,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 54.61 0)
+			(at 50.8 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5649,7 +9172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 54.61 0)
+			(at 50.8 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5658,7 +9181,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 182.88 54.61 0)
+			(at 50.8 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5679,51 +9202,53 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 39.37 104.14 90)
+		(lib_id "LED:WS2812B")
+		(at 232.41 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dfe95944-a150-408f-8f78-2883c4ece3a4")
-		(property "Reference" "C7"
-			(at 39.37 96.52 90)
+		(uuid "e06de50f-fcf3-4887-9da5-9f2adfc0cbe4")
+		(property "Reference" "D17"
+			(at 243.84 73.5898 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100nF"
-			(at 39.37 99.06 90)
+		(property "Value" "WS2812B"
+			(at 243.84 76.1298 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 43.18 103.1748 0)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 233.68 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 39.37 104.14 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 234.95 89.535 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 39.37 104.14 0)
+		(property "Description" "RGB LED with integrated controller"
+			(at 232.41 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5732,15 +9257,153 @@
 			)
 		)
 		(pin "2"
-			(uuid "daf48be0-d7df-4d65-a7ed-c06e55a72ad6")
+			(uuid "d5a060fe-6414-4a3d-99b6-c66aa719166e")
+		)
+		(pin "4"
+			(uuid "8a107baa-8df5-4df6-93c6-c60a67b6181d")
+		)
+		(pin "3"
+			(uuid "77a84bf1-f3eb-4862-a9e9-de8baf5e2003")
 		)
 		(pin "1"
-			(uuid "0f9d3cef-c065-4d03-80b2-b8691c57d8a2")
+			(uuid "fc0809a8-8b56-45b2-9e78-a64604760485")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "C7")
+					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 219.71 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e18b664b-cf88-419f-acf7-659afa77c4bc")
+		(property "Reference" "#PWR0102"
+			(at 219.71 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 219.71 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 219.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 219.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 219.71 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "833cf248-366f-47e3-9c1a-34222f3e4b39")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 121.92 24.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e22933e3-befa-4bd1-86b5-0a40dfcf88ed")
+		(property "Reference" "#PWR013"
+			(at 121.92 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 121.92 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 121.92 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68b30e75-efae-40ad-964e-6f6a17d78b5f")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -5813,33 +9476,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 109.22 26.67 90)
+		(lib_id "power:GND")
+		(at 109.22 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e8f9fd85-4691-4b29-b864-0d0e310a2dbf")
-		(property "Reference" "C3"
-			(at 109.22 19.05 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 109.22 21.59 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 113.03 25.7048 0)
+		(uuid "ec39cf9e-3089-4c56-8296-b7a54ff1b06d")
+		(property "Reference" "#PWR059"
+			(at 109.22 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5847,60 +9494,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 109.22 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 109.22 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a1f5903b-0955-4e5c-919d-4bdd613fdd1f")
-		)
-		(pin "1"
-			(uuid "efa317f3-7eff-49fa-b07c-fe947fde58d6")
-		)
-		(instances
-			(project "mora-jai"
-				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 218.44 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ec444221-9c62-4f6f-b197-3ca4a4163df4")
-		(property "Reference" "#PWR051"
-			(at 218.44 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 218.44 66.04 0)
+		(property "Value" "GND"
+			(at 109.22 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5908,7 +9503,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 71.12 0)
+			(at 109.22 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5917,7 +9512,73 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 71.12 0)
+			(at 109.22 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 109.22 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2227f04d-fc15-40e6-ac41-1e0ff042a777")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 157.48 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec444221-9c62-4f6f-b197-3ca4a4163df4")
+		(property "Reference" "#PWR051"
+			(at 157.48 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 157.48 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5926,7 +9587,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 218.44 71.12 0)
+			(at 157.48 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5948,7 +9609,7 @@
 	)
 	(symbol
 		(lib_id "LED:WS2812B")
-		(at 182.88 83.82 0)
+		(at 121.92 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5957,7 +9618,7 @@
 		(fields_autoplaced yes)
 		(uuid "ed0fac6d-a03e-4fec-a056-7fa0a155474a")
 		(property "Reference" "D12"
-			(at 194.31 77.3998 0)
+			(at 133.35 168.8398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5965,7 +9626,7 @@
 			)
 		)
 		(property "Value" "WS2812B"
-			(at 194.31 79.9398 0)
+			(at 133.35 171.3798 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5973,7 +9634,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 184.15 91.44 0)
+			(at 123.19 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5983,7 +9644,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 185.42 93.345 0)
+			(at 124.46 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5993,7 +9654,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 182.88 83.82 0)
+			(at 121.92 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6023,17 +9684,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 116.84 85.09 0)
+		(lib_id "power:+5V")
+		(at 199.39 24.13 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f519b70d-aba1-401a-b3e2-cfd672117681")
-		(property "Reference" "#PWR031"
-			(at 116.84 91.44 0)
+		(uuid "ed6c195b-bef8-4961-b7ba-d5127f5ac4f8")
+		(property "Reference" "#PWR036"
+			(at 199.39 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6041,8 +9702,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 116.84 90.17 0)
+		(property "Value" "+5V"
+			(at 199.39 19.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6050,7 +9711,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 85.09 0)
+			(at 199.39 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6059,7 +9720,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 85.09 0)
+			(at 199.39 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6067,8 +9728,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 85.09 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 199.39 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6077,12 +9738,88 @@
 			)
 		)
 		(pin "1"
-			(uuid "5a26efdb-dd7e-4d9f-86d5-bc998fb71730")
+			(uuid "49181f1c-ad08-4363-ab01-dd3d59096516")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "#PWR031")
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:WS2812B")
+		(at 121.92 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f1c578af-f6eb-4859-8071-559f35a96ea0")
+		(property "Reference" "D23"
+			(at 133.35 116.7698 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WS2812B"
+			(at 133.35 119.3098 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(at 123.19 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(at 124.46 132.715 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 121.92 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "43d5d172-b795-4b8b-a2e2-1bf2b8721279")
+		)
+		(pin "4"
+			(uuid "c5ba97ba-3e26-450a-ac99-0877310900a3")
+		)
+		(pin "3"
+			(uuid "f676b98b-579d-40e3-bbff-5835577292ab")
+		)
+		(pin "1"
+			(uuid "d163117d-140e-48d4-bca2-f28e050022f8")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "D23")
 					(unit 1)
 				)
 			)
@@ -6090,7 +9827,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 182.88 92.71 0)
+		(at 121.92 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6099,7 +9836,7 @@
 		(fields_autoplaced yes)
 		(uuid "f6b00aff-2614-44ff-ae6e-edbb6ece2284")
 		(property "Reference" "#PWR049"
-			(at 182.88 99.06 0)
+			(at 121.92 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6108,7 +9845,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 182.88 97.79 0)
+			(at 121.92 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6116,7 +9853,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 92.71 0)
+			(at 121.92 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6125,7 +9862,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 92.71 0)
+			(at 121.92 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6134,7 +9871,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 182.88 92.71 0)
+			(at 121.92 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6155,17 +9892,83 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 74.93 66.04 90)
+		(lib_id "power:+5V")
+		(at 154.94 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ff87b9cb-38e8-4792-a1b5-5d5f63932b9d")
-		(property "Reference" "C5"
-			(at 74.93 58.42 90)
+		(uuid "fd96ee21-e2ec-4af0-8c14-6ee2a8b62bee")
+		(property "Reference" "#PWR093"
+			(at 154.94 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 154.94 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 154.94 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf66c2f6-67ea-4d9c-b951-cd22989299c7")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
+					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 193.04 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff0868fa-0320-40a7-be19-da8f32327ee0")
+		(property "Reference" "C16"
+			(at 193.04 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6173,7 +9976,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 74.93 60.96 90)
+			(at 193.04 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6181,7 +9984,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 78.74 65.0748 0)
+			(at 196.85 68.8848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6190,7 +9993,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 74.93 66.04 0)
+			(at 193.04 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6199,7 +10002,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 74.93 66.04 0)
+			(at 193.04 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6208,15 +10011,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "1b2b4cb9-3c8f-4859-9d28-17d78541ca02")
+			(uuid "b4c0fee4-f4c5-4196-9d01-d02b34428ac6")
 		)
 		(pin "1"
-			(uuid "15afaaf8-64c3-4c92-a4c0-ad32cca35c79")
+			(uuid "b086f374-3bdd-4f65-970d-e8f99f8fed2e")
 		)
 		(instances
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3/c49a6983-c4dd-4457-a09b-a398a4b03e4a"
-					(reference "C5")
+					(reference "C16")
 					(unit 1)
 				)
 			)

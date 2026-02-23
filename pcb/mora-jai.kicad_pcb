@@ -19180,16 +19180,6 @@
 		(uuid "2f0d2c19-f477-45f0-a755-563434149212")
 	)
 	(gr_line
-		(start 119.2 60.499999)
-		(end 120.3 60.499999)
-		(stroke
-			(width 0.1)
-			(type default)
-		)
-		(layer "Dwgs.User")
-		(uuid "2fc56c56-329e-4a9c-9da1-8143d630fc2d")
-	)
-	(gr_line
 		(start 143.5 78.699999)
 		(end 133.5 78.699999)
 		(stroke

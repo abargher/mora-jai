@@ -2685,7 +2685,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Questions:\n- Button for deep sleep direct connection?"
+	(text "Questions:\n- Button for deep sleep direct connection?\n- Solenoid circuit?"
 		(exclude_from_sim no)
 		(at 91.44 55.626 0)
 		(effects

@@ -372,7 +372,7 @@
 	(pad "15" thru_hole oval
 		(at -4.451364 -0.335 180)
 		(size 2.5 1.1)
-		(drill 1.1)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.0508)
@@ -382,7 +382,7 @@
 	(pad "16" thru_hole oval
 		(at -4.451364 -2.24 180)
 		(size 2.5 1.1)
-		(drill 1.1)
+		(drill 1)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(solder_mask_margin 0.0508)

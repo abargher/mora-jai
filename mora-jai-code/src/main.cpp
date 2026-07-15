@@ -71,7 +71,10 @@ void setup()
     digitalWrite(D1, LOW);
     digitalWrite(D2, LOW);
     digitalWrite(D4, LOW);
-    digitalWrite(D5, LOW);
+
+    // motor control pin
+    pinMode(D8, OUTPUT);
+    digitalWrite(D8, LOW);
 
     pinMode(D3, INPUT);
 
@@ -122,7 +125,7 @@ typedef struct
 // the loop function runs over and over again forever
 void loop()
 {
-
+    bool motorOn = false;
     for (int i = 0; i < 4; i++)
     {
         matrix[led_idxs[i]] = !readMux(i) + 1;
@@ -138,9 +141,18 @@ void loop()
         else if (matrix[i] == 2)
         {
             color = pixels.Color(0, 100, 0);
+            motorOn = true;
         }
         pixels.setPixelColor(i, color);
         pixels.setBrightness(10);
+    }
+    if (motorOn)
+    {
+        digitalWrite(D8, HIGH);
+    }
+    else
+    {
+        digitalWrite(D8, LOW);
     }
     pixels.show();
 

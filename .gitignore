@@ -4,3 +4,5 @@ mora-jai-backups/
 fp-info-cache
 *.bak
 pcb/.history
+.DS_Store
+

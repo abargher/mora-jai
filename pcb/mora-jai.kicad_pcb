@@ -17230,7 +17230,7 @@
 			(uuid "84a4dd20-8c73-4003-bd91-ad6a4d015194")
 		)
 		(fp_line
-			(start -6.991363 10.465)
+			(start -6.991364 10.465)
 			(end 6.978636 10.465)
 			(stroke
 				(width 0.1)
@@ -17275,7 +17275,7 @@
 		(fp_arc
 			(start -8.896364 -8.589)
 			(mid -8.338402 -9.936038)
-			(end -6.991363 -10.494)
+			(end -6.991364 -10.494)
 			(stroke
 				(width 0.1)
 				(type solid)
@@ -17295,7 +17295,7 @@
 			(uuid "608de005-650e-47e5-a0e4-f577983236c2")
 		)
 		(fp_arc
-			(start -6.991363 10.465)
+			(start -6.991364 10.465)
 			(mid -8.338402 9.907038)
 			(end -8.896364 8.56)
 			(stroke
@@ -17327,17 +17327,27 @@
 			(layer "F.SilkS")
 			(uuid "24c49706-768e-409a-a19d-cce96c70dcd2")
 		)
-		(fp_poly
-			(pts
-				(xy -8.899364 -10.475) (xy 8.890636 -10.475001) (xy 8.890636 10.473) (xy -8.899364 10.473)
-			)
+		(fp_rect
+			(start -8.899364 -10.475)
+			(end 8.890636 10.473)
 			(stroke
 				(width 0.05)
 				(type default)
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "5a9a0635-152c-4688-8df0-82d3bffc4d1f")
+			(uuid "77afc23b-faa1-4876-9f85-358a44a13d4e")
+		)
+		(fp_rect
+			(start -8.901364 -10.475)
+			(end 8.882636 10.476)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "08ac9a71-1c5b-4193-97aa-92b27ad6cc6e")
 		)
 		(fp_circle
 			(center -7.897364 -9.358)
@@ -17349,18 +17359,6 @@
 			(fill yes)
 			(layer "F.Fab")
 			(uuid "037941e8-ffbe-46c3-a2f7-f9d588f982f6")
-		)
-		(fp_poly
-			(pts
-				(xy -8.901364 -10.475) (xy 8.882636 -10.475) (xy 8.882636 10.476) (xy -8.901364 10.476)
-			)
-			(stroke
-				(width 0.1)
-				(type default)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "fed6d82d-75bb-45d8-9f5b-024137c13723")
 		)
 		(pad "1" smd roundrect
 			(at -8.061364 -7.573 90)
@@ -17459,7 +17457,7 @@
 			(uuid "0853b91c-3ce7-4861-ba98-0cf1c6263ba6")
 		)
 		(pad "9" smd roundrect
-			(at 8.103636 5.126999 90)
+			(at 8.103636 5.127 90)
 			(size 2.75 2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -17507,7 +17505,7 @@
 			(uuid "ccb0f2fd-4585-4a4e-98a4-5ecd984cfbc7")
 		)
 		(pad "13" smd roundrect
-			(at 8.103636 -5.032999 90)
+			(at 8.103636 -5.033 90)
 			(size 2.75 2)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -17611,7 +17609,7 @@
 			(uuid "3d616dde-2318-479e-bf58-571c362eaedd")
 		)
 		(pad "23" smd circle
-			(at -1.276365 -0.965 90)
+			(at -1.276364 -0.965 90)
 			(size 1.7 1.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U3-USB_DN-Pad23)")
@@ -17620,7 +17618,7 @@
 			(uuid "a0c0e53d-d57b-4a49-8f63-918df7ef61ac")
 		)
 		(pad "24" smd circle
-			(at 1.263637 -0.965 90)
+			(at 1.263636 -0.965 90)
 			(size 1.7 1.7)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(net "unconnected-(U3-USB_DP-Pad24)")
@@ -17629,7 +17627,7 @@
 			(uuid "456e06ad-83ac-4bfe-8d55-ca88e7504436")
 		)
 		(embedded_fonts no)
-		(model "${CUSTOM_LIBRARIES}/OPL_Kicad_Library/Seeed Studio XIAO Series Library/SeeedStudioXIAO.pretty/XIAO-ESP32S3 v2.step"
+		(model "${KIPRJMOD}/OPL_Kicad_Library/Seeed Studio XIAO Series Library/Seeed Studio XIAO-ESP32-C3.step"
 			(offset
 				(xyz 6 -1.75 0)
 			)

@@ -3604,12 +3604,6 @@
 		(uuid "4ba711fc-ac05-4f0c-ad39-23e99c31a3a5")
 	)
 	(junction
-		(at 58.42 69.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4dbbc53f-2e89-4b50-bb1f-4509f2f9ff4a")
-	)
-	(junction
 		(at 46.99 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3700,6 +3694,10 @@
 	(no_connect
 		(at 43.18 24.13)
 		(uuid "7b0384a6-e4f9-4eb5-8624-01eeee4c4245")
+	)
+	(no_connect
+		(at 63.5 68.58)
+		(uuid "9fd89681-40f3-4a63-8e45-5faf1434a00c")
 	)
 	(no_connect
 		(at 58.42 24.13)
@@ -4057,16 +4055,6 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 68.58) (xy 63.5 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "439a4aaa-d915-40c4-8a45-abef5166d649")
-	)
-	(wire
-		(pts
 			(xy 67.31 113.03) (xy 67.31 109.22)
 		)
 		(stroke
@@ -4134,16 +4122,6 @@
 			(type default)
 		)
 		(uuid "4c1d0599-547d-46a6-a2e3-f74646b601dd")
-	)
-	(wire
-		(pts
-			(xy 58.42 69.85) (xy 58.42 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "511fddaf-457b-4ff3-b261-12c81778a90d")
 	)
 	(wire
 		(pts
@@ -4717,7 +4695,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 68.58) (xy 58.42 69.85)
+			(xy 58.42 68.58) (xy 58.42 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4894,16 +4872,6 @@
 			(type default)
 		)
 		(uuid "dc40336c-12a9-4335-a95c-6255a68dad0d")
-	)
-	(wire
-		(pts
-			(xy 63.5 69.85) (xy 58.42 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dda1bc41-42ca-452f-96a8-92ad1920ad4d")
 	)
 	(wire
 		(pts
@@ -9911,7 +9879,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 226.06 81.28 0)
 			(hide yes)
 			(show_name no)

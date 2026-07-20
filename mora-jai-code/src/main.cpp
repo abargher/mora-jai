@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
+#include <ESP32Servo.h>
 
 #define PIN 1
 #define NUMPIXELS 64
@@ -59,9 +60,20 @@ int readMux(int channel)
     return val;
 }
 
+Servo servo;
+int servoPos = 0;
+
 // the setup function runs once when you press reset or power the board
 void setup()
 {
+    ESP32PWM::allocateTimer(0);
+    ESP32PWM::allocateTimer(1);
+    ESP32PWM::allocateTimer(2);
+    ESP32PWM::allocateTimer(3);
+
+    servo.setPeriodHertz(50);
+    servo.attach(D8, 1000, 2000);
+
     // initialize digital pin LED_BUILTIN as an output.
     pinMode(LED_BUILTIN, OUTPUT);
     pinMode(D1, OUTPUT);
@@ -73,8 +85,7 @@ void setup()
     digitalWrite(D4, LOW);
 
     // motor control pin
-    pinMode(D8, OUTPUT);
-    digitalWrite(D8, LOW);
+    // pinMode(D8, OUTPUT);
 
     pinMode(D3, INPUT);
 
@@ -125,7 +136,6 @@ typedef struct
 // the loop function runs over and over again forever
 void loop()
 {
-    bool motorOn = false;
     for (int i = 0; i < 4; i++)
     {
         matrix[led_idxs[i]] = !readMux(i) + 1;
@@ -141,21 +151,28 @@ void loop()
         else if (matrix[i] == 2)
         {
             color = pixels.Color(0, 100, 0);
-            motorOn = true;
         }
         pixels.setPixelColor(i, color);
         pixels.setBrightness(10);
     }
-    if (motorOn)
-    {
-        digitalWrite(D8, HIGH);
-    }
-    else
-    {
-        digitalWrite(D8, LOW);
-    }
+
     pixels.show();
 
+    bool motorOn = false;
+    if (motorOn)
+    {
+        for (servoPos = 0; servoPos <= 180; servoPos += 1)
+        { // goes from 0 degrees to 180 degrees
+            // in steps of 1 degree
+            servo.write(servoPos); // tell servo to go to position in variable 'pos'
+            delay(5);              // waits 5ms for the servo to reach the position
+        }
+        for (servoPos = 180; servoPos >= 0; servoPos -= 1)
+        {                          // goes from 180 degrees to 0 degrees
+            servo.write(servoPos); // tell servo to go to position in variable 'pos'
+            delay(5);              // waits 5ms for the servo to reach the position
+        }
+    }
     /*
         - Set initial state of puzzle
 

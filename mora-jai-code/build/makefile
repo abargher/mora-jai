@@ -12,7 +12,7 @@ clean:
 	@rm -rf objs/lib/*.o
 	@rm -rf handler libmora.a
 
-CFLAGS = -Wall -Werror
+CFLAGS = -Wall -Werror -Wno-unknown-pragmas
 
 _LIBS = mora.c
 _LIB_PATH = ../lib/

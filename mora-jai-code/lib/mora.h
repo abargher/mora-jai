@@ -67,9 +67,9 @@ jai_board_t make_mora(const char *board);
 /// @return
 char *print_mora(jai_board_t board);
 
-void mora_move(jai_board_t board, uint8_t move);
+jai_board_t mora_move(jai_board_t board, uint8_t move);
 
-static inline COLOR mora_index(jai_board_t board, uint8_t idx)
+static inline COLOR mora_get(jai_board_t board, uint8_t idx)
 {
     if (idx > 8)
     {
@@ -84,6 +84,24 @@ static inline COLOR mora_index(jai_board_t board, uint8_t idx)
     {
         return pair & 0xF;
     }
+}
+
+static inline jai_board_t mora_set(jai_board_t board, uint8_t idx, COLOR color)
+{
+    uint8_t pair_val = board.bits[idx >> 1];
+    if (idx & 1)
+    {
+        pair_val &= 0x0F;
+        pair_val |= (color << 4);
+        board.bits[idx >> 1] = pair_val;
+    }
+    else
+    {
+        pair_val &= 0xF0;
+        pair_val |= color;
+        board.bits[idx >> 1] = pair_val;
+    }
+    return board;
 }
 
 #endif // MORA_H

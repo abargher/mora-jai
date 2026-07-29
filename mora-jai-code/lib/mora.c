@@ -103,7 +103,7 @@ char *mora_to_str(jai_board_t board)
     {
         return NULL;
     }
-    snprintf(str, 17, "mora_%c%c%c%c%c%c%c%c%c_%c",
+    snprintf(str, 20, "mora_%c%c%c%c%c%c%c%c%c_%c%c%c%c",
              color_to_char(board.board.top_left),
              color_to_char(board.board.top_center),
              color_to_char(board.board.top_right),
@@ -113,15 +113,18 @@ char *mora_to_str(jai_board_t board)
              color_to_char(board.board.bottom_left),
              color_to_char(board.board.bottom_center),
              color_to_char(board.board.bottom_right),
-             color_to_char(board.board.goal_color));
+             color_to_char(board.board.goal_1),
+             color_to_char(board.board.goal_2),
+             color_to_char(board.board.goal_3),
+             color_to_char(board.board.goal_4));
     return str;
 }
 
 jai_board_t make_mora(const char *board)
 {
     jai_board_t new_board;
-    char values[10];
-    sscanf(board, "mora_%c%c%c%c%c%c%c%c%c_%c",
+    char values[13];
+    sscanf(board, "mora_%c%c%c%c%c%c%c%c%c_%c%c%c%c",
            values + 0,
            values + 1,
            values + 2,
@@ -131,7 +134,10 @@ jai_board_t make_mora(const char *board)
            values + 6,
            values + 7,
            values + 8,
-           values + 9);
+           values + 9,
+           values + 10,
+           values + 11,
+           values + 12);
     new_board.board.top_left = char_to_color(values[0]);
     new_board.board.top_center = char_to_color(values[1]);
     new_board.board.top_right = char_to_color(values[2]);
@@ -141,7 +147,10 @@ jai_board_t make_mora(const char *board)
     new_board.board.bottom_left = char_to_color(values[6]);
     new_board.board.bottom_center = char_to_color(values[7]);
     new_board.board.bottom_right = char_to_color(values[8]);
-    new_board.board.goal_color = char_to_color(values[9]);
+    new_board.board.goal_1 = char_to_color(values[9]);
+    new_board.board.goal_2 = char_to_color(values[10]);
+    new_board.board.goal_3 = char_to_color(values[11]);
+    new_board.board.goal_4 = char_to_color(values[12]);
 
     return new_board;
 }
@@ -150,7 +159,7 @@ char *print_mora(jai_board_t board)
 {
     char *res = calloc(41, sizeof(char));
     snprintf(res, 41, "Mora Jai -- Goal: %c\n%c %c %c\n\n%c %c %c\n\n%c %c %c\n",
-             color_to_char(board.board.goal_color),
+             color_to_char(board.board.goal_1),
              color_to_char(board.board.top_left),
              color_to_char(board.board.top_center),
              color_to_char(board.board.top_right),

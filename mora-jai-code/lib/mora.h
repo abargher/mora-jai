@@ -1,5 +1,6 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <stdbool.h>
 
 #ifndef MORA_H
 #define MORA_H
@@ -34,7 +35,10 @@ typedef struct
             uint8_t bottom_center : 4;
             uint8_t bottom_right : 4;
             uint8_t __unused : 4; // for byte padding lol
-            uint8_t goal_color;
+            uint8_t goal_1 : 4;
+            uint8_t goal_2 : 4;
+            uint8_t goal_3 : 4;
+            uint8_t goal_4 : 4;
         } board;
         uint8_t bits[5];
         struct
@@ -55,7 +59,7 @@ COLOR char_to_color(char c);
 
 char *color_to_str(COLOR c);
 
-/// @brief Prints state to storage string, i.e. "mora_GBEPYVWRO_U"
+/// @brief Prints state to storage string, i.e. "mora_GBEPYVWRO_UGBE"
 /// @param board
 /// @return
 char *mora_to_str(jai_board_t board);
@@ -102,6 +106,14 @@ static inline jai_board_t mora_set(jai_board_t board, uint8_t idx, COLOR color)
         board.bits[idx >> 1] = pair_val;
     }
     return board;
+}
+
+static inline bool mora_win(jai_board_t board)
+{
+    return board.board.top_left == board.board.goal_1 &&
+           board.board.top_right == board.board.goal_2 &&
+           board.board.bottom_left == board.board.goal_3 &&
+           board.board.bottom_right == board.board.goal_4;
 }
 
 #endif // MORA_H

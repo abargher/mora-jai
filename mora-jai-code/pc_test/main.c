@@ -2,8 +2,8 @@
 
 #include "../lib/mora.h"
 
-const char *test_board = "mora_pgggyygyy_y";
-const char *test_rainbow = "mora_GBEYPPWRO_U";
+const char *test_board = "mora_pgggyygyy_yyyy";
+const char *test_rainbow = "mora_GBEYPPWRO_UGBE";
 
 int main()
 {

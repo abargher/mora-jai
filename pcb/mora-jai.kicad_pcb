@@ -1713,7 +1713,7 @@
 		(property "Reference" "J3"
 			(at 0 -2.77 0)
 			(layer "F.SilkS")
-			(uuid "53a72bd9-35e5-4d3a-b427-ba31297b4646")
+			(uuid "c147faf9-62ef-421c-955e-292b2f00e2c3")
 			(effects
 				(font
 					(size 1 1)
@@ -1724,7 +1724,7 @@
 		(property "Value" "Conn_01x02"
 			(at 0 5.31 0)
 			(layer "F.Fab")
-			(uuid "1c8d423a-1ab9-410b-bcc9-6390a06de98f")
+			(uuid "2268de08-0c2e-4888-97eb-0a9c15324517")
 			(effects
 				(font
 					(size 1 1)
@@ -1736,7 +1736,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2f6510ff-4f39-4a67-9b77-a8ad60cd0256")
+			(uuid "0377c2e8-05ca-4cf6-bd17-6848641949fb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1747,7 +1747,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8f049aac-bc04-4c4c-9726-33dd1a1f9550")
+			(uuid "ad0f8845-0300-43c0-ade0-136e3b4a113b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3135,7 +3135,7 @@
 		(property "Reference" "S1"
 			(at -1.775 -5.839 90)
 			(layer "F.SilkS")
-			(uuid "6deb712b-02f0-45bc-85be-0a134d82947f")
+			(uuid "36c91f36-ac67-4d12-920e-14a87604146a")
 			(effects
 				(font
 					(size 1 1)
@@ -3146,7 +3146,7 @@
 		(property "Value" "SLW-874744-6A-RA-N-D"
 			(at 9.655 10.235 90)
 			(layer "F.Fab")
-			(uuid "7c2a2ff4-e5dc-45d3-b3be-1ae88415e23b")
+			(uuid "63aab09f-9f18-45cb-8882-d2b75a4d89db")
 			(effects
 				(font
 					(size 1 1)
@@ -3158,7 +3158,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "32bce0c8-e1b1-464e-aa2a-9e0be5683d7e")
+			(uuid "e5b8d4f0-62d8-4ed1-8f1e-a93a40a137a5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3170,7 +3170,7 @@
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f4e9bf4c-06cf-438e-8086-54e6e3a5b119")
+			(uuid "51e44f6e-187c-4887-835f-fc9ad105b93e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4022,7 +4022,7 @@
 		(descr "JST PH series connector, S2B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)")
 		(tags "connector JST PH horizontal")
 		(property "Reference" "J1"
-			(at 1 -2.55 90)
+			(at 5.5 0 180)
 			(layer "F.SilkS")
 			(uuid "e84d4e2a-3449-44f4-ba8d-f7c4d8090dec")
 			(effects
@@ -5086,7 +5086,7 @@
 		(descr "SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip")
 		(tags "net tie solder jumper bridged")
 		(property "Reference" "JP2"
-			(at 0 -1.8 0)
+			(at 0 2.5 0)
 			(layer "F.SilkS")
 			(uuid "eb0ac132-a057-45f6-9d17-73f7f01d61a3")
 			(effects
@@ -26261,16 +26261,158 @@
 		(layer "Edge.Cuts")
 		(uuid "751f90fa-8f94-457f-9584-184b43c41d69")
 	)
-	(gr_text "TODO: Reposition battery connector\naccording to sketch"
-		(at 178.5 55.5 0)
-		(layer "Cmts.User")
-		(uuid "4542aec9-cbf6-40c1-b418-1852b7054bcd")
+	(gr_text "D8\npin"
+		(at 30.5 67.5 0)
+		(layer "F.SilkS")
+		(uuid "48a395dc-499f-46fb-bd62-6bcf7aeb90e3")
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "+5V\n+3V3\nPWR"
+		(at 135.5 29.5 90)
+		(layer "F.SilkS")
+		(uuid "5e09bf78-cf1b-4846-a13a-484c60bbd2eb")
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify right bottom)
+		)
+	)
+	(gr_text "+5V\nMTR\nGND"
+		(at 142.5 169 0)
+		(layer "F.SilkS")
+		(uuid "03f65530-9eee-44ad-8a20-eccc028ecb16")
+		(effects
+			(font
+				(size 1.5 1.25)
+			)
+			(justify right bottom)
+		)
+	)
+	(gr_text "ON"
+		(at 31.5855 53.5 0)
+		(layer "F.SilkS")
+		(uuid "a9809f9b-818a-4f18-8986-6d11e0328232")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "OFF"
+		(at 31.5855 64 0)
+		(layer "F.SilkS")
+		(uuid "ddc076f7-906f-43ab-a17f-0a390b44c0cd")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND\nPWR\nSCL\nSDA"
+		(at 140 34 0)
+		(layer "F.SilkS")
+		(uuid "bf99f2bf-d149-4ce5-9817-08f6247de7e4")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+	)
+	(gr_text "XIAO ESP32 S3\non this side"
+		(at 36 80 0)
+		(layer "F.SilkS")
+		(uuid "d67251b9-afc6-4096-bfbb-31549a297082")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify bottom)
+		)
+	)
+	(gr_text "GND\n+BATT"
+		(at 165.5 57.5 0)
+		(layer "F.SilkS")
+		(uuid "4abe14ed-db54-450c-b4e3-bbdc4c02e1c8")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify right bottom)
+		)
+	)
+	(gr_text "+5V\nGND"
+		(at 31.5 49 0)
+		(layer "F.SilkS")
+		(uuid "ba8ce39d-0983-4cdc-a990-11608fafb8d2")
 		(effects
 			(font
 				(size 2 2)
-				(thickness 0.25)
 			)
-			(justify left)
+			(justify left bottom)
+		)
+	)
+	(gr_text "GND\nPWR\nSCL\nSDA"
+		(at 144.5 34.5 0)
+		(layer "B.SilkS")
+		(uuid "c52c75e9-74ec-43e0-8ddc-4b730fff18cb")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "GND\n+BATT"
+		(at 167 57.5 0)
+		(layer "B.SilkS")
+		(uuid "607701ce-ea21-4ff9-922e-101e728978a1")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom mirror)
+		)
+	)
+	(gr_text "+5V\nMOTOR\nGND"
+		(at 145.5 169 0)
+		(layer "B.SilkS")
+		(uuid "49ebb8aa-6683-4849-b35e-20af7872ed91")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify right bottom mirror)
+		)
+	)
+	(gr_text "GND\n+BATT"
+		(at 37.5 82 90)
+		(layer "B.SilkS")
+		(uuid "f9b8c766-6206-4613-8055-9b42a78e8319")
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify right bottom mirror)
+		)
+	)
+	(gr_text "+5V\nGND"
+		(at 37.5 49.5 0)
+		(layer "B.SilkS")
+		(uuid "4a339ff8-d338-4315-87cf-0ef5c86c3ddf")
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom mirror)
 		)
 	)
 	(gr_text "Hinge goes here"

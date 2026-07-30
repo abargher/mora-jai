@@ -1,0 +1,1 @@
+const char *s01 = "01431"; // master_bedroom

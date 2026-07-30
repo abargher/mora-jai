@@ -27137,8 +27137,8 @@
 			(justify left bottom mirror)
 		)
 	)
-	(gr_text "Open Mora Jai Box PCB r1\nDesigned by: Alec Bargher"
-		(at 61 160 0)
+	(gr_text "Open Mora Jai Box PCB rev. 1\nPCB+FW by: Alec Bargher\nCAD Model by: Eren Slifker\nSoftware by: Isaac Berman\nEmotional Support: shmoopy"
+		(at 62 160.5 0)
 		(layer "B.SilkS")
 		(uuid "eebbf5c6-fade-4c66-b93a-0286ddc53f4a")
 		(effects
@@ -31222,14 +31222,6 @@
 		(net "Net-(J1-Pin_1)")
 		(uuid "1eeaff3e-4410-4a33-b557-6452487a28fc")
 	)
-	(segment
-		(start 145.5 55)
-		(end 225 55)
-		(width 0.5)
-		(layer "F.Cu")
-		(net "Net-(J1-Pin_1)")
-		(uuid "d8c41bc4-599e-4947-83f1-f48c1dc20fbd")
-	)
 	(via
 		(at 55 44)
 		(size 0.6)
@@ -31253,6 +31245,14 @@
 		(layer "B.Cu")
 		(net "Net-(J1-Pin_1)")
 		(uuid "11a3ebe5-9e28-48df-b22b-9ecf2e4b90f9")
+	)
+	(segment
+		(start 145.5 55)
+		(end 66 55)
+		(width 0.5)
+		(layer "B.Cu")
+		(net "Net-(J1-Pin_1)")
+		(uuid "d8c41bc4-599e-4947-83f1-f48c1dc20fbd")
 	)
 	(segment
 		(start 168 56.5)

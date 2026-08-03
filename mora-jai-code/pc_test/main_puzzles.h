@@ -73,25 +73,25 @@
 #define b69 "mora_yeybbbueu_ubbu" // Blueprints Coat Check (I4)
 #define b70 "mora_pgyrywoub_yyyy" // Blueprints Aquarium (I5)
 #define b71 "mora_opogegugu_uuuu" // Blueprints 46th room (H5)
-#define b72 "mora_wureuguyu_oooo" // Challenge Orange 1
-#define b73 "mora_oyggrorpw_bbbb" // Challenge Black 1
-#define b74 "mora_rpowyworr_gggg" // Challenge Grey 1
-#define b75 "mora_ogrwevoeo_rrrr" // Challenge Red
-#define b76 "mora_goovobore_rrro" // Challenge Long 1
-#define b77 "mora_pgovggugp_pppp" // Challenge Pink 1
-#define b78 "mora_oopuwwpev_pppp" // Challenge Pink 2
-#define b79 "mora_uygruwoeo_gggg" // Challenge Grey 2
-#define b80 "mora_buwevergu_eeee" // Challenge Green
-#define b81 "mora_gwuoervue_uwvu" // Challenge Misc 1
-#define b82 "mora_ruwwrreyp_epww" // Challenge Misc 2
-#define b83 "mora_ovuwwrbry_bbbb" // Challenge Black 2
-#define b84 "mora_bwvrorgyu_uuuu" // Challenge Blue
-#define b85 "mora_boguovwyu_vvvv" // Challenge Violet
-#define b86 "mora_rwpoywuro_gbuu" // Challenge Misc 3
-#define b87 "mora_bywouoywr_wwry" // Challenge Misc 4
-#define b88 "mora_wvuuowbow_vooo" // Challenge Misc 5
-#define b89 "mora_obgyuoyww_yyyy" // Challenge Yellow
-#define b90 "mora_owobouwyo_oooo" // Challenge Orange 2
-#define b91 "mora_ogurvrbwy_ygbo" // Challenge Longer
+#define b72 "mora_woreogoyo_oooo" // challenge_orange_1
+#define b73 "mora_oyggrorpw_bbbb" // challenge_black_1
+#define b74 "mora_rpowyworr_gggg" // challenge_grey_1
+#define b75 "mora_ogrwevoeo_rrrr" // challenge_red
+#define b76 "mora_goovobore_rrro" // challenge_long_1
+#define b77 "mora_pgovggugp_pppp" // challenge_pink_1
+#define b78 "mora_oopuwwpev_pppp" // challenge_pink_2
+#define b79 "mora_uygruwoeo_gggg" // challenge_grey_2
+#define b80 "mora_bowevergu_eeee" // challenge_green
+#define b81 "mora_gwuoervue_uwvu" // challenge_misc_1
+#define b82 "mora_ruwwrreyp_epww" // challenge_misc_2
+#define b83 "mora_ovuwwrbry_bbbb" // challenge_black_2
+#define b84 "mora_bwvrorgyu_uuuu" // challenge_blue
+#define b85 "mora_bogvovwyu_vvvv" // challenge_violet
+#define b86 "mora_rwpoywuro_gbuu" // challenge_misc_3
+#define b87 "mora_bywouoywr_wwry" // challenge_misc_4
+#define b88 "mora_wvuuowbow_vooo" // challenge_misc_5
+#define b89 "mora_obgyuoyww_yyyy" // challenge_yellow
+#define b90 "mora_owobouwyo_oooo" // challenge_orange_2
+#define b91 "mora_ogurvrbwy_ygbo" // challenge_longer
 
 #endif // MAIN_PUZZLES_H

@@ -1,9 +1,9 @@
+#ifndef MORA_H
+#define MORA_H
+
 #include <stdint.h>
 #include <stdio.h>
 #include <stdbool.h>
-
-#ifndef MORA_H
-#define MORA_H
 
 typedef enum
 {
@@ -16,41 +16,42 @@ typedef enum
     WHITE,
     RED,
     ORANGE,
-    BLUE
+    BLUE,
 } COLOR;
 
-typedef struct
+#define MORA_COLOR_COUNT 10
+
+typedef union jai_board
 {
-    union
+    struct board
     {
-        struct
-        {
-            uint8_t top_left : 4;
-            uint8_t top_center : 4;
-            uint8_t top_right : 4;
-            uint8_t middle_left : 4;
-            uint8_t middle_center : 4;
-            uint8_t middle_right : 4;
-            uint8_t bottom_left : 4;
-            uint8_t bottom_center : 4;
-            uint8_t bottom_right : 4;
-            uint8_t __unused : 4; // for byte padding lol
-            uint8_t goal_1 : 4;
-            uint8_t goal_2 : 4;
-            uint8_t goal_3 : 4;
-            uint8_t goal_4 : 4;
-        } board;
-        uint8_t bits[5];
-        struct
-        {
-            uint32_t upper;
-            uint32_t lower;
-        } hash_32;
+        uint8_t top_left : 4;
+        uint8_t top_center : 4;
+        uint8_t top_right : 4;
+        uint8_t middle_left : 4;
+        uint8_t middle_center : 4;
+        uint8_t middle_right : 4;
+        uint8_t bottom_left : 4;
+        uint8_t bottom_center : 4;
+        uint8_t bottom_right : 4;
+        uint8_t __unused : 4; // for byte padding lol
+        uint8_t goal_1 : 4;
+        uint8_t goal_2 : 4;
+        uint8_t goal_3 : 4;
+        uint8_t goal_4 : 4;
+    } board;
+    uint8_t bits[5];
+    struct hash_32
+    {
+        uint32_t upper;
+        uint32_t lower;
+    } hash_32;
 #ifdef __x86_64__
-        uint64_t hash_64;
+    uint64_t hash_64;
 #endif
-    };
 } jai_board_t;
+
+extern const jai_board_t INVALID_BOARD;
 
 jai_board_t make_mora(const char *board);
 

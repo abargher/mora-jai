@@ -1,38 +1,28 @@
 #include <stdio.h>
 
 #include "../lib/mora.h"
-
-const char *test_board = "mora_pgggyygyy_yyyy";
-const char *test_rainbow = "mora_GBEYPPWRO_UGBE";
+#include "random.h"
+#include "puzzles_index.h"
 
 int main()
 {
-    jai_board_t board = make_mora(test_board);
-    printf("%ld\n", board.hash_64);
-    printf("%s\n", print_mora(board));
+    jai_board_t test = make_mora(b12);
+    validate_single_verbose(test, "5113117220610204544566", NULL);
+    // return 0;
 
-    board = mora_set(board, 0, BLUE);
-    board = mora_set(board, 1, VIOLET);
-    board = mora_set(board, 2, BLACK);
+    int p_count = sizeof(puzzles) / sizeof(puzzles[0]);
+    int s_count = sizeof(solutions) / sizeof(solutions[0]);
+    validation_results_t *res = validate_all(p_count, puzzles, s_count, solutions);
 
-    printf("%s\n", print_mora(board));
-
-    board = mora_move(board, 2);
-
-    printf("%s\n", print_mora(board));
-
-    jai_board_t rainbow = make_mora(test_rainbow);
-    for (int i = 0; i < 9; i++)
+    if (res != NULL)
     {
-        printf("%s\n", color_to_str(mora_get(rainbow, i)));
-    }
+        printf("Valided %d puzzles, with success on %d\n", res->tested_count, res->solved_count);
 
-    rainbow = mora_move(rainbow, 1);
-    rainbow = mora_move(rainbow, 2);
-    rainbow = mora_move(rainbow, 1);
-    rainbow = mora_move(rainbow, 4);
-    rainbow = mora_move(rainbow, 7);
-    printf("%s\n", print_mora(rainbow));
-    rainbow = mora_move(rainbow, 3);
-    printf("%s\n", print_mora(rainbow));
+        if (res->failed_count != 0)
+        {
+            char *puzzle = mora_to_str(res->failed_puzzles[0]);
+            char *final = mora_to_str(res->final_states[7]);
+            printf("First failed: puzzle %s, final state %s\n", puzzle, final);
+        }
+    }
 }

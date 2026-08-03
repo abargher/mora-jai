@@ -18,7 +18,7 @@ _LIBS = mora.c
 _LIB_PATH = ../lib/
 LIBS = $(patsubst %.c, $(_LIB_PATH)/%.c, $(_LIBS))
 
-_SRCS = main.c
+_SRCS = main.c random.c
 _SRC_PATH = ../pc_test/
 SRCS = $(patsubst %.c, $(_SRC_PATH)%.c, $(_SRCS))
 

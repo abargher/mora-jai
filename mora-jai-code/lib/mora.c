@@ -2,6 +2,8 @@
 
 #include "mora.h"
 
+const jai_board_t INVALID_BOARD = {.hash_32 = {.upper = ~0, .lower = ~0}};
+
 char color_to_char(COLOR c)
 {
     switch (c)
@@ -98,7 +100,7 @@ char *color_to_str(COLOR c)
 
 char *mora_to_str(jai_board_t board)
 {
-    char *str = calloc(17, sizeof(char));
+    char *str = calloc(20, sizeof(char));
     if (str == NULL)
     {
         return NULL;
@@ -124,20 +126,24 @@ jai_board_t make_mora(const char *board)
 {
     jai_board_t new_board;
     char values[13];
-    sscanf(board, "mora_%c%c%c%c%c%c%c%c%c_%c%c%c%c",
-           values + 0,
-           values + 1,
-           values + 2,
-           values + 3,
-           values + 4,
-           values + 5,
-           values + 6,
-           values + 7,
-           values + 8,
-           values + 9,
-           values + 10,
-           values + 11,
-           values + 12);
+    int res = sscanf(board, "mora_%c%c%c%c%c%c%c%c%c_%c%c%c%c",
+                     values + 0,
+                     values + 1,
+                     values + 2,
+                     values + 3,
+                     values + 4,
+                     values + 5,
+                     values + 6,
+                     values + 7,
+                     values + 8,
+                     values + 9,
+                     values + 10,
+                     values + 11,
+                     values + 12);
+    if (res != 13)
+    {
+        return INVALID_BOARD;
+    }
     new_board.board.top_left = char_to_color(values[0]);
     new_board.board.top_center = char_to_color(values[1]);
     new_board.board.top_right = char_to_color(values[2]);
@@ -204,13 +210,13 @@ static int8_t ortho_neighbors[][4] = {
     {5, 1, -1, -1}, // 2
     {6, 4, 0, -1},  // 3
     {3, 7, 5, 1},   // 4
-    {4, 7, 8, 2},   // 5
+    {4, 8, 2, -1},  // 5
     {7, 3, -1, -1}, // 6
     {6, 8, 4, -1},  // 7
     {7, 5, -1, -1}  // 8
 };
 static int8_t neighbors[][8] = {
-    {4, 3, 1, -1, -1, -1, -1, -1}, // 0
+    {1, 3, 4, -1, -1, -1, -1, -1}, // 0
     {3, 4, 5, 2, 0, -1, -1, -1},   // 1
     {4, 5, 1, -1, -1, -1, -1, -1}, // 2
     {6, 7, 4, 1, 0, -1, -1, -1},   // 3
@@ -251,7 +257,7 @@ static inline jai_board_t move_grey(jai_board_t board, uint8_t move)
 /// @param move
 static inline jai_board_t move_black(jai_board_t board, uint8_t move)
 {
-    uint8_t row_start = move / 3;
+    uint8_t row_start = 3 * (move / 3);
     COLOR temp = mora_get(board, row_start + 2);
     board = mora_set(board, row_start + 2, mora_get(board, row_start + 1));
     board = mora_set(board, row_start + 1, mora_get(board, row_start));
@@ -273,9 +279,10 @@ static inline jai_board_t move_green(jai_board_t board, uint8_t move)
     Note that the opposite of idx i is just 8 - i.
     We avoid casework by also swapping 4 with itself
     */
+
     uint8_t other_idx = 8 - move;
     COLOR temp = mora_get(board, move);
-    board = mora_set(board, move, other_idx);
+    board = mora_set(board, move, mora_get(board, other_idx));
     board = mora_set(board, other_idx, temp);
     return board;
 }
@@ -316,8 +323,9 @@ static inline jai_board_t move_yellow(jai_board_t board, uint8_t move)
     {
         return board;
     }
+    COLOR prev = mora_get(board, move);
     board = mora_set(board, move, mora_get(board, move - 3));
-    board = mora_set(board, move - 3, YELLOW);
+    board = mora_set(board, move - 3, prev);
     return board;
 }
 
@@ -331,8 +339,9 @@ static inline jai_board_t move_violet(jai_board_t board, uint8_t move)
     {
         return board;
     }
+    COLOR prev = mora_get(board, move);
     board = mora_set(board, move, mora_get(board, move + 3));
-    board = mora_set(board, move + 3, VIOLET);
+    board = mora_set(board, move + 3, prev);
     return board;
 }
 
@@ -345,7 +354,7 @@ static inline jai_board_t move_white(jai_board_t board, uint8_t move)
     board = mora_set(board, move, GREY);
     ITER_ORTHO_NEIGHBORS(board, move, i)
     {
-        _swap_white_grey(board, i);
+        board = _swap_white_grey(board, i);
     }
     return board;
 }
@@ -361,11 +370,11 @@ static inline jai_board_t move_red(jai_board_t board, uint8_t move)
         COLOR curr = mora_get(board, i);
         if (curr == WHITE)
         {
-            board = mora_set(board, move, BLACK);
+            board = mora_set(board, i, BLACK);
         }
         else if (curr == BLACK)
         {
-            board = mora_set(board, move, RED);
+            board = mora_set(board, i, RED);
         }
     }
     return board;
@@ -377,7 +386,7 @@ static inline jai_board_t move_red(jai_board_t board, uint8_t move)
 /// @return
 static inline jai_board_t move_orange(jai_board_t board, uint8_t move)
 {
-    uint8_t color_counts[8] = {0};
+    uint8_t color_counts[MORA_COLOR_COUNT] = {0};
     uint8_t count = 0;
     ITER_ORTHO_NEIGHBORS(board, move, i)
     {
@@ -413,7 +422,29 @@ static inline jai_board_t move_blue(jai_board_t board, uint8_t move)
     {
         return board;
     }
-    return mora_move(mora_set(board, move, center), move);
+    switch (center)
+    {
+    case GREY:
+        return move_grey(board, move);
+    case BLACK:
+        return move_black(board, move);
+    case GREEN:
+        return move_green(board, move);
+    case PINK:
+        return move_pink(board, move);
+    case YELLOW:
+        return move_yellow(board, move);
+    case VIOLET:
+        return move_violet(board, move);
+    case WHITE:
+        return move_white(board, move);
+    case RED:
+        return move_red(board, move);
+    case ORANGE:
+        return move_orange(board, move);
+    default:
+        return board;
+    }
 }
 
 jai_board_t mora_move(jai_board_t board, uint8_t move)

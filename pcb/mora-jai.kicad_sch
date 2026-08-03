@@ -3414,18 +3414,6 @@
 		(uuid "08c11429-f530-4240-b2d9-1b758a839972")
 	)
 	(rectangle
-		(start 132.588 103.124)
-		(end 206.502 129.54)
-		(stroke
-			(width 0.508)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "81b55576-665b-4bd5-a4c3-92a00a54ad44")
-	)
-	(rectangle
 		(start 206.502 103.124)
 		(end 284.226 129.54)
 		(stroke
@@ -3508,19 +3496,6 @@
 			)
 		)
 		(uuid "27bf35be-6d8e-4667-8710-e5bcb002f85e")
-	)
-	(text "Questions:\n- Button for deep sleep direct connection?"
-		(exclude_from_sim no)
-		(at 144.018 114.808 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-				(thickness 0.3048)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "6547c1e2-c72f-47d1-ad7b-0bc4b6a50bc2")
 	)
 	(text "5V Servo connector"
 		(exclude_from_sim no)

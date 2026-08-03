@@ -78,8 +78,8 @@
       ],
       "drc_exclusions": [
         [
-          "lib_footprint_mismatch|35731250|79315863|ef93c054-d303-4c9b-bca1-2c17f3b782f1|00000000-0000-0000-0000-000000000000",
-          "Footprint is updated for this board only"
+          "lib_footprint_mismatch|35731250|79367681|ef93c054-d303-4c9b-bca1-2c17f3b782f1|00000000-0000-0000-0000-000000000000",
+          "Edited silkscreen to fit on board edge"
         ],
         [
           "silk_edge_clearance|26000000|74752363|9b5c3268-7e90-40d0-b89b-7d899590ec90|99122971-ef0e-4994-83f0-f9e0e7c88f9a",
@@ -102,8 +102,56 @@
           "MCU overhang"
         ],
         [
-          "silk_edge_clearance|26172000|88356363|9b5c3268-7e90-40d0-b89b-7d899590ec90|4dec39ab-37d3-478a-a3de-5b10d0aaa71a",
-          "MCU overhang"
+          "silk_over_copper|27911000|88146363|115314f1-02ee-4a95-8f3e-1d85f8d2f620|218ba82e-3c59-4aac-b297-eb883cf8cb39",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|27915000|70366369|9cf4cd5c-6f50-44e5-93c9-65eb101105e1|51e6683b-3b81-4410-9cb7-a1b71233c288",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|29427000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|51e6683b-3b81-4410-9cb7-a1b71233c288",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|29427000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|218ba82e-3c59-4aac-b297-eb883cf8cb39",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|31967000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|82c3747f-deec-43ab-8b24-e72cdc5f438c",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|31967000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|ad839d97-8c3a-4418-8200-3b44657189f2",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|34507000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|ccb0f2fd-4585-4a4e-98a4-5ecd984cfbc7",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|37047000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|17a2187d-1c9d-44c3-970b-94d26c9d5824",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|39587000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|a672a6ad-a2a4-4390-9306-6f65db96be8b",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|42127000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|ca557a99-42fc-44bc-a964-c2113a3de4de",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|44667000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|0853b91c-3ce7-4861-ba98-0cf1c6263ba6",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|45060000|70366363|608de005-650e-47e5-a0e4-f577983236c2|0853b91c-3ce7-4861-ba98-0cf1c6263ba6",
+          "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|45060000|88146363|e792d9c7-add5-4aee-bced-368b0eb6c57e|25e9b7df-1177-47a1-9d1d-69487824bdf0",
+          "MCU footprint outline"
         ]
       ],
       "meta": {
@@ -596,6 +644,10 @@
       {
         "netclass": "Power",
         "pattern": "+BATT"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "Net-(J1-Pin_1)"
       }
     ]
   },
@@ -681,12 +733,42 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },

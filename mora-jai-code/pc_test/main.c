@@ -6,8 +6,8 @@
 
 int main()
 {
-    jai_board_t test = make_mora(b12);
-    validate_single_verbose(test, "5113117220610204544566", NULL);
+    // jai_board_t test = make_mora(b70);
+    // validate_single_verbose(test, s70, NULL);
     // return 0;
 
     int p_count = sizeof(puzzles) / sizeof(puzzles[0]);
@@ -21,7 +21,7 @@ int main()
         if (res->failed_count != 0)
         {
             char *puzzle = mora_to_str(res->failed_puzzles[0]);
-            char *final = mora_to_str(res->final_states[7]);
+            char *final = mora_to_str(res->final_states[70]);
             printf("First failed: puzzle %s, final state %s\n", puzzle, final);
         }
     }

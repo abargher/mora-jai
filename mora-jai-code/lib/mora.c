@@ -179,20 +179,20 @@ char *print_mora(jai_board_t board)
 }
 
 #pragma region Move Helpers
-/// @brief Swap grey <--> white at given location
+/// @brief Swap grey <--> ANY at given location
 /// @param board
 /// @param move
 /// @return
-static inline jai_board_t _swap_white_grey(jai_board_t board, uint8_t move)
+static inline jai_board_t _swap_ANY_grey(jai_board_t board, uint8_t move, COLOR target)
 {
     COLOR temp = mora_get(board, move);
-    if (temp == WHITE)
+    if (temp == target)
     {
         return mora_set(board, move, GREY);
     }
     else if (temp == GREY)
     {
-        return mora_set(board, move, WHITE);
+        return mora_set(board, move, target);
     }
     return board;
 }
@@ -351,10 +351,11 @@ static inline jai_board_t move_violet(jai_board_t board, uint8_t move)
 /// @return
 static inline jai_board_t move_white(jai_board_t board, uint8_t move)
 {
+    COLOR self_color = mora_get(board, move);
     board = mora_set(board, move, GREY);
     ITER_ORTHO_NEIGHBORS(board, move, i)
     {
-        board = _swap_white_grey(board, i);
+        board = _swap_ANY_grey(board, i, self_color);
     }
     return board;
 }
@@ -365,6 +366,8 @@ static inline jai_board_t move_white(jai_board_t board, uint8_t move)
 /// @return
 static inline jai_board_t move_red(jai_board_t board, uint8_t move)
 {
+    // Need to know if pressed tile was red or blue
+    COLOR red = mora_get(board, move);
     for (int i = 0; i < 9; i++)
     {
         COLOR curr = mora_get(board, i);
@@ -374,7 +377,7 @@ static inline jai_board_t move_red(jai_board_t board, uint8_t move)
         }
         else if (curr == BLACK)
         {
-            board = mora_set(board, i, RED);
+            board = mora_set(board, i, red);
         }
     }
     return board;
@@ -387,28 +390,30 @@ static inline jai_board_t move_red(jai_board_t board, uint8_t move)
 static inline jai_board_t move_orange(jai_board_t board, uint8_t move)
 {
     uint8_t color_counts[MORA_COLOR_COUNT] = {0};
-    uint8_t count = 0;
+    COLOR best = MORA_COLOR_COUNT;
     ITER_ORTHO_NEIGHBORS(board, move, i)
     {
-        color_counts[mora_get(board, i)]++;
-        count++;
-    }
-
-    uint8_t max = 0;
-    COLOR best = -1;
-    for (uint8_t i = 0; i < 8; i++)
-    {
-        if (color_counts[i] > max)
+        COLOR col = mora_get(board, i);
+        color_counts[col]++;
+        if (color_counts[col] == 2)
         {
-            max = color_counts[i];
-            best = i;
+            if (best == MORA_COLOR_COUNT)
+            {
+                best = col;
+            }
+            else
+            {
+                // We found multiple colors with 2+, must be a 2-2 tie
+                return board;
+            }
         }
     }
-    if (max > count / 2)
+    if (best == MORA_COLOR_COUNT)
     {
-        return mora_set(board, move, best);
+        // No majority
+        return board;
     }
-    return board;
+    return mora_set(board, move, best);
 }
 
 /// @brief If center is not blue, perform action as if move is color of center

@@ -3414,42 +3414,6 @@
 		(uuid "08c11429-f530-4240-b2d9-1b758a839972")
 	)
 	(rectangle
-		(start 158.496 124.46)
-		(end 173.482 134.366)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "275adbf5-322d-4e53-bf99-3c1a6ca83604")
-	)
-	(rectangle
-		(start 179.07 125.476)
-		(end 194.056 135.382)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "2aaa66ff-24a6-41b1-8ebb-deb2d597ca08")
-	)
-	(rectangle
-		(start 157.734 144.526)
-		(end 172.72 154.432)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "2d97537d-eb30-40ec-b56d-d8df08dda7c3")
-	)
-	(rectangle
 		(start 206.502 103.124)
 		(end 284.226 129.54)
 		(stroke
@@ -3509,9 +3473,9 @@
 		)
 		(uuid "fc85669d-0e78-47eb-b770-bcd00ec52ee2")
 	)
-	(text "TODO:\n- Add battery charging circuit\n- Add +BATT -> +5V boost converter circuit\n- Add MOSFET to cut off +BATT output when VBUS is connected\n"
+	(text "TODO:\n- Add battery charging circuit\n- Add +BATT -> +5V boost converter circuit\n- Add MOSFET to cut off +BATT output when VBUS is connected\n- DECOUPLING CAPACITORS!!!!\n\n"
 		(exclude_from_sim no)
-		(at 191.77 147.066 0)
+		(at 214.122 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3519,16 +3483,6 @@
 			(justify left)
 		)
 		(uuid "0f55539e-0259-4804-8313-2efea4e3ad2f")
-	)
-	(text "battery\ncharger"
-		(exclude_from_sim no)
-		(at 165.1 129.286 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "1a8c5f4c-5d15-4f82-af97-ae39522da654")
 	)
 	(text "ESP32S3 MCU"
 		(exclude_from_sim no)
@@ -3553,26 +3507,6 @@
 			)
 		)
 		(uuid "27bf35be-6d8e-4667-8710-e5bcb002f85e")
-	)
-	(text "VBUS"
-		(exclude_from_sim no)
-		(at 164.338 149.352 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4d29e21a-ad79-4495-a93c-97c2ec46794c")
-	)
-	(text "battery"
-		(exclude_from_sim no)
-		(at 185.674 130.302 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "56d91e1b-f13d-48b6-b472-8198e7d7e7a4")
 	)
 	(text "5V Servo connector"
 		(exclude_from_sim no)
@@ -4082,16 +4016,6 @@
 			(type default)
 		)
 		(uuid "37878529-bb62-4caf-9681-0fb98576702d")
-	)
-	(polyline
-		(pts
-			(xy 166.116 133.858) (xy 166.116 135.636)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "382f2a4a-de6a-4ac2-970c-abe2b9965469")
 	)
 	(wire
 		(pts
@@ -5112,26 +5036,6 @@
 			(type default)
 		)
 		(uuid "eccba98a-2a3e-47c6-b741-5e3253918621")
-	)
-	(polyline
-		(pts
-			(xy 166.37 144.526) (xy 166.37 135.636)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecf7df24-6148-490f-aba6-25b5610cac3d")
-	)
-	(polyline
-		(pts
-			(xy 166.37 135.636) (xy 166.116 135.636)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f010c72b-2e1f-45a6-a391-3452eda86ba3")
 	)
 	(wire
 		(pts

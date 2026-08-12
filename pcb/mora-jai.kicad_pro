@@ -330,7 +330,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "1"
+      "sch_revision": "2"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -659,7 +659,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "mora-jai.stl",
+      "step": "mora-jai-2026-08-12-v0.step",
       "svg": "",
       "vrml": ""
     },

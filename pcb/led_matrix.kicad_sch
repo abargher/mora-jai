@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Project Mora Jai")
-		(date "2026-02-04")
-		(rev "1")
+		(date "2026-08-12")
+		(rev "2")
 		(comment 1 "CERN-OHL-S-2.0")
 	)
 	(lib_symbols

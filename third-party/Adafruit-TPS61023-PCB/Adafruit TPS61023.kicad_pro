@@ -41,7 +41,7 @@
         "pads": {
           "drill": 0.8,
           "height": 1.27,
-          "width": 2.54
+          "width": 1.27
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -69,92 +69,10 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|35731250|79367681|ef93c054-d303-4c9b-bca1-2c17f3b782f1|00000000-0000-0000-0000-000000000000",
-          "Edited silkscreen to fit on board edge"
-        ],
-        [
-          "silk_edge_clearance|26000000|74752363|9b5c3268-7e90-40d0-b89b-7d899590ec90|99122971-ef0e-4994-83f0-f9e0e7c88f9a",
-          "MCU overhang"
-        ],
-        [
-          "silk_edge_clearance|26000000|83751326|9b5c3268-7e90-40d0-b89b-7d899590ec90|dd9ac450-16f6-4163-82b7-1b3251f3ee4e",
-          "MCU overhang"
-        ],
-        [
-          "silk_edge_clearance|26006037|86241400|9b5c3268-7e90-40d0-b89b-7d899590ec90|115314f1-02ee-4a95-8f3e-1d85f8d2f620",
-          "MCU overhang"
-        ],
-        [
-          "silk_edge_clearance|26010000|72271363|9b5c3268-7e90-40d0-b89b-7d899590ec90|12bdc7cc-e716-458f-86ef-9c75c5f60bf6",
-          "MCU overhang"
-        ],
-        [
-          "silk_edge_clearance|26010000|72271363|9b5c3268-7e90-40d0-b89b-7d899590ec90|9cf4cd5c-6f50-44e5-93c9-65eb101105e1",
-          "MCU overhang"
-        ],
-        [
-          "silk_over_copper|27911000|88146363|115314f1-02ee-4a95-8f3e-1d85f8d2f620|218ba82e-3c59-4aac-b297-eb883cf8cb39",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|27915000|70366369|9cf4cd5c-6f50-44e5-93c9-65eb101105e1|51e6683b-3b81-4410-9cb7-a1b71233c288",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|29427000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|51e6683b-3b81-4410-9cb7-a1b71233c288",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|29427000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|218ba82e-3c59-4aac-b297-eb883cf8cb39",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|31967000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|82c3747f-deec-43ab-8b24-e72cdc5f438c",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|31967000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|ad839d97-8c3a-4418-8200-3b44657189f2",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|34507000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|ccb0f2fd-4585-4a4e-98a4-5ecd984cfbc7",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|37047000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|17a2187d-1c9d-44c3-970b-94d26c9d5824",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|39587000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|a672a6ad-a2a4-4390-9306-6f65db96be8b",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|42127000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|ca557a99-42fc-44bc-a964-c2113a3de4de",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|44667000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|0853b91c-3ce7-4861-ba98-0cf1c6263ba6",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|45060000|70366363|608de005-650e-47e5-a0e4-f577983236c2|0853b91c-3ce7-4861-ba98-0cf1c6263ba6",
-          "MCU footprint outline"
-        ],
-        [
-          "silk_over_copper|45060000|88146363|e792d9c7-add5-4aee-bced-368b0eb6c57e|25e9b7df-1177-47a1-9d1d-69487824bdf0",
-          "MCU footprint outline"
-        ]
-      ],
+      "diff_pair_dimensions": [],
+      "drc_exclusions": [],
       "meta": {
+        "filename": "board_design_settings.json",
         "version": 2
       },
       "rule_severities": {
@@ -193,9 +111,9 @@
         "missing_tuning_profile": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -223,9 +141,9 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.2032,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.025,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -236,10 +154,10 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.0,
+        "min_track_width": 0.1778,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.005,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -286,9 +204,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -315,12 +231,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -330,7 +241,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "2"
+      "sch_revision": ""
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -539,7 +450,6 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "warning",
       "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
       "isolated_pin_label": "warning",
@@ -579,7 +489,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "mora-jai.kicad_pro",
+    "filename": "Adafruit TPS61023.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -595,28 +505,13 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
+        "priority": -1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "clearance": 0.5,
-        "diff_pair_gap": 0.5,
-        "diff_pair_width": 0.4,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Power",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "tuning_profile": "",
-        "via_diameter": 0.6,
-        "via_drill": 0.3
       }
     ],
     "meta": {
@@ -624,43 +519,15 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "Power",
-        "pattern": "+5V"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "+3V3"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "GND"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "OLED_PWR"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "+BATT"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(J1-Pin_1)"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
-      "gencad": "",
       "idf": "",
       "netlist": "",
       "plot": "",
-      "pos_files": "",
       "specctra_dsn": "",
-      "step": "mora-jai-2026-08-12-v0.step",
-      "svg": "",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -724,6 +591,18 @@
         },
         {
           "group_by": true,
+          "label": "Exclude from Simulation",
+          "name": "${EXCLUDE_FROM_SIM}",
+          "show": true
+        },
+        {
+          "group_by": true,
+          "label": "Exclude from Position Files",
+          "name": "${EXCLUDE_FROM_POS_FILES}",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -733,72 +612,12 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "PARTREV",
-          "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Name",
-          "name": "Manufacturer_Name",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Height",
-          "name": "Height",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Part Number",
-          "name": "Mouser Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Price/Stock",
-          "name": "Mouser Price/Stock",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "",
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -831,43 +650,22 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
-    "space_save_all_events": true,
-    "spice_current_sheet_as_root": false,
-    "spice_external_command": "spice \"%I\"",
-    "spice_model_current_sheet_as_root": true,
-    "spice_save_all_currents": false,
-    "spice_save_all_dissipations": false,
-    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "mora-jai.kicad_sch",
-        "name": "mora-jai",
-        "uuid": "06a165cb-987d-4515-950b-4b68772ab4b3"
+        "filename": "Adafruit TPS61023.kicad_sch",
+        "name": "Adafruit TPS61023",
+        "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ],
-    "used_designators": "L1,IC1,#FLG5,TH1,R3-13,JP1-2,#PWR71,#PWR73-74,#PWR77,#PWR79-80,#PWR83,#PWR85-86,#PWR89,#PWR91-92,#PWR95,#PWR97-98,#PWR101,#PWR103-104,#PWR107-114,J4-6,C3,C18,C20,C22,C24,C26,C28,C30,D5,D18,U2-3,Q1-2",
+    "used_designators": "",
     "variants": []
   },
-  "sheets": [
-    [
-      "06a165cb-987d-4515-950b-4b68772ab4b3",
-      "mora-jai"
-    ],
-    [
-      "c49a6983-c4dd-4457-a09b-a398a4b03e4a",
-      "LED matrix"
-    ],
-    [
-      "aa6c7920-79eb-4ab8-8958-e2c6f8586c71",
-      "Power"
-    ]
-  ],
+  "sheets": [],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {

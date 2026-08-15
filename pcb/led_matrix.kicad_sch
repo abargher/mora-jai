@@ -716,17 +716,6 @@
 		)
 		(uuid "bc51f6aa-fe7c-4d99-9045-50089efdb69d")
 	)
-	(text "Questions:\n- Is one LED per corner acceptable?"
-		(exclude_from_sim no)
-		(at 126.746 152.4 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify left)
-		)
-		(uuid "3d1dfd2f-723c-4362-a9ef-fd627d616c25")
-	)
 	(text "Corner Buttons, 1 LED each (1x4 = 4 total)"
 		(exclude_from_sim no)
 		(at 64.262 152.654 0)

@@ -650,7 +650,7 @@
     "meta": {
       "version": 1
     },
-    "page_layout_descr_file": "",
+    "page_layout_descr_file": "empty.kicad_wks",
     "plot_directory": "",
     "reuse_designators": true,
     "subpart_first_id": 65,
@@ -658,14 +658,19 @@
     "top_level_sheets": [
       {
         "filename": "Adafruit TPS61023.kicad_sch",
-        "name": "Adafruit TPS61023",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "name": "Adafruit TPS61023_1",
+        "uuid": "85200960-1bf8-43e7-9c25-e6c1cc0bd462"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "85200960-1bf8-43e7-9c25-e6c1cc0bd462",
+      "Adafruit TPS61023_1"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {

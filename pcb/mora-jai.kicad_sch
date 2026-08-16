@@ -3224,7 +3224,7 @@
 		)
 		(uuid "fc85669d-0e78-47eb-b770-bcd00ec52ee2")
 	)
-	(text "TODO:\n- CHECK DECOUPLING CAPACITORS!!!! EVERYWHERE!!\n- Edit footprint for MCU to expose other bottom pads\n- Expose more test pins/pads (all chip connectors)\n"
+	(text "TODO:\n- Expose more test pins/pads (all chip connectors)\n"
 		(exclude_from_sim no)
 		(at 133.35 138.43 0)
 		(effects
@@ -3283,7 +3283,7 @@
 	)
 	(text "\"charging done\""
 		(exclude_from_sim no)
-		(at 56.134 20.066 90)
+		(at 56.134 21.336 90)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -3455,10 +3455,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f5d99094-f47a-428e-9c6c-36cb2e5d7a0a")
-	)
-	(no_connect
-		(at 54.61 26.67)
-		(uuid "17cfb018-5e3b-4191-8a25-9434902cb399")
 	)
 	(no_connect
 		(at 63.5 71.12)
@@ -3636,6 +3632,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 26.67) (xy 54.61 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f2909dc-8352-4eaa-8e5e-d02d918bfc1c")
+	)
+	(wire
+		(pts
 			(xy 143.51 26.67) (xy 143.51 29.21)
 		)
 		(stroke
@@ -3803,6 +3809,16 @@
 			(type default)
 		)
 		(uuid "41c1edc2-0119-4dbd-8c4c-5bd198766f89")
+	)
+	(wire
+		(pts
+			(xy 76.2 13.97) (xy 76.2 16.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42c0e72f-b2c0-47a7-bdd3-dd529d3ea15e")
 	)
 	(wire
 		(pts
@@ -4533,6 +4549,16 @@
 			(type default)
 		)
 		(uuid "c52757c3-e89b-4e80-8a58-2c30ab634b37")
+	)
+	(wire
+		(pts
+			(xy 54.61 13.97) (xy 76.2 13.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c946e890-7a2c-47e1-b702-977b25224008")
 	)
 	(wire
 		(pts
@@ -8059,6 +8085,84 @@
 			(project "mora-jai"
 				(path "/06a165cb-987d-4515-950b-4b68772ab4b3"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 76.2 16.51 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "80bfd7c2-9805-4714-aad1-6d7965b9421d")
+		(property "Reference" "#PWR056"
+			(at 76.2 22.86 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 76.2 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 76.2 16.51 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5aee8086-f6e2-40ea-b52e-78812d22df0e")
+		)
+		(instances
+			(project "mora-jai"
+				(path "/06a165cb-987d-4515-950b-4b68772ab4b3"
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)

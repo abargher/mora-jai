@@ -3452,6 +3452,12 @@
 		(uuid "d67e9947-f766-42f7-888d-f60e6ae6ee70")
 	)
 	(junction
+		(at 167.64 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e767e856-0248-4cfd-a69f-625c71715535")
+	)
+	(junction
 		(at 38.1 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3509,7 +3515,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 43.18) (xy 172.72 43.18)
+			(xy 154.94 43.18) (xy 167.64 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3656,6 +3662,16 @@
 			(type default)
 		)
 		(uuid "267a7595-e031-4b41-9bee-ce2198d27088")
+	)
+	(wire
+		(pts
+			(xy 167.64 43.18) (xy 172.72 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2690b052-3c39-4efc-bc6d-70ccd3e9252c")
 	)
 	(wire
 		(pts
@@ -3949,6 +3965,16 @@
 	)
 	(wire
 		(pts
+			(xy 119.38 109.22) (xy 121.92 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5170723e-eae6-44c3-901c-1b6dd90a8714")
+	)
+	(wire
+		(pts
 			(xy 172.72 64.77) (xy 172.72 67.31)
 		)
 		(stroke
@@ -4186,6 +4212,16 @@
 			(type default)
 		)
 		(uuid "84e9a965-760f-428a-9b27-234349ca110d")
+	)
+	(wire
+		(pts
+			(xy 167.64 44.45) (xy 167.64 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a3cf7ee-632e-4e79-b848-479712671df9")
 	)
 	(wire
 		(pts
@@ -4659,16 +4695,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 109.22) (xy 121.92 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f69e86a5-23e1-429c-8e21-e712f1e0b7cc")
-	)
-	(wire
-		(pts
 			(xy 104.14 85.09) (xy 96.52 85.09)
 		)
 		(stroke
@@ -4737,26 +4763,6 @@
 		)
 		(uuid "ff981bef-8d7d-4e0c-a17f-f741c3c74ddc")
 	)
-	(label "VIN"
-		(at 116.84 109.22 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "35d35905-c3ca-4e3b-b722-02dc5c930f23")
-	)
-	(label "VIN"
-		(at 162.56 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f8a9e74f-0644-4b08-bd4f-eca2201e58a9")
-	)
 	(global_label "BATT_V"
 		(shape input)
 		(at 68.58 119.38 270)
@@ -4794,6 +4800,30 @@
 		(uuid "16508cf2-130d-45f5-9bf8-b205079d908f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 137.38 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VIN"
+		(shape input)
+		(at 119.38 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "24d0c6a9-de3c-4a05-8d30-7bdb48b7e542")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 113.3709 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4962,6 +4992,30 @@
 		(uuid "837a83d7-d479-4b60-8182-59d9974f4461")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 173.5448 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "VIN"
+		(shape input)
+		(at 167.64 44.45 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "abea1f77-2fbb-4709-ab75-e4725dbbe1b5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 167.64 50.4591 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

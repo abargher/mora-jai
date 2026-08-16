@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 #include <ESP32Servo.h>
+#include "LittleFS.h"
 
 #define PIN D10
 #define NUMPIXELS 22
@@ -64,7 +65,7 @@ int readMux(int channel)
 
     // read the value at the SIG pin
     int val = digitalRead(D6);
-    Serial.printf("reading %d value on mux out\n", val);
+    // Serial.printf("reading %d value on mux out\n", val);
 
     // return the value
     return val;
@@ -76,6 +77,10 @@ int servoPos = 0;
 // the setup function runs once when you press reset or power the board
 void setup()
 {
+    Serial.begin(115200);
+    // delay startup by 2s to allow time to connect serial monitor
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
+
     ESP32PWM::allocateTimer(0);
     ESP32PWM::allocateTimer(1);
     ESP32PWM::allocateTimer(2);
@@ -104,7 +109,6 @@ void setup()
 
     pinMode(D6, INPUT);
 
-    Serial.begin(115200);
     pixels.begin();
 
     pixels.clear();
@@ -126,27 +130,27 @@ void setup()
         pixels.setBrightness(10);
     }
     pixels.show();
+
+    if (!LittleFS.begin(true))
+    {
+        Serial.println("An Error has occurred while mounting LittleFS");
+        return;
+    }
+    Serial.println("opening file");
+    File file = LittleFS.open("/hello.txt");
+    if (!file)
+    {
+        Serial.println("Failed to open file for reading");
+        return;
+    }
+
+    Serial.println("File Content:");
+    while (file.available())
+    {
+        Serial.write(file.read());
+    }
+    file.close();
 }
-
-typedef enum
-{
-    GRAY,
-    BLACK,
-    RED,
-    YELLOW,
-    VIOLET,
-    ORANGE,
-    WHITE,
-    PINK,
-    GREEN,
-    BLUE,
-    COLOR_COUNT // number of distinct button colors
-} ButtonColor;
-
-typedef struct
-{
-
-} PuzzleState;
 
 // the loop function runs over and over again forever
 void loop()

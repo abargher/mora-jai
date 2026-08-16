@@ -65,7 +65,7 @@
           "min_thickness": 0.25,
           "pad_connection": 2,
           "remove_islands": 0,
-          "thermal_relief_gap": 0.5,
+          "thermal_relief_gap": 0.0,
           "thermal_relief_spoke_width": 0.5
         }
       },
@@ -78,8 +78,20 @@
       ],
       "drc_exclusions": [
         [
-          "lib_footprint_mismatch|35731250|79367681|ef93c054-d303-4c9b-bca1-2c17f3b782f1|00000000-0000-0000-0000-000000000000",
-          "Edited silkscreen to fit on board edge"
+          "lib_footprint_mismatch|133037500|163300000|307b58ff-9ce7-4adb-8c76-a6ed7f27a334|00000000-0000-0000-0000-000000000000",
+          "Pads enlargened for ease of soldering, this board only"
+        ],
+        [
+          "lib_footprint_mismatch|138230000|163382000|5df82e8e-1f75-40f9-bc86-d64893822cc1|00000000-0000-0000-0000-000000000000",
+          "Modified for clearance for this board"
+        ],
+        [
+          "lib_footprint_mismatch|35731250|79507681|ef93c054-d303-4c9b-bca1-2c17f3b782f1|00000000-0000-0000-0000-000000000000",
+          "XIAO footprint modified for this board only"
+        ],
+        [
+          "net_conflict|36500000|79249999|ef93c054-d303-4c9b-bca1-2c17f3b782f1|00000000-0000-0000-0000-000000000000",
+          "heat pad left unconnected on XIAO"
         ],
         [
           "silk_edge_clearance|26000000|74752363|9b5c3268-7e90-40d0-b89b-7d899590ec90|99122971-ef0e-4994-83f0-f9e0e7c88f9a",
@@ -100,6 +112,34 @@
         [
           "silk_edge_clearance|26010000|72271363|9b5c3268-7e90-40d0-b89b-7d899590ec90|9cf4cd5c-6f50-44e5-93c9-65eb101105e1",
           "MCU overhang"
+        ],
+        [
+          "silk_edge_clearance|82502422|118481699|92caa849-e0ae-47ba-a780-733917344482|c918df28-a63d-456a-8709-23309c1f7bd3",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|104250000|100250001|78fd2bd5-8d44-41ed-bb4e-66e3bf4128c1|8bd22ae2-c52a-449a-b581-3ae6911a8a8d",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|104250000|58249999|78fd2bd5-8d44-41ed-bb4e-66e3bf4128c1|96dd975f-2de0-498c-8a02-978017b06a69",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|104250000|62749999|78fd2bd5-8d44-41ed-bb4e-66e3bf4128c1|c360062c-3e41-4775-9702-a1bf37e4c105",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|104250000|95750001|78fd2bd5-8d44-41ed-bb4e-66e3bf4128c1|6a9d595f-1918-4fcf-bb9b-2a79294e2b95",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|134641866|99830002|6c64a34c-bd7b-4091-9959-ee9fab26f94e|d603b003-4e50-4838-b874-39b2869bfab7",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|141750000|100250001|6c64a34c-bd7b-4091-9959-ee9fab26f94e|e0282d6a-1c0d-4e04-925d-fbbe6f526b9d",
+          "Clipping allowed for Mt. Holly symbol"
         ],
         [
           "silk_over_copper|27911000|88146363|115314f1-02ee-4a95-8f3e-1d85f8d2f620|218ba82e-3c59-4aac-b297-eb883cf8cb39",
@@ -130,20 +170,40 @@
           "MCU footprint outline"
         ],
         [
+          "silk_over_copper|34507000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|56d50c8a-afbe-459c-aef9-096e59f0092b",
+          "XIAO footprint silkscreen allowed to clip"
+        ],
+        [
           "silk_over_copper|37047000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|17a2187d-1c9d-44c3-970b-94d26c9d5824",
           "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|37047000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|38d7f450-ac01-4985-91e3-3d0110c02b4a",
+          "XIAO footprint silkscreen allowed to clip"
         ],
         [
           "silk_over_copper|39587000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|a672a6ad-a2a4-4390-9306-6f65db96be8b",
           "MCU footprint outline"
         ],
         [
+          "silk_over_copper|39587000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|6fa89bac-052b-477a-88ab-112827e2538b",
+          "XIAO footprint silkscreen allowed to clip"
+        ],
+        [
           "silk_over_copper|42127000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|ca557a99-42fc-44bc-a964-c2113a3de4de",
           "MCU footprint outline"
         ],
         [
+          "silk_over_copper|42127000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|a8e74290-f055-4f4e-a4df-dbe1719020bb",
+          "XIAO footprint silkscreen allowed to clip"
+        ],
+        [
           "silk_over_copper|44667000|70366363|89f715cc-5bcb-4d4d-8a52-b394fcd2d2c4|0853b91c-3ce7-4861-ba98-0cf1c6263ba6",
           "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|44667000|88146363|84a4dd20-8c73-4003-bd91-ad6a4d015194|25e9b7df-1177-47a1-9d1d-69487824bdf0",
+          "XIAO footprint silkscreen allowed to clip"
         ],
         [
           "silk_over_copper|45060000|70366363|608de005-650e-47e5-a0e4-f577983236c2|0853b91c-3ce7-4861-ba98-0cf1c6263ba6",
@@ -152,6 +212,30 @@
         [
           "silk_over_copper|45060000|88146363|e792d9c7-add5-4aee-bced-368b0eb6c57e|25e9b7df-1177-47a1-9d1d-69487824bdf0",
           "MCU footprint outline"
+        ],
+        [
+          "silk_over_copper|60128930|96108819|c918df28-a63d-456a-8709-23309c1f7bd3|416f7448-6425-48c9-8849-a0482bce88a6",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|60250000|100250001|c918df28-a63d-456a-8709-23309c1f7bd3|4255dc10-e30c-4d3e-85af-cd1113421a3d",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|97750000|100250001|e937fe24-3ab0-4c1d-b7aa-c81eafbf4a9d|33f9c246-8665-4518-b52c-99345d00f4de",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|97750000|58249999|e937fe24-3ab0-4c1d-b7aa-c81eafbf4a9d|049bb88f-4bbb-4420-b8e6-c9a9db32f928",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|97750000|62749999|e937fe24-3ab0-4c1d-b7aa-c81eafbf4a9d|bd682e08-c5c0-473a-af54-3932b2ac9158",
+          "Clipping allowed for Mt. Holly symbol"
+        ],
+        [
+          "silk_over_copper|97750000|95750001|e937fe24-3ab0-4c1d-b7aa-c81eafbf4a9d|fc45506e-f7c9-46d4-860c-d645c4bad697",
+          "Clipping allowed for Mt. Holly symbol"
         ]
       ],
       "meta": {
@@ -671,7 +755,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "mora-jai-2026-08-12-v0.step",
+      "step": "mora-jai-2026-08-16-v0.step",
       "svg": "",
       "vrml": ""
     },

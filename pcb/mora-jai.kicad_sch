@@ -3224,17 +3224,6 @@
 		)
 		(uuid "fc85669d-0e78-47eb-b770-bcd00ec52ee2")
 	)
-	(text "TODO:\n- Expose more test pins/pads (all chip connectors)\n"
-		(exclude_from_sim no)
-		(at 133.35 138.43 0)
-		(effects
-			(font
-				(size 5.08 5.08)
-			)
-			(justify left)
-		)
-		(uuid "0f55539e-0259-4804-8313-2efea4e3ad2f")
-	)
 	(text "Power(sheet)"
 		(exclude_from_sim no)
 		(at 219.456 100.838 0)
@@ -3652,7 +3641,7 @@
 	)
 	(wire
 		(pts
-			(xy 270.51 39.37) (xy 270.51 40.64)
+			(xy 270.51 38.1) (xy 270.51 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3709,6 +3698,16 @@
 			(type default)
 		)
 		(uuid "339f5757-39ea-4196-91d6-56c5b7fdaf98")
+	)
+	(wire
+		(pts
+			(xy 276.86 34.29) (xy 276.86 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3451bcf1-b651-4c0f-b00a-d8bfbfff074d")
 	)
 	(wire
 		(pts
@@ -4082,23 +4081,13 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 27.94) (xy 276.86 34.29)
+			(xy 262.89 26.67) (xy 262.89 34.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6c8dbd48-34ab-47e8-83b0-46c6b4823d85")
-	)
-	(wire
-		(pts
-			(xy 270.51 27.94) (xy 270.51 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f400eaf-e38f-4efa-ba0f-7f7cffdeabfd")
 	)
 	(wire
 		(pts
@@ -4109,16 +4098,6 @@
 			(type default)
 		)
 		(uuid "6fcc29f4-0c18-4491-b902-b76424cb0949")
-	)
-	(wire
-		(pts
-			(xy 274.32 34.29) (xy 276.86 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fd888d8-a542-4f15-b881-73e9b4a7ffaa")
 	)
 	(wire
 		(pts
@@ -4219,6 +4198,16 @@
 			(type default)
 		)
 		(uuid "87882bee-acc7-424f-bd07-4e1ad90be3eb")
+	)
+	(wire
+		(pts
+			(xy 275.59 34.29) (xy 276.86 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a4b2c0a-e73f-461c-ba2b-f11daa846825")
 	)
 	(wire
 		(pts
@@ -4469,6 +4458,16 @@
 			(type default)
 		)
 		(uuid "b995a5c3-b091-4aae-9658-32d5ec7d8682")
+	)
+	(wire
+		(pts
+			(xy 265.43 34.29) (xy 262.89 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f4a27a-e281-4527-a702-9469cef5c78f")
 	)
 	(wire
 		(pts
@@ -6427,7 +6426,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 276.86 27.94 0)
+		(at 262.89 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6438,7 +6437,7 @@
 		(fields_autoplaced yes)
 		(uuid "2c8f920a-3171-40e0-ad12-5c757b985dd7")
 		(property "Reference" "#PWR058"
-			(at 276.86 31.75 0)
+			(at 262.89 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6449,7 +6448,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 276.86 22.86 0)
+			(at 262.89 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6459,7 +6458,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 276.86 27.94 0)
+			(at 262.89 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6470,7 +6469,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 276.86 27.94 0)
+			(at 262.89 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6481,7 +6480,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 276.86 27.94 0)
+			(at 262.89 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9570,7 +9569,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_3_Bridged12")
-		(at 270.51 34.29 90)
+		(at 270.51 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9580,7 +9579,7 @@
 		(dnp no)
 		(uuid "c21cb09a-f72b-476e-91b0-77ae7578b205")
 		(property "Reference" "JP2"
-			(at 267.97 33.0199 90)
+			(at 269.24 31.242 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9591,7 +9590,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_3_Bridged12"
-			(at 267.97 35.56 90)
+			(at 258.826 29.21 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9613,7 +9612,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 285.75 34.29 0)
+			(at 270.51 49.53 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9624,7 +9623,7 @@
 			)
 		)
 		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
-			(at 283.21 34.29 0)
+			(at 270.51 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10135,7 +10134,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 270.51 27.94 0)
+		(at 276.86 27.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10146,7 +10145,7 @@
 		(fields_autoplaced yes)
 		(uuid "e9f945c2-23b3-4a06-8288-7e443d08ec1b")
 		(property "Reference" "#PWR071"
-			(at 270.51 31.75 0)
+			(at 276.86 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10157,7 +10156,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 270.51 22.86 0)
+			(at 276.86 22.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10167,7 +10166,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 270.51 27.94 0)
+			(at 276.86 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10178,7 +10177,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 270.51 27.94 0)
+			(at 276.86 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10189,7 +10188,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 270.51 27.94 0)
+			(at 276.86 27.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

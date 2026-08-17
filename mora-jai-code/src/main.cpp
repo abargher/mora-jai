@@ -1,6 +1,10 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
 #include <ESP32Servo.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
+
 #include "LittleFS.h"
 
 #define LED_PIN LED_BUILTIN
@@ -9,16 +13,44 @@
 #define MUX_CH0 D1
 #define MUX_CH1 D2
 #define MUX_CH2 D0
-#define MUX_CH3 D4
+#define MUX_CH3 D6
+#define INPUT_POLL_WAIT_MS 50
 
 #define SERVO_CTRL_PIN D8
 
-#define INPUT_POLL_WAIT_MS 50
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 32 // OLED display height, in pixels
 
-#define LED_DATA_PIN D5
+#define LED_DATA_PIN D7
 #define NUM_PIXELS 22
 
 #define QUEUE_SIZE 5
+
+// OLED Example setup
+#define OLED_RESET -1       // Reset pin # (or -1 if sharing Arduino reset pin)
+#define SCREEN_ADDRESS 0x3C ///< See datasheet for Address; 0x3D for 128x64, 0x3C for 128x32
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
+#define LOGO_HEIGHT 16
+#define LOGO_WIDTH 16
+static const unsigned char PROGMEM logo_bmp[] =
+    {0b00000000, 0b11000000,
+     0b00000001, 0b11000000,
+     0b00000001, 0b11000000,
+     0b00000011, 0b11100000,
+     0b11110011, 0b11100000,
+     0b11111110, 0b11111000,
+     0b01111110, 0b11111111,
+     0b00110011, 0b10011111,
+     0b00011111, 0b11111100,
+     0b00001101, 0b01110000,
+     0b00011011, 0b10100000,
+     0b00111111, 0b11100000,
+     0b00111111, 0b11110000,
+     0b01111100, 0b11110000,
+     0b01110000, 0b01110000,
+     0b00000000, 0b00110000};
+// end OLED Example
 
 typedef struct
 {
@@ -35,7 +67,6 @@ typedef struct
 QueueHandle_t buttonUpdateQueue = NULL;
 QueueHandle_t ledUpdateQueue = NULL;
 
-TaskHandle_t ServoSweepTaskHandle = NULL;
 TaskHandle_t ButtonPollTaskHandle = NULL;
 TaskHandle_t LEDUpdateTaskHandle = NULL;
 TaskHandle_t GameLogicMockTaskHandle = NULL;
@@ -53,7 +84,6 @@ int readMux(int channel)
     digitalWrite(MUX_CH3, (channel >> 3) & 0x1);
 
     int val = digitalRead(MUX_SIGNAL);
-    // Serial.printf("reading %d value on mux out\n", val);
 
     return val;
 }
@@ -140,20 +170,20 @@ void GameLogicMockTask(void *parameter)
     }
 }
 
-#define SERVO_WAIT_MS 15
-void ServoSweepTask(void *parameter)
-{
-    for (servoPos = 0; servoPos <= 180; servoPos += 1)
-    {
-        servo.write(servoPos);
-        vTaskDelay(SERVO_WAIT_MS / portTICK_PERIOD_MS);
-    }
-    for (servoPos = 180; servoPos >= 0; servoPos -= 1)
-    {
-        servo.write(servoPos);
-        vTaskDelay(SERVO_WAIT_MS / portTICK_PERIOD_MS);
-    }
-}
+// #define SERVO_WAIT_MS 15
+// void ServoSweepTask(void *parameter)
+// {
+//     for (servoPos = 0; servoPos <= 180; servoPos += 1)
+//     {
+//         servo.write(servoPos);
+//         vTaskDelay(SERVO_WAIT_MS / portTICK_PERIOD_MS);
+//     }
+//     for (servoPos = 180; servoPos >= 0; servoPos -= 1)
+//     {
+//         servo.write(servoPos);
+//         vTaskDelay(SERVO_WAIT_MS / portTICK_PERIOD_MS);
+//     }
+// }
 
 #define SERVO_MIN 500
 #define SERVO_MAX 2500
@@ -182,6 +212,42 @@ void SetupPixels()
     pixels.show();
 }
 
+void testdrawstyles(void)
+{
+    display.clearDisplay();
+
+    display.setTextSize(1);              // Normal 1:1 pixel scale
+    display.setTextColor(SSD1306_WHITE); // Draw white text
+    display.setCursor(0, 0);             // Start at top-left corner
+    display.println(F("Hello, world!"));
+
+    display.setTextColor(SSD1306_BLACK, SSD1306_WHITE); // Draw 'inverse' text
+    display.println(3.141592, 6);                       // print a double with 6 decimal places
+
+    display.setTextSize(2); // Draw 2X-scale text
+    display.setTextColor(SSD1306_WHITE);
+    display.print(F("0x"));
+    display.println(0xDEADBEEF, HEX);
+
+    display.display();
+    delay(2000);
+}
+
+void SetupDisplay()
+{
+    vTaskDelay(500 / portTICK_PERIOD_MS); // wait for display
+    if (!display.begin(SSD1306_SWITCHCAPVCC, SCREEN_ADDRESS))
+    {
+        Serial.println(F("SSD1306 allocation failed"));
+        for (;;)
+            ; // Don't proceed, loop forever
+    }
+    display.display();
+    vTaskDelay(2000 / portTICK_PERIOD_MS);
+
+    testdrawstyles(); // Draw 'stylized' characters
+}
+
 void setup()
 {
     Serial.begin(115200);
@@ -197,6 +263,7 @@ void setup()
 
     SetupServo();
     SetupPixels();
+    SetupDisplay();
 
     // setup queues
     buttonUpdateQueue = xQueueCreate(QUEUE_SIZE, sizeof(buttonUpdate_t));
@@ -234,16 +301,6 @@ void setup()
         &LEDUpdateTaskHandle, // Task handle
         1                     // Core 1
     );
-
-    // xTaskCreatePinnedToCore(
-    //     ServoSweepTask,        // Task function
-    //     "ServoSweepTask",      // Task name
-    //     3000,                  // Stack size (bytes)
-    //     NULL,                  // Parameters
-    //     1,                     // Priority
-    //     &ServoSweepTaskHandle, // Task handle
-    //     1                      // Core 1
-    // );
 
     xTaskCreatePinnedToCore(
         ButtonPollTask,        // Task function

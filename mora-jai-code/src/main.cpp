@@ -3,41 +3,21 @@
 #include <ESP32Servo.h>
 #include "LittleFS.h"
 
-#define PIN D10
-#define NUMPIXELS 22
+#define LED_PIN LED_BUILTIN
+#define MUX_SIGNAL D3
+#define MUX_CH0 D1
+#define MUX_CH1 D2
+#define MUX_CH2 D0
+#define MUX_CH3 D4
 
-Adafruit_NeoPixel pixels(NUMPIXELS, PIN, NEO_GRB + NEO_KHZ800);
-#define DELAYVAL 1500
-
-const int L0 = 8;
-const int L1 = 14;
-const int L2 = 56;
-const int L3 = 62;
-int led_idxs[4] = {L0, L1, L2, L3};
-
-int matrix[64] = {
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1,
-    1, 1, 1, 1, 1, 1, 1, 1};
-// int matrix[64] = {
-//     0, 0, 0, 0, 0, 0, 0, 0,
-//     1, 0, 0, 0, 0, 0, 1, 0,
-//     0, 0, 0, 0, 0, 0, 0, 0,
-//     0, 0, 1, 1, 1, 0, 0, 0,
-//     0, 0, 1, 1, 1, 0, 0, 0,
-//     0, 0, 1, 1, 1, 0, 0, 0,
-//     0, 0, 0, 0, 0, 0, 0, 0,
-//     1, 0, 0, 0, 0, 0, 1, 0};
+TaskHandle_t BlinkTaskHandle = NULL;
+TaskHandle_t ButtonPollTaskHandle = NULL;
 
 int readMux(int channel)
 {
-    int controlPin[] = {D0, D1, D2, D3};
+    int controlPin[] = {MUX_CH0, MUX_CH1, MUX_CH2, MUX_CH3};
 
+    // TODO: replace with bit shifting
     int muxChannel[16][4] = {
         {0, 0, 0, 0}, // channel 0
         {1, 0, 0, 0}, // channel 1
@@ -57,166 +37,100 @@ int readMux(int channel)
         {1, 1, 1, 1}  // channel 15
     };
 
-    // loop through the 4 sig
+    // Tell the mux which channel's value to show on MUX_SIGNAL
     for (int i = 0; i < 4; i++)
     {
         digitalWrite(controlPin[i], muxChannel[channel][i]);
     }
 
-    // read the value at the SIG pin
-    int val = digitalRead(D6);
+    int val = digitalRead(MUX_SIGNAL);
     // Serial.printf("reading %d value on mux out\n", val);
 
-    // return the value
     return val;
 }
 
-Servo servo;
-int servoPos = 0;
+volatile uint32_t buttonState = 0;
+volatile uint32_t buttonsState[16] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+// volatile uint32_t lastButtonState = LOW;
+volatile uint32_t lastDebounceTime = 0;
+const uint32_t debounceDelay = 50; // milliseconds
 
-// the setup function runs once when you press reset or power the board
+void ButtonPollTask(void *parameter)
+{
+    while (true)
+    {
+        uint32_t readings[16];
+        for (int i = 0; i < 16; i++)
+        {
+            readings[i] = (uint32_t)(!readMux(i));
+        }
+
+        for (int i = 0; i < 16; i++)
+        {
+            if (readings[i] != buttonsState[i])
+            {
+                buttonsState[i] = readings[i];
+                Serial.printf("button %d changed to %d\n", i, readings[i]);
+            }
+        }
+        vTaskDelay(50 / portTICK_PERIOD_MS);
+
+        // .check value of button
+        // .write it to newState
+        // .compare to lastState
+        // .if different, send event with new state
+        // .make lastState = newState, wipe newState clean
+    }
+}
+
+void BlinkTask(void *parameter)
+{
+    while (true)
+    {
+        digitalWrite(LED_PIN, LOW);
+        // Serial.println("BlinkTask: LED ON");
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        digitalWrite(LED_PIN, HIGH);
+        // Serial.println("BlinkTask: LED OFF");
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
+        // Serial.print("BlinkTask running on core ");
+        // Serial.println(xPortGetCoreID());
+    }
+}
+
 void setup()
 {
     Serial.begin(115200);
-    // delay startup by 2s to allow time to connect serial monitor
-    vTaskDelay(2000 / portTICK_PERIOD_MS);
 
-    ESP32PWM::allocateTimer(0);
-    ESP32PWM::allocateTimer(1);
-    ESP32PWM::allocateTimer(2);
-    ESP32PWM::allocateTimer(3);
+    pinMode(LED_PIN, OUTPUT);
+    pinMode(MUX_CH0, OUTPUT);
+    pinMode(MUX_CH1, OUTPUT);
+    pinMode(MUX_CH2, OUTPUT);
+    pinMode(MUX_CH3, OUTPUT);
+    pinMode(MUX_SIGNAL, INPUT);
 
-    servo.setPeriodHertz(50);
-    servo.attach(D8, 1000, 2000);
+    xTaskCreatePinnedToCore(
+        BlinkTask,        // Task function
+        "BlinkTask",      // Task name
+        10000,            // Stack size (bytes)
+        NULL,             // Parameters
+        1,                // Priority
+        &BlinkTaskHandle, // Task handle
+        1                 // Core 1
+    );
 
-    // initialize digital pin LED_BUILTIN as an output.
-    pinMode(LED_BUILTIN, OUTPUT);
-    pinMode(D0, OUTPUT);
-    pinMode(D1, OUTPUT);
-    pinMode(D2, OUTPUT);
-    pinMode(D3, OUTPUT);
-    digitalWrite(D0, LOW);
-    digitalWrite(D1, LOW);
-    digitalWrite(D2, LOW);
-    digitalWrite(D3, LOW);
-
-    // pull mux enable pin low (chip enables active low)
-    pinMode(D7, OUTPUT);
-    digitalWrite(D7, LOW);
-
-    // motor control pin
-    // pinMode(D9, OUTPUT);
-
-    pinMode(D6, INPUT);
-
-    pixels.begin();
-
-    pixels.clear();
-    pixels.show();
-
-    Serial.println("setting pixels now");
-    for (int i = 0; i < NUMPIXELS; i++)
-    {
-        uint32_t color = 0;
-        if (matrix[i] == 1)
-        {
-            color = pixels.Color(0, 100, 100);
-        }
-        else if (matrix[i] == 2)
-        {
-            color = pixels.Color(0, 100, 0);
-        }
-        pixels.setPixelColor(i, color);
-        pixels.setBrightness(10);
-    }
-    pixels.show();
-
-    if (!LittleFS.begin(true))
-    {
-        Serial.println("An Error has occurred while mounting LittleFS");
-        return;
-    }
-    Serial.println("opening file");
-    File file = LittleFS.open("/hello.txt");
-    if (!file)
-    {
-        Serial.println("Failed to open file for reading");
-        return;
-    }
-
-    Serial.println("File Content:");
-    while (file.available())
-    {
-        Serial.write(file.read());
-    }
-    file.close();
+    xTaskCreatePinnedToCore(
+        ButtonPollTask,        // Task function
+        "ButtonPollTask",      // Task name
+        6000,                  // Stack size (bytes)
+        NULL,                  // Parameters
+        1,                     // Priority
+        &ButtonPollTaskHandle, // Task handle
+        0                      // Core 0
+    );
 }
 
-// the loop function runs over and over again forever
 void loop()
 {
-    for (int i = 0; i < 4; i++)
-    {
-        matrix[led_idxs[i]] = !readMux(i) + 1;
-    }
-
-    for (int i = 0; i < NUMPIXELS; i++)
-    {
-        uint32_t color = 0;
-        if (matrix[i] == 1)
-        {
-            color = pixels.Color(0, 100, 100);
-        }
-        else if (matrix[i] == 2)
-        {
-            color = pixels.Color(0, 100, 0);
-        }
-        pixels.setPixelColor(i, color);
-        pixels.setBrightness(10);
-    }
-
-    pixels.show();
-
-    bool motorOn = false;
-    if (motorOn)
-    {
-        for (servoPos = 0; servoPos <= 180; servoPos += 1)
-        { // goes from 0 degrees to 180 degrees
-            // in steps of 1 degree
-            servo.write(servoPos); // tell servo to go to position in variable 'pos'
-            delay(5);              // waits 5ms for the servo to reach the position
-        }
-        for (servoPos = 180; servoPos >= 0; servoPos -= 1)
-        {                          // goes from 180 degrees to 0 degrees
-            servo.write(servoPos); // tell servo to go to position in variable 'pos'
-            delay(5);              // waits 5ms for the servo to reach the position
-        }
-    }
-    /*
-        - Set initial state of puzzle
-
-        interaction loop:
-        - write LED colors from puzzle state
-        - Poll state of all buttons
-        - if button pressed, update state of puzzle
-
-
-    */
-
-    // Serial.printf("b1 = %d, b2 = %d\n", b1, b2);
-    // pixels.clear();
-    // pixels.show();
-    // delay(DELAYVAL);
-    // Serial.println("setting pixels now");
-    // for(int i=0; i<NUMPIXELS; i++) {
-    //   uint32_t color = 0;
-    //   if (matrix[i] == 1) {
-    //     color = pixels.Color(0, 100, 100);
-    //   }
-    //   pixels.setPixelColor(i, color);
-    //   pixels.setBrightness(10);
-    // }
-
-    // pixels.show();
-    // delay(DELAYVAL);
+    // Empty because FreeRTOS scheduler runs the task
 }

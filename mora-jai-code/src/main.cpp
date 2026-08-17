@@ -11,6 +11,8 @@
 #define MUX_CH2 D0
 #define MUX_CH3 D4
 
+#define SERVO_CTRL_PIN D8
+
 #define INPUT_POLL_WAIT_MS 50
 
 #define LED_DATA_PIN D5
@@ -33,12 +35,14 @@ typedef struct
 QueueHandle_t buttonUpdateQueue = NULL;
 QueueHandle_t ledUpdateQueue = NULL;
 
-TaskHandle_t BlinkTaskHandle = NULL;
+TaskHandle_t ServoSweepTaskHandle = NULL;
 TaskHandle_t ButtonPollTaskHandle = NULL;
 TaskHandle_t LEDUpdateTaskHandle = NULL;
 TaskHandle_t GameLogicMockTaskHandle = NULL;
 
 Adafruit_NeoPixel pixels(NUM_PIXELS, LED_DATA_PIN, NEO_GRB + NEO_KHZ800);
+Servo servo;
+int servoPos = 0;
 
 int readMux(int channel)
 {
@@ -99,7 +103,7 @@ void LEDUpdateTask(void *parameter)
     }
 }
 
-bool ledToggleStates[4] = {false, false, false, false};
+bool ledToggleStates[7] = {false, false, false, false, false, false, false};
 void GameLogicMockTask(void *parameter)
 {
     // consume button state events
@@ -120,23 +124,47 @@ void GameLogicMockTask(void *parameter)
                 ledUpdate_t lightUpdate = {buttonIndex, color};
                 xQueueSend(ledUpdateQueue, &lightUpdate, 0);
             }
+            if (buttonIndex == 4 && isButtonPressed)
+            {
+                servo.write(0);
+            }
+            if (buttonIndex == 5 && isButtonPressed)
+            {
+                servo.write(90);
+            }
+            if (buttonIndex == 6 && isButtonPressed)
+            {
+                servo.write(180);
+            }
         }
     }
 }
 
-void BlinkTask(void *parameter)
+#define SERVO_WAIT_MS 15
+void ServoSweepTask(void *parameter)
 {
-    while (true)
+    for (servoPos = 0; servoPos <= 180; servoPos += 1)
     {
-        digitalWrite(LED_PIN, LOW);
-        // Serial.println("BlinkTask: LED ON");
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-        digitalWrite(LED_PIN, HIGH);
-        // Serial.println("BlinkTask: LED OFF");
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
-        // Serial.print("BlinkTask running on core ");
-        // Serial.println(xPortGetCoreID());
+        servo.write(servoPos);
+        vTaskDelay(SERVO_WAIT_MS / portTICK_PERIOD_MS);
     }
+    for (servoPos = 180; servoPos >= 0; servoPos -= 1)
+    {
+        servo.write(servoPos);
+        vTaskDelay(SERVO_WAIT_MS / portTICK_PERIOD_MS);
+    }
+}
+
+#define SERVO_MIN 500
+#define SERVO_MAX 2500
+void SetupServo()
+{
+    ESP32PWM::allocateTimer(0);
+    ESP32PWM::allocateTimer(1);
+    ESP32PWM::allocateTimer(2);
+    ESP32PWM::allocateTimer(3);
+    servo.setPeriodHertz(50);
+    servo.attach(SERVO_CTRL_PIN, SERVO_MIN, SERVO_MAX);
 }
 
 void SetupPixels()
@@ -167,6 +195,7 @@ void setup()
     pinMode(MUX_CH3, OUTPUT);
     pinMode(MUX_SIGNAL, INPUT);
 
+    SetupServo();
     SetupPixels();
 
     // setup queues
@@ -185,6 +214,7 @@ void setup()
             ;
     }
 
+    // setup tasks
     xTaskCreatePinnedToCore(
         GameLogicMockTask,        // Task function
         "GameLogicMockTask",      // Task name
@@ -205,15 +235,15 @@ void setup()
         1                     // Core 1
     );
 
-    xTaskCreatePinnedToCore(
-        BlinkTask,        // Task function
-        "BlinkTask",      // Task name
-        3000,             // Stack size (bytes)
-        NULL,             // Parameters
-        1,                // Priority
-        &BlinkTaskHandle, // Task handle
-        1                 // Core 1
-    );
+    // xTaskCreatePinnedToCore(
+    //     ServoSweepTask,        // Task function
+    //     "ServoSweepTask",      // Task name
+    //     3000,                  // Stack size (bytes)
+    //     NULL,                  // Parameters
+    //     1,                     // Priority
+    //     &ServoSweepTaskHandle, // Task handle
+    //     1                      // Core 1
+    // );
 
     xTaskCreatePinnedToCore(
         ButtonPollTask,        // Task function

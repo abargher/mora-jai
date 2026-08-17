@@ -4,44 +4,49 @@
 #include "LittleFS.h"
 
 #define LED_PIN LED_BUILTIN
+
 #define MUX_SIGNAL D3
 #define MUX_CH0 D1
 #define MUX_CH1 D2
 #define MUX_CH2 D0
 #define MUX_CH3 D4
 
+#define INPUT_POLL_WAIT_MS 50
+
+#define LED_DATA_PIN D5
+#define NUM_PIXELS 22
+
+#define QUEUE_SIZE 5
+
+typedef struct
+{
+    uint32_t buttonNum;
+    bool isPressed; // pressed = true, released = false;
+} buttonUpdate_t;
+
+typedef struct
+{
+    uint32_t index;
+    uint32_t color;
+} ledUpdate_t;
+
+QueueHandle_t buttonUpdateQueue = NULL;
+QueueHandle_t ledUpdateQueue = NULL;
+
 TaskHandle_t BlinkTaskHandle = NULL;
 TaskHandle_t ButtonPollTaskHandle = NULL;
+TaskHandle_t LEDUpdateTaskHandle = NULL;
+TaskHandle_t GameLogicMockTaskHandle = NULL;
+
+Adafruit_NeoPixel pixels(NUM_PIXELS, LED_DATA_PIN, NEO_GRB + NEO_KHZ800);
 
 int readMux(int channel)
 {
-    int controlPin[] = {MUX_CH0, MUX_CH1, MUX_CH2, MUX_CH3};
-
-    // TODO: replace with bit shifting
-    int muxChannel[16][4] = {
-        {0, 0, 0, 0}, // channel 0
-        {1, 0, 0, 0}, // channel 1
-        {0, 1, 0, 0}, // channel 2
-        {1, 1, 0, 0}, // channel 3
-        {0, 0, 1, 0}, // channel 4
-        {1, 0, 1, 0}, // channel 5
-        {0, 1, 1, 0}, // channel 6
-        {1, 1, 1, 0}, // channel 7
-        {0, 0, 0, 1}, // channel 8
-        {1, 0, 0, 1}, // channel 9
-        {0, 1, 0, 1}, // channel 10
-        {1, 1, 0, 1}, // channel 11
-        {0, 0, 1, 1}, // channel 12
-        {1, 0, 1, 1}, // channel 13
-        {0, 1, 1, 1}, // channel 14
-        {1, 1, 1, 1}  // channel 15
-    };
-
     // Tell the mux which channel's value to show on MUX_SIGNAL
-    for (int i = 0; i < 4; i++)
-    {
-        digitalWrite(controlPin[i], muxChannel[channel][i]);
-    }
+    digitalWrite(MUX_CH0, (channel >> 0) & 0x1);
+    digitalWrite(MUX_CH1, (channel >> 1) & 0x1);
+    digitalWrite(MUX_CH2, (channel >> 2) & 0x1);
+    digitalWrite(MUX_CH3, (channel >> 3) & 0x1);
 
     int val = digitalRead(MUX_SIGNAL);
     // Serial.printf("reading %d value on mux out\n", val);
@@ -49,11 +54,7 @@ int readMux(int channel)
     return val;
 }
 
-volatile uint32_t buttonState = 0;
 volatile uint32_t buttonsState[16] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-// volatile uint32_t lastButtonState = LOW;
-volatile uint32_t lastDebounceTime = 0;
-const uint32_t debounceDelay = 50; // milliseconds
 
 void ButtonPollTask(void *parameter)
 {
@@ -70,16 +71,56 @@ void ButtonPollTask(void *parameter)
             if (readings[i] != buttonsState[i])
             {
                 buttonsState[i] = readings[i];
-                Serial.printf("button %d changed to %d\n", i, readings[i]);
+                buttonUpdate_t updateEvent = {i, (bool)readings[i]};
+                xQueueSend(buttonUpdateQueue, &updateEvent, 0); // 0 returns immediate if queue is full
+                Serial.printf("sent event: button %d changed to %d\n", i, readings[i]);
             }
         }
-        vTaskDelay(50 / portTICK_PERIOD_MS);
+        vTaskDelay(INPUT_POLL_WAIT_MS / portTICK_PERIOD_MS);
+    }
+}
 
-        // .check value of button
-        // .write it to newState
-        // .compare to lastState
-        // .if different, send event with new state
-        // .make lastState = newState, wipe newState clean
+uint32_t colors[NUM_PIXELS] = {0};
+void LEDUpdateTask(void *parameter)
+{
+    // consume LED Update events
+    // set LED colors accordingly
+    while (true)
+    {
+        ledUpdate_t lightUpdate;
+        if (xQueueReceive(ledUpdateQueue, &lightUpdate, portMAX_DELAY))
+        {
+            uint32_t index = lightUpdate.index;
+            uint32_t color = lightUpdate.color;
+            colors[index] = color;
+            pixels.setPixelColor(index, color);
+            pixels.show();
+        }
+    }
+}
+
+bool ledToggleStates[4] = {false, false, false, false};
+void GameLogicMockTask(void *parameter)
+{
+    // consume button state events
+    // dispatch corresponding LED Update events
+    while (true)
+    {
+        buttonUpdate_t updateEvent;
+        if (xQueueReceive(buttonUpdateQueue, &updateEvent, portMAX_DELAY))
+        {
+            uint32_t buttonIndex = updateEvent.buttonNum;
+            bool isButtonPressed = updateEvent.isPressed;
+            if (buttonIndex < 4 && isButtonPressed)
+            {
+                ledToggleStates[buttonIndex] = !ledToggleStates[buttonIndex];
+                Serial.printf("sent event: toggled light %d\n", buttonIndex);
+
+                uint32_t color = ledToggleStates[buttonIndex] ? pixels.Color(0, 100, 100) : pixels.Color(0, 100, 0);
+                ledUpdate_t lightUpdate = {buttonIndex, color};
+                xQueueSend(ledUpdateQueue, &lightUpdate, 0);
+            }
+        }
     }
 }
 
@@ -98,21 +139,76 @@ void BlinkTask(void *parameter)
     }
 }
 
+void SetupPixels()
+{
+    pixels.begin();
+    pixels.clear();
+    pixels.show();
+
+    pixels.setBrightness(10);
+    for (int i = 0; i < NUM_PIXELS; i++)
+    {
+        uint32_t color = pixels.Color(0, 100, 0);
+        pixels.setPixelColor(i, color);
+    }
+    pixels.show();
+}
+
 void setup()
 {
     Serial.begin(115200);
 
     pinMode(LED_PIN, OUTPUT);
+    pinMode(LED_DATA_PIN, OUTPUT);
+
     pinMode(MUX_CH0, OUTPUT);
     pinMode(MUX_CH1, OUTPUT);
     pinMode(MUX_CH2, OUTPUT);
     pinMode(MUX_CH3, OUTPUT);
     pinMode(MUX_SIGNAL, INPUT);
 
+    SetupPixels();
+
+    // setup queues
+    buttonUpdateQueue = xQueueCreate(QUEUE_SIZE, sizeof(buttonUpdate_t));
+    if (buttonUpdateQueue == NULL)
+    {
+        Serial.println("failed to create button queue!");
+        while (1)
+            ;
+    }
+    ledUpdateQueue = xQueueCreate(QUEUE_SIZE, sizeof(ledUpdate_t));
+    if (ledUpdateQueue == NULL)
+    {
+        Serial.println("failed to create LED queue!");
+        while (1)
+            ;
+    }
+
+    xTaskCreatePinnedToCore(
+        GameLogicMockTask,        // Task function
+        "GameLogicMockTask",      // Task name
+        3000,                     // Stack size (bytes)
+        NULL,                     // Parameters
+        1,                        // Priority
+        &GameLogicMockTaskHandle, // Task handle
+        1                         // Core 1
+    );
+
+    xTaskCreatePinnedToCore(
+        LEDUpdateTask,        // Task function
+        "LEDUpdateTask",      // Task name
+        3000,                 // Stack size (bytes)
+        NULL,                 // Parameters
+        1,                    // Priority
+        &LEDUpdateTaskHandle, // Task handle
+        1                     // Core 1
+    );
+
     xTaskCreatePinnedToCore(
         BlinkTask,        // Task function
         "BlinkTask",      // Task name
-        10000,            // Stack size (bytes)
+        3000,             // Stack size (bytes)
         NULL,             // Parameters
         1,                // Priority
         &BlinkTaskHandle, // Task handle

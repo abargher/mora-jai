@@ -4,26 +4,11 @@
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include <LittleFS.h>
 
-#include "LittleFS.h"
+#include <pins.h>
 
-#define LED_PIN LED_BUILTIN
-
-#define MUX_SIGNAL D3
-#define MUX_CH0 D1
-#define MUX_CH1 D2
-#define MUX_CH2 D0
-#define MUX_CH3 D6
-#define INPUT_POLL_WAIT_MS 50
-
-#define SERVO_CTRL_PIN D8
-
-#define SCREEN_WIDTH 128 // OLED display width, in pixels
-#define SCREEN_HEIGHT 32 // OLED display height, in pixels
-
-#define LED_DATA_PIN D7
-#define NUM_PIXELS 22
-
+#define INPUT_POLL_WAIT_MS 100
 #define QUEUE_SIZE 5
 
 // OLED Example setup

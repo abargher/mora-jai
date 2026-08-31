@@ -246,6 +246,8 @@ void setup()
     pinMode(MUX_CH3, OUTPUT);
     pinMode(MUX_SIGNAL, INPUT);
 
+    digitalWrite(LED_PIN, LOW); // built-in LED is active-low
+
     SetupServo();
     SetupPixels();
     SetupDisplay();

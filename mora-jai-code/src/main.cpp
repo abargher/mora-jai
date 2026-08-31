@@ -7,6 +7,7 @@
 #include <LittleFS.h>
 
 #include <pins.h>
+#include <hardware.hpp>
 
 #define INPUT_POLL_WAIT_MS 100
 #define QUEUE_SIZE 5
@@ -36,18 +37,6 @@ static const unsigned char PROGMEM logo_bmp[] =
      0b01110000, 0b01110000,
      0b00000000, 0b00110000};
 // end OLED Example
-
-typedef struct
-{
-    uint32_t buttonNum;
-    bool isPressed; // pressed = true, released = false;
-} buttonUpdate_t;
-
-typedef struct
-{
-    uint32_t index;
-    uint32_t color;
-} ledUpdate_t;
 
 QueueHandle_t buttonUpdateQueue = NULL;
 QueueHandle_t ledUpdateQueue = NULL;

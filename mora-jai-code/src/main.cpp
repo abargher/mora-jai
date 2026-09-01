@@ -8,7 +8,6 @@
 
 #include <pins.h>
 #include <hardware.hpp>
-#include <hardware_os.hpp>
 
 #define INPUT_POLL_WAIT_MS 100
 #define QUEUE_SIZE 5
@@ -120,31 +119,34 @@ void ButtonEventConsumerTask(void *parameter)
         if (xQueueReceive(buttonUpdateQueue, &updateEvent, portMAX_DELAY))
         {
             ExecuteCallbacks(updateEvent);
-
-            uint32_t buttonIndex = updateEvent.buttonNum;
-            bool isButtonPressed = updateEvent.isPressed;
-            if (buttonIndex < 4 && isButtonPressed)
-            {
-                ledToggleStates[buttonIndex] = !ledToggleStates[buttonIndex];
-                Serial.printf("sent event: toggled light %d\n", buttonIndex);
-
-                uint32_t color = ledToggleStates[buttonIndex] ? pixels.Color(0, 100, 100) : pixels.Color(0, 100, 0);
-                ledUpdate_t lightUpdate = {buttonIndex, color};
-                xQueueSend(ledUpdateQueue, &lightUpdate, 0);
-            }
-            if (buttonIndex == 4 && isButtonPressed)
-            {
-                servo.write(0);
-            }
-            if (buttonIndex == 5 && isButtonPressed)
-            {
-                servo.write(90);
-            }
-            if (buttonIndex == 6 && isButtonPressed)
-            {
-                servo.write(180);
-            }
         }
+    }
+}
+
+void ToggleLights(buttonUpdate_t updateEvent)
+{
+    uint32_t buttonIndex = updateEvent.buttonNum;
+    bool isButtonPressed = updateEvent.isPressed;
+    if (buttonIndex < 4 && isButtonPressed)
+    {
+        ledToggleStates[buttonIndex] = !ledToggleStates[buttonIndex];
+        Serial.printf("sent event: toggled light %d\n", buttonIndex);
+
+        uint32_t color = ledToggleStates[buttonIndex] ? pixels.Color(0, 100, 100) : pixels.Color(0, 100, 0);
+        ledUpdate_t lightUpdate = {buttonIndex, color};
+        xQueueSend(ledUpdateQueue, &lightUpdate, 0);
+    }
+    if (buttonIndex == 4 && isButtonPressed)
+    {
+        servo.write(0);
+    }
+    if (buttonIndex == 5 && isButtonPressed)
+    {
+        servo.write(90);
+    }
+    if (buttonIndex == 6 && isButtonPressed)
+    {
+        servo.write(180);
     }
 }
 
@@ -262,6 +264,9 @@ void setup()
         while (1)
             ;
     }
+
+    RegisterButtonDownCallback(ToggleLights);
+    RegisterButtonUpCallback(ToggleLights);
 
     // setup tasks
     xTaskCreatePinnedToCore(

@@ -29,6 +29,9 @@ callback function from the set.
 int UnregisterButtonDownCallback(uint32_t index);
 int UnregisterButtonUpCallback(uint32_t index);
 
+void SetupEventLocks();
+void ExecuteCallbacks(buttonUpdate_t data);
+
 // TODO: determine and assign values for all colors
 typedef enum
 {

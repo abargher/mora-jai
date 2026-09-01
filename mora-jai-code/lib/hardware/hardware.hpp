@@ -17,14 +17,14 @@ typedef void (*BUTTON_CALLBACK)(buttonUpdate_t data);
 Both return the index ("id") of the registered callback,
 between 0 and MAX_BTN_CALLBACKS. Can be used to unregister the callback later.
 Returns a negative value if there was an error in registration.
-TODO: define error values for not enough space, any other errors, etc
 */
 int RegisterButtonDownCallback(BUTTON_CALLBACK handler);
 int RegisterButtonUpCallback(BUTTON_CALLBACK handler);
+// TODO: define error values for not enough space, mutex wait timeout, etc
 
 /*
-Input must be between 0 and MAX_BTN_CALLBACKS. Unregisters that function from
-the set.
+Input must be between 0 and MAX_BTN_CALLBACKS. Unregisters the corresponding
+callback function from the set.
 */
 int UnregisterButtonDownCallback(uint32_t index);
 int UnregisterButtonUpCallback(uint32_t index);

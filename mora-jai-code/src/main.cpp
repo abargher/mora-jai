@@ -57,6 +57,7 @@ int readMux(int channel)
     digitalWrite(MUX_CH1, (channel >> 1) & 0x1);
     digitalWrite(MUX_CH2, (channel >> 2) & 0x1);
     digitalWrite(MUX_CH3, (channel >> 3) & 0x1);
+    vTaskDelay(0.1 / portTICK_PERIOD_MS);
 
     int val = digitalRead(MUX_SIGNAL);
 

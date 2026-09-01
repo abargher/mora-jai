@@ -1,0 +1,6 @@
+production/
+.history/
+mora-jai-backups/
+*.bak
+fp-info-cache
+*.step

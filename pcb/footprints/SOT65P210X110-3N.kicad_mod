@@ -1,0 +1,236 @@
+(footprint "SOT65P210X110-3N"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "SOT-323")
+	(tags "MOSFET (P-Channel)")
+	(property "Reference" "Q**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "41f4055d-0d7d-4044-bb9e-dfff543fdfe6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "SOT65P210X110-3N"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6d778aab-fc48-42e4-8db4-c0d1c062112b")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7c95ad68-4fba-455c-84d9-8d52ea1b94ee")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f334d410-e677-4007-8b8f-050cf45f5a02")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.475 -1.15)
+		(end -0.725 -1.15)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5805a81c-cc02-40c6-86d4-66abf4c147c6")
+	)
+	(fp_line
+		(start -0.375 -1)
+		(end 0.375 -1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "30a56630-e9b8-4049-bdd8-707010bde0f4")
+	)
+	(fp_line
+		(start -0.375 1)
+		(end -0.375 -1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "147c979c-93b3-414e-93e9-44a09da81d3a")
+	)
+	(fp_line
+		(start 0.375 -1)
+		(end 0.375 1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e803c886-876c-4bfc-9e68-e61aa0e71c1d")
+	)
+	(fp_line
+		(start 0.375 1)
+		(end -0.375 1)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0005b66f-c649-49ba-b173-a40d359f64de")
+	)
+	(fp_line
+		(start -1.725 -1.35)
+		(end 1.725 -1.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ae021b84-4e99-4193-ac1d-8b0b8cad838b")
+	)
+	(fp_line
+		(start -1.725 1.35)
+		(end -1.725 -1.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "b6f4f91e-e5d3-486d-9474-41687b89915e")
+	)
+	(fp_line
+		(start 1.725 -1.35)
+		(end 1.725 1.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6815fcca-824d-4850-9a01-0a8180479757")
+	)
+	(fp_line
+		(start 1.725 1.35)
+		(end -1.725 1.35)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ded579af-50d2-4d4c-b939-2f10f0f7368b")
+	)
+	(fp_line
+		(start -0.625 -1)
+		(end 0.625 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "f4f41c75-6b3c-4141-ac17-4644664db8e7")
+	)
+	(fp_line
+		(start -0.625 -0.35)
+		(end 0.025 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "46bdd3e3-cf3c-4fde-b9e8-3413dac87579")
+	)
+	(fp_line
+		(start -0.625 1)
+		(end -0.625 -1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "302c0ebd-15d9-49b6-ba19-66f1daca2333")
+	)
+	(fp_line
+		(start 0.625 -1)
+		(end 0.625 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "c61195be-c174-4145-a352-fd01fbfae08f")
+	)
+	(fp_line
+		(start 0.625 1)
+		(end -0.625 1)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "59a622cb-5777-4d36-8d99-c0ccda9631bf")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "3e0ee82b-ee6f-4d62-ab7d-0df527ab9feb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.1 -0.65 90)
+		(size 0.5 0.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "689f5695-690d-4caa-bc9f-a14467108aa2")
+	)
+	(pad "2" smd rect
+		(at -1.1 0.65 90)
+		(size 0.5 0.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "d2f120f5-46f9-42e8-973a-931753a60336")
+	)
+	(pad "3" smd rect
+		(at 1.1 0 90)
+		(size 0.5 0.75)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "bdecee86-a34f-456c-a1ae-93810881c6a9")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/footprints/3d/PJC7407_R1_00001.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

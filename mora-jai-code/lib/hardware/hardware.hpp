@@ -72,11 +72,19 @@ void SetRGBSingle(uint32_t index, uint32_t color);
 void SetColorMatrix(BtnColor_t *colors);
 void SetColorSingle(uint32_t index, BtnColor_t color);
 
-/* Latch functions */
+/* Latch (servo) functions */
 
 void LatchUnlock();
 void LatchLock();
 
 /* Hardware info functions */
+// report battery charge level
+// report battery charging state (read STAT_1 for currently charging, STAT_2 for finished)
+// report if running on USB power (read PWR_GOOD)
+// report if latch is open or closed (read latch state file value)
+
+/* Display functions */
+// write text to screen
+// .... more to come
 
 #endif // __HARDWARE_H__

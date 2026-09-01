@@ -6,7 +6,7 @@
     [x] unlock function
         - just rotate to 0/90/180 deg
     [ ] store lock/unlock state?? Persistent?
-[ ] FS library wrapper?
+[ ] Filesystem library wrapper?
 [ ] report state of pressed buttons
     [x] impl: FW thread polls multiplexer, sends "events" to SW thread when
       button state changes (numbered buttonDown and buttonUp events)

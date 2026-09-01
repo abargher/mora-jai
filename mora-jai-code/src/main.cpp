@@ -74,7 +74,7 @@ void ButtonPollTask(void *parameter)
             readings[i] = (uint32_t)(!readMux(i));
         }
 
-        for (int i = 0; i < 16; i++)
+        for (uint32_t i = 0; i < 16; i++)
         {
             if (readings[i] != buttonsState[i])
             {
@@ -237,6 +237,7 @@ void setup()
 
     digitalWrite(LED_PIN, LOW); // built-in LED is active-low
 
+    SetupEvents();
     SetupServo();
     SetupPixels();
     SetupDisplay();

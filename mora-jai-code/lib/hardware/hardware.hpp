@@ -13,7 +13,6 @@ typedef struct
 
 typedef void (*BUTTON_CALLBACK)(buttonUpdate_t data);
 
-void SetupEvents();
 /*
 Both return the index ("id") of the registered callback,
 between 0 and MAX_BTN_CALLBACKS. Can be used to unregister the callback later.

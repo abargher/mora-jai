@@ -4,24 +4,10 @@
 #include <FreeRTOS.h>
 #include <semphr.h>
 
-void SetupEvents()
-{
-    btn_down_callback_lock_handle = xSemaphoreCreateMutexStatic(&btn_down_callback_lock);
-    if (btn_down_callback_lock_handle == NULL)
-    {
-        DEBUG_LOG("Could not allocate memory for btn_down_callback_lock mutex\n");
-    }
-    btn_up_callback_lock_handle = xSemaphoreCreateMutexStatic(&btn_up_callback_lock);
-    if (btn_up_callback_lock_handle == NULL)
-    {
-        DEBUG_LOG("Could not allocate memory for btn_up_callback_lock mutex\n");
-    }
-}
-
 int _RegisterCallback(volatile BUTTON_CALLBACK *callback_set, SemaphoreHandle_t lock, BUTTON_CALLBACK handler)
 {
     xSemaphoreTake(lock, portMAX_DELAY);
-    for (int i = 0; i < MAX_BTN_CALLBACKS; i++)
+    for (uint32_t i = 0; i < MAX_BTN_CALLBACKS; i++)
     {
         if (callback_set[i] == NULL)
         {
@@ -36,7 +22,22 @@ int _RegisterCallback(volatile BUTTON_CALLBACK *callback_set, SemaphoreHandle_t 
     return NO_FREE_CALLBACK_SLOT;
 }
 
-int RegisterButtonDownCallback(volatile BUTTON_CALLBACK handler)
+int _UnregisterCallback(volatile BUTTON_CALLBACK *callback_set, SemaphoreHandle_t lock, uint32_t id)
+{
+    if (id < 0 || id >= MAX_BTN_CALLBACKS)
+    {
+        DEBUG_LOG("ID %d is not a valid callback ID.\n", id);
+        return INVALID_CALLBACK_ID;
+    }
+
+    xSemaphoreTake(lock, portMAX_DELAY);
+    callback_set[id] = NULL;
+    xSemaphoreGive(lock);
+
+    return EXIT_SUCCESS;
+}
+
+int RegisterButtonDownCallback(BUTTON_CALLBACK handler)
 {
     return _RegisterCallback(btn_down_callbacks, btn_down_callback_lock_handle, handler);
 }
@@ -44,6 +45,16 @@ int RegisterButtonDownCallback(volatile BUTTON_CALLBACK handler)
 int RegisterButtonUpCallback(BUTTON_CALLBACK handler)
 {
     return _RegisterCallback(btn_up_callbacks, btn_up_callback_lock_handle, handler);
+}
+
+int UnregisterButtonDownCallback(uint32_t id)
+{
+    return _UnregisterCallback(btn_down_callbacks, btn_down_callback_lock_handle, id);
+}
+
+int UnregisterButtonUpCallback(uint32_t id)
+{
+    return _UnregisterCallback(btn_up_callbacks, btn_up_callback_lock_handle, id);
 }
 
 void SetRGBMatrix(uint32_t *colors)

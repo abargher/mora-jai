@@ -7,6 +7,7 @@
 #define LATCH_STATE_FILEPATH "lockstate.txt"
 #define MAX_BTN_CALLBACKS 5
 #define NO_FREE_CALLBACK_SLOT -1
+#define INVALID_CALLBACK_ID -1
 
 SemaphoreHandle_t btn_up_callback_lock_handle;
 SemaphoreHandle_t btn_down_callback_lock_handle;

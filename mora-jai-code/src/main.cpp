@@ -8,6 +8,7 @@
 
 #include <pins.h>
 #include <hardware.hpp>
+#include <hardware_os.hpp>
 
 #define INPUT_POLL_WAIT_MS 100
 #define QUEUE_SIZE 5
@@ -43,7 +44,7 @@ QueueHandle_t ledUpdateQueue = NULL;
 
 TaskHandle_t ButtonPollTaskHandle = NULL;
 TaskHandle_t LEDUpdateTaskHandle = NULL;
-TaskHandle_t GameLogicMockTaskHandle = NULL;
+TaskHandle_t ButtonEventConsumerTaskHandle = NULL;
 
 Adafruit_NeoPixel pixels(NUM_PIXELS, LED_DATA_PIN, NEO_GRB + NEO_KHZ800);
 Servo servo;
@@ -108,7 +109,7 @@ void LEDUpdateTask(void *parameter)
 }
 
 bool ledToggleStates[7] = {false, false, false, false, false, false, false};
-void GameLogicMockTask(void *parameter)
+void ButtonEventConsumerTask(void *parameter)
 {
     // consume button state events
     // dispatch corresponding LED Update events
@@ -117,6 +118,8 @@ void GameLogicMockTask(void *parameter)
         buttonUpdate_t updateEvent;
         if (xQueueReceive(buttonUpdateQueue, &updateEvent, portMAX_DELAY))
         {
+            ExecuteCallbacks(updateEvent);
+
             uint32_t buttonIndex = updateEvent.buttonNum;
             bool isButtonPressed = updateEvent.isPressed;
             if (buttonIndex < 4 && isButtonPressed)
@@ -237,10 +240,11 @@ void setup()
 
     digitalWrite(LED_PIN, LOW); // built-in LED is active-low
 
-    SetupEvents();
     SetupServo();
     SetupPixels();
     SetupDisplay();
+
+    SetupEventLocks();
 
     // setup queues
     buttonUpdateQueue = xQueueCreate(QUEUE_SIZE, sizeof(buttonUpdate_t));
@@ -260,13 +264,13 @@ void setup()
 
     // setup tasks
     xTaskCreatePinnedToCore(
-        GameLogicMockTask,        // Task function
-        "GameLogicMockTask",      // Task name
-        3000,                     // Stack size (bytes)
-        NULL,                     // Parameters
-        1,                        // Priority
-        &GameLogicMockTaskHandle, // Task handle
-        1                         // Core 1
+        ButtonEventConsumerTask,        // Task function
+        "ButtonEventConsumerTask",      // Task name
+        3000,                           // Stack size (bytes)
+        NULL,                           // Parameters
+        1,                              // Priority
+        &ButtonEventConsumerTaskHandle, // Task handle
+        1                               // Core 1
     );
 
     xTaskCreatePinnedToCore(

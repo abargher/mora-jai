@@ -4,3 +4,4 @@ mora-jai-backups/
 *.bak
 fp-info-cache
 *.step
+*.lck

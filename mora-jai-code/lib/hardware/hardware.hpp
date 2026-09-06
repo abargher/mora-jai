@@ -78,9 +78,12 @@ void LatchUnlock();
 void LatchLock();
 
 /* Hardware info functions */
-// report battery charge level
+uint32_t GetBatteryMilliVolts();
+uint32_t GetBatteryPercentage();
+
 // report battery charging state (read STAT_1 for currently charging, STAT_2 for finished)
 // report if running on USB power (read PWR_GOOD)
+
 // report if latch is open or closed (read latch state file value)
 
 /* Display functions */

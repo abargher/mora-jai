@@ -17,6 +17,8 @@
 #define SERVO_CTRL_PIN D9
 
 #define BATT_V_PIN A8
+#define BATT_V_R1_VALUE 10000
+#define BATT_V_R2_VALUE 2200
 
 #define CHARG_ON_PIN D7
 #define CHARG_DONE_PIN 42

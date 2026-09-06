@@ -232,6 +232,9 @@ void setup()
 {
     Serial.begin(115200);
 
+    analogSetAttenuation(ADC_0db); // 0db attenuation for batt. voltage reading
+    pinMode(BATT_V_PIN, INPUT);    // analog input pin for battery voltage
+
     pinMode(LED_PIN, OUTPUT);
     pinMode(LED_DATA_PIN, OUTPUT);
 
@@ -241,6 +244,7 @@ void setup()
     pinMode(MUX_CH3, OUTPUT);
     pinMode(MUX_SIGNAL, INPUT);
 
+    // TODO: remove this debugging light enable
     digitalWrite(LED_PIN, LOW); // built-in LED is active-low
 
     SetupServo();

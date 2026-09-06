@@ -4,6 +4,8 @@
 #include <FreeRTOS.h>
 #include <semphr.h>
 
+#include <pins.h>
+
 /* For OS only, do not call from user code */
 void SetupEventLocks()
 {
@@ -133,4 +135,21 @@ void LatchLock()
 
     If unlocked, move servo to lock position and update file.
     */
+}
+
+uint32_t GetBatteryMilliVolts()
+{
+    uint32_t raw_reading = analogReadMilliVolts(BATT_V_PIN);
+    uint32_t batt_mv = raw_reading * (BATT_V_R1_VALUE + BATT_V_R2_VALUE) / BATT_V_R2_VALUE;
+    DEBUG_LOG("raw battery reading: %lumV\n", raw_reading);
+    DEBUG_LOG("battery voltage reading: %lumV\n", batt_mv);
+    return batt_mv;
+}
+
+uint32_t GetBatteryPercentage()
+{
+    // uint32_t batt_mv = GetBatteryMilliVolts();
+    // TODO: experiment with readings, see what range we get for real battery
+    // Perhaps do some logging to a file on flash and determine ideal range
+    // that way?
 }

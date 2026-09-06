@@ -7,6 +7,7 @@
 
 #include <pins.h>
 #include <hardware.hpp>
+#include <debug.h>
 
 #define INPUT_POLL_WAIT_MS 100
 #define QUEUE_SIZE 5
@@ -136,15 +137,11 @@ void ToggleLights(buttonUpdate_t updateEvent)
     }
     if (buttonIndex == 4 && isButtonPressed)
     {
-        servo.write(0);
+        ForceLatchUnlock();
     }
     if (buttonIndex == 5 && isButtonPressed)
     {
-        servo.write(90);
-    }
-    if (buttonIndex == 6 && isButtonPressed)
-    {
-        servo.write(180);
+        ForceLatchLock();
     }
 }
 
@@ -162,9 +159,6 @@ void ToggleLights(buttonUpdate_t updateEvent)
 //         vTaskDelay(SERVO_WAIT_MS / portTICK_PERIOD_MS);
 //     }
 // }
-
-#define SERVO_MIN 500
-#define SERVO_MAX 2500
 
 void SetupPixels()
 {

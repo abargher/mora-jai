@@ -15,6 +15,8 @@
 #define NO_FREE_CALLBACK_SLOT -1
 #define INVALID_CALLBACK_ID -1
 
+#define SERVO_MIN 500
+#define SERVO_MAX 2500
 Servo servo;
 
 SemaphoreHandle_t btn_up_callback_lock_handle;

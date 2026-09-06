@@ -77,12 +77,19 @@ void SetColorSingle(uint32_t index, BtnColor_t color);
 void LatchUnlock();
 void LatchLock();
 
+typedef enum BatteryState
+{
+    NO_CABLE,    // USB cable is not plugged in, battery discharging
+    CABLE_ONLY,  // USB cable is plugged in, but battery does not seem connected
+    CHARGING,    // Battery is currently charging
+    CHARGE_DONE, // Battery has finished charging
+    ERROR        // we are in some error state (both STAT1 and STAT2 are low)
+} BatteryState_t;
+
 /* Hardware info functions */
 uint32_t GetBatteryMilliVolts();
 uint32_t GetBatteryPercentage();
-
-// report battery charging state (read STAT_1 for currently charging, STAT_2 for finished)
-// report if running on USB power (read PWR_GOOD)
+BatteryState_t GetBatteryState();
 
 // report if latch is open or closed (read latch state file value)
 

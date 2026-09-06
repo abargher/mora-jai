@@ -235,6 +235,10 @@ void setup()
     analogSetAttenuation(ADC_0db); // 0db attenuation for batt. voltage reading
     pinMode(BATT_V_PIN, INPUT);    // analog input pin for battery voltage
 
+    pinMode(PWR_GOOD_PIN, INPUT);
+    pinMode(CHARG_ON_PIN, INPUT);
+    pinMode(CHARG_DONE_PIN, INPUT);
+
     pinMode(LED_PIN, OUTPUT);
     pinMode(LED_DATA_PIN, OUTPUT);
 

@@ -153,3 +153,39 @@ uint32_t GetBatteryPercentage()
     // Perhaps do some logging to a file on flash and determine ideal range
     // that way?
 }
+
+// TODO: can we set an interrupt on PWR_GOOD to detect cable plug/unplug?
+BatteryState_t GetBatteryState()
+{
+    int pwr_good_val = digitalRead(PWR_GOOD_PIN);
+
+    // PWR_GOOD is high, then no cable is plugged in.
+    if (pwr_good_val == HIGH)
+    {
+        return NO_CABLE;
+    }
+
+    int charging_on_val = digitalRead(CHARG_ON_PIN);
+    int charging_done_val = digitalRead(CHARG_DONE_PIN);
+
+    // PWR_GOOD is low, but nothing else is, then we have no battery.
+    // TODO: check behavior above with datasheet
+    if (charging_on_val == HIGH && charging_done_val == HIGH)
+    {
+        return CABLE_ONLY;
+    }
+    // STAT1 is low, then battery is currently charging.
+    else if (charging_on_val == LOW && charging_done_val == HIGH)
+    {
+        return CHARGING;
+    }
+    // STAT2 is low, then battery has finished charging.
+    else if (charging_on_val == HIGH && charging_done_val == LOW)
+    {
+        return CHARGE_DONE;
+    }
+    else
+    {
+        return ERROR;
+    }
+}

@@ -29,6 +29,7 @@ callback function from the set.
 int UnregisterButtonDownCallback(uint32_t index);
 int UnregisterButtonUpCallback(uint32_t index);
 
+void SetupServo();
 void SetupEventLocks();
 void ExecuteCallbacks(buttonUpdate_t data);
 
@@ -76,6 +77,8 @@ void SetColorSingle(uint32_t index, BtnColor_t color);
 
 void LatchUnlock();
 void LatchLock();
+void ForceLatchUnlock();
+void ForceLatchLock();
 
 typedef enum BatteryState
 {
@@ -86,12 +89,19 @@ typedef enum BatteryState
     ERROR        // we are in some error state (both STAT1 and STAT2 are low)
 } BatteryState_t;
 
+typedef enum LatchState
+{
+    OPEN,
+    LOCKED,
+    UNKNOWN
+} LatchState_t;
+
 /* Hardware info functions */
 uint32_t GetBatteryMilliVolts();
 uint32_t GetBatteryPercentage();
 BatteryState_t GetBatteryState();
 
-// report if latch is open or closed (read latch state file value)
+LatchState_t GetLastLatchState();
 
 /* Display functions */
 // write text to screen

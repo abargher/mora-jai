@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
-#include <ESP32Servo.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -46,7 +45,6 @@ TaskHandle_t LEDUpdateTaskHandle = NULL;
 TaskHandle_t ButtonEventConsumerTaskHandle = NULL;
 
 Adafruit_NeoPixel pixels(NUM_PIXELS, LED_DATA_PIN, NEO_GRB + NEO_KHZ800);
-Servo servo;
 int servoPos = 0;
 
 int readMux(int channel)
@@ -167,15 +165,6 @@ void ToggleLights(buttonUpdate_t updateEvent)
 
 #define SERVO_MIN 500
 #define SERVO_MAX 2500
-void SetupServo()
-{
-    ESP32PWM::allocateTimer(0);
-    ESP32PWM::allocateTimer(1);
-    ESP32PWM::allocateTimer(2);
-    ESP32PWM::allocateTimer(3);
-    servo.setPeriodHertz(50);
-    servo.attach(SERVO_CTRL_PIN, SERVO_MIN, SERVO_MAX);
-}
 
 void SetupPixels()
 {
@@ -256,6 +245,11 @@ void setup()
     SetupDisplay();
 
     SetupEventLocks();
+
+    if (!LittleFS.begin(true))
+    {
+        DEBUG_LOG("An Error has occurred while mounting LittleFS\n");
+    }
 
     // setup queues
     buttonUpdateQueue = xQueueCreate(QUEUE_SIZE, sizeof(buttonUpdate_t));

@@ -1,10 +1,12 @@
+#include <ESP32Servo.h>
+#include <FreeRTOS.h>
+#include <semphr.h>
+#include <LittleFS.h>
+
+#include <pins.h>
 #include <hardware.hpp>
 #include <hardware_private.hpp>
 #include <debug.h>
-#include <FreeRTOS.h>
-#include <semphr.h>
-
-#include <pins.h>
 
 /* For OS only, do not call from user code */
 void SetupEventLocks()
@@ -137,6 +139,24 @@ void LatchLock()
     */
 }
 
+void ForceLatchUnlock()
+{
+    /*
+    Move servo to unlock position and update file, regardless of last state.
+    */
+    servo.write(LATCH_UNLOCKED_ANGLE);
+    // TODO: update latch file
+}
+
+void ForceLatchLock()
+{
+    /*
+    Move servo to lock position and update file, regardless of last state.
+    */
+    servo.write(LATCH_LOCKED_ANGLE);
+    // TODO: update latch file
+}
+
 uint32_t GetBatteryMilliVolts()
 {
     uint32_t raw_reading = analogReadMilliVolts(BATT_V_PIN);
@@ -188,4 +208,43 @@ BatteryState_t GetBatteryState()
     {
         return ERROR;
     }
+}
+
+LatchState_t GetLastLatchState()
+{
+    // report if latch is open or closed (read latch state file value)
+    // if (!LittleFS.begin(true))
+    // {
+    //     DEBUG_LOG("An Error has occurred while mounting LittleFS");
+    // }
+
+    DEBUG_LOG("opening latch state file\n");
+    File file = LittleFS.open(LATCH_STATE_FILEPATH);
+    if (!file)
+    {
+        DEBUG_LOG("Failed to open latch state file for reading\n");
+        return UNKNOWN;
+    }
+
+    DEBUG_LOG("File Content:\n");
+    while (file.available())
+    {
+        // TODO: instead, copy file content into buffer, with bounds checks
+        Serial.write(file.read());
+    }
+
+    // TODO: based on file content, return locked or unlocked state
+    // If unreadable or other error, return UNKNOWN
+
+    file.close();
+}
+
+void SetupServo()
+{
+    ESP32PWM::allocateTimer(0);
+    ESP32PWM::allocateTimer(1);
+    ESP32PWM::allocateTimer(2);
+    ESP32PWM::allocateTimer(3);
+    servo.setPeriodHertz(50);
+    servo.attach(SERVO_CTRL_PIN, SERVO_MIN, SERVO_MAX);
 }

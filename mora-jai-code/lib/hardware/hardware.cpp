@@ -172,6 +172,7 @@ uint32_t GetBatteryPercentage()
     // TODO: experiment with readings, see what range we get for real battery
     // Perhaps do some logging to a file on flash and determine ideal range
     // that way?
+    return 0; // TODO: remove when implemented
 }
 
 // TODO: can we set an interrupt on PWR_GOOD to detect cable plug/unplug?
@@ -237,6 +238,7 @@ LatchState_t GetLastLatchState()
     // If unreadable or other error, return UNKNOWN
 
     file.close();
+    return UNKNOWN; // TODO: remove when finished
 }
 
 void SetupServo()

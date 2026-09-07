@@ -1,13 +1,23 @@
 #ifndef __HARDWARE_PRIVATE_H__
 #define __HARDWARE_PRIVATE_H__
-#include <hardware.hpp>
+#include <ESP32Servo.h>
 #include <FreeRTOS.h>
 #include <semphr.h>
 
-#define LATCH_STATE_FILEPATH "lockstate.txt"
+#include <hardware.hpp>
+
+#define LATCH_STATE_FILEPATH "/lockstate.txt"
+#define LATCH_LOCKED_ANGLE 90
+#define LATCH_UNLOCKED_ANGLE 0
+
 #define MAX_BTN_CALLBACKS 5
+
 #define NO_FREE_CALLBACK_SLOT -1
 #define INVALID_CALLBACK_ID -1
+
+#define SERVO_MIN 500
+#define SERVO_MAX 2500
+Servo servo;
 
 SemaphoreHandle_t btn_up_callback_lock_handle;
 SemaphoreHandle_t btn_down_callback_lock_handle;

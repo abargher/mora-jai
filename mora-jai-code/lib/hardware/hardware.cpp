@@ -1,8 +1,12 @@
+#include <ESP32Servo.h>
+#include <FreeRTOS.h>
+#include <semphr.h>
+#include <LittleFS.h>
+
+#include <pins.h>
 #include <hardware.hpp>
 #include <hardware_private.hpp>
 #include <debug.h>
-#include <FreeRTOS.h>
-#include <semphr.h>
 
 /* For OS only, do not call from user code */
 void SetupEventLocks()
@@ -133,4 +137,116 @@ void LatchLock()
 
     If unlocked, move servo to lock position and update file.
     */
+}
+
+void ForceLatchUnlock()
+{
+    /*
+    Move servo to unlock position and update file, regardless of last state.
+    */
+    servo.write(LATCH_UNLOCKED_ANGLE);
+    // TODO: update latch file
+}
+
+void ForceLatchLock()
+{
+    /*
+    Move servo to lock position and update file, regardless of last state.
+    */
+    servo.write(LATCH_LOCKED_ANGLE);
+    // TODO: update latch file
+}
+
+uint32_t GetBatteryMilliVolts()
+{
+    uint32_t raw_reading = analogReadMilliVolts(BATT_V_PIN);
+    uint32_t batt_mv = raw_reading * (BATT_V_R1_VALUE + BATT_V_R2_VALUE) / BATT_V_R2_VALUE;
+    DEBUG_LOG("raw battery reading: %lumV\n", raw_reading);
+    DEBUG_LOG("battery voltage reading: %lumV\n", batt_mv);
+    return batt_mv;
+}
+
+uint32_t GetBatteryPercentage()
+{
+    // uint32_t batt_mv = GetBatteryMilliVolts();
+    // TODO: experiment with readings, see what range we get for real battery
+    // Perhaps do some logging to a file on flash and determine ideal range
+    // that way?
+    return 0; // TODO: remove when implemented
+}
+
+// TODO: can we set an interrupt on PWR_GOOD to detect cable plug/unplug?
+BatteryState_t GetBatteryState()
+{
+    int pwr_good_val = digitalRead(PWR_GOOD_PIN);
+
+    // PWR_GOOD is high, then no cable is plugged in.
+    if (pwr_good_val == HIGH)
+    {
+        return NO_CABLE;
+    }
+
+    int charging_on_val = digitalRead(CHARG_ON_PIN);
+    int charging_done_val = digitalRead(CHARG_DONE_PIN);
+
+    // PWR_GOOD is low, but nothing else is, then we have no battery.
+    // TODO: check behavior above with datasheet
+    if (charging_on_val == HIGH && charging_done_val == HIGH)
+    {
+        return CABLE_ONLY;
+    }
+    // STAT1 is low, then battery is currently charging.
+    else if (charging_on_val == LOW && charging_done_val == HIGH)
+    {
+        return CHARGING;
+    }
+    // STAT2 is low, then battery has finished charging.
+    else if (charging_on_val == HIGH && charging_done_val == LOW)
+    {
+        return CHARGE_DONE;
+    }
+    else
+    {
+        return ERROR;
+    }
+}
+
+LatchState_t GetLastLatchState()
+{
+    // report if latch is open or closed (read latch state file value)
+    // if (!LittleFS.begin(true))
+    // {
+    //     DEBUG_LOG("An Error has occurred while mounting LittleFS");
+    // }
+
+    DEBUG_LOG("opening latch state file\n");
+    File file = LittleFS.open(LATCH_STATE_FILEPATH);
+    if (!file)
+    {
+        DEBUG_LOG("Failed to open latch state file for reading\n");
+        return UNKNOWN;
+    }
+
+    DEBUG_LOG("File Content:\n");
+    while (file.available())
+    {
+        // TODO: instead, copy file content into buffer, with bounds checks
+        Serial.write(file.read());
+    }
+
+    // TODO: based on file content, return locked or unlocked state
+    // If unreadable or other error, return UNKNOWN
+
+    file.close();
+    return UNKNOWN; // TODO: remove when finished
+}
+
+void SetupServo()
+{
+    ESP32PWM::allocateTimer(0);
+    ESP32PWM::allocateTimer(1);
+    ESP32PWM::allocateTimer(2);
+    ESP32PWM::allocateTimer(3);
+    servo.setPeriodHertz(50);
+    servo.attach(SERVO_CTRL_PIN, SERVO_MIN, SERVO_MAX);
 }

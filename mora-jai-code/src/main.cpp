@@ -1,6 +1,5 @@
 #include <Arduino.h>
 #include <Adafruit_NeoPixel.h>
-#include <ESP32Servo.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
@@ -8,6 +7,7 @@
 
 #include <pins.h>
 #include <hardware.hpp>
+#include <debug.h>
 
 #define INPUT_POLL_WAIT_MS 100
 #define QUEUE_SIZE 5
@@ -46,7 +46,6 @@ TaskHandle_t LEDUpdateTaskHandle = NULL;
 TaskHandle_t ButtonEventConsumerTaskHandle = NULL;
 
 Adafruit_NeoPixel pixels(NUM_PIXELS, LED_DATA_PIN, NEO_GRB + NEO_KHZ800);
-Servo servo;
 int servoPos = 0;
 
 int readMux(int channel)
@@ -138,15 +137,11 @@ void ToggleLights(buttonUpdate_t updateEvent)
     }
     if (buttonIndex == 4 && isButtonPressed)
     {
-        servo.write(0);
+        ForceLatchUnlock();
     }
     if (buttonIndex == 5 && isButtonPressed)
     {
-        servo.write(90);
-    }
-    if (buttonIndex == 6 && isButtonPressed)
-    {
-        servo.write(180);
+        ForceLatchLock();
     }
 }
 
@@ -164,18 +159,6 @@ void ToggleLights(buttonUpdate_t updateEvent)
 //         vTaskDelay(SERVO_WAIT_MS / portTICK_PERIOD_MS);
 //     }
 // }
-
-#define SERVO_MIN 500
-#define SERVO_MAX 2500
-void SetupServo()
-{
-    ESP32PWM::allocateTimer(0);
-    ESP32PWM::allocateTimer(1);
-    ESP32PWM::allocateTimer(2);
-    ESP32PWM::allocateTimer(3);
-    servo.setPeriodHertz(50);
-    servo.attach(SERVO_CTRL_PIN, SERVO_MIN, SERVO_MAX);
-}
 
 void SetupPixels()
 {
@@ -232,6 +215,13 @@ void setup()
 {
     Serial.begin(115200);
 
+    analogSetAttenuation(ADC_0db); // 0db attenuation for batt. voltage reading
+    pinMode(BATT_V_PIN, INPUT);    // analog input pin for battery voltage
+
+    pinMode(PWR_GOOD_PIN, INPUT);
+    pinMode(CHARG_ON_PIN, INPUT);
+    pinMode(CHARG_DONE_PIN, INPUT);
+
     pinMode(LED_PIN, OUTPUT);
     pinMode(LED_DATA_PIN, OUTPUT);
 
@@ -241,6 +231,7 @@ void setup()
     pinMode(MUX_CH3, OUTPUT);
     pinMode(MUX_SIGNAL, INPUT);
 
+    // TODO: remove this debugging light enable
     digitalWrite(LED_PIN, LOW); // built-in LED is active-low
 
     SetupServo();
@@ -248,6 +239,11 @@ void setup()
     SetupDisplay();
 
     SetupEventLocks();
+
+    if (!LittleFS.begin(true))
+    {
+        DEBUG_LOG("An Error has occurred while mounting LittleFS\n");
+    }
 
     // setup queues
     buttonUpdateQueue = xQueueCreate(QUEUE_SIZE, sizeof(buttonUpdate_t));

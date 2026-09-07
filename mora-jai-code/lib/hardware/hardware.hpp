@@ -29,6 +29,7 @@ callback function from the set.
 int UnregisterButtonDownCallback(uint32_t index);
 int UnregisterButtonUpCallback(uint32_t index);
 
+void SetupServo();
 void SetupEventLocks();
 void ExecuteCallbacks(buttonUpdate_t data);
 
@@ -76,12 +77,31 @@ void SetColorSingle(uint32_t index, BtnColor_t color);
 
 void LatchUnlock();
 void LatchLock();
+void ForceLatchUnlock();
+void ForceLatchLock();
+
+typedef enum BatteryState
+{
+    NO_CABLE,    // USB cable is not plugged in, battery discharging
+    CABLE_ONLY,  // USB cable is plugged in, but battery does not seem connected
+    CHARGING,    // Battery is currently charging
+    CHARGE_DONE, // Battery has finished charging
+    ERROR        // we are in some error state (both STAT1 and STAT2 are low)
+} BatteryState_t;
+
+typedef enum LatchState
+{
+    OPEN,
+    LOCKED,
+    UNKNOWN
+} LatchState_t;
 
 /* Hardware info functions */
-// report battery charge level
-// report battery charging state (read STAT_1 for currently charging, STAT_2 for finished)
-// report if running on USB power (read PWR_GOOD)
-// report if latch is open or closed (read latch state file value)
+uint32_t GetBatteryMilliVolts();
+uint32_t GetBatteryPercentage();
+BatteryState_t GetBatteryState();
+
+LatchState_t GetLastLatchState();
 
 /* Display functions */
 // write text to screen

@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdint.h>
 #include <stdlib.h>
-#include "../lib/mora.h"
+#include "../lib/mora/mora.h"
 
 void random_tests();
 

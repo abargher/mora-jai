@@ -1,15 +1,11 @@
 #include <stdio.h>
 
-#include "../lib/mora.h"
+#include "../lib/mora/mora.h"
+#include "../lib/jaios/jaios.h"
 #include "random.h"
 #include "puzzles_index.h"
 
-int main()
-{
-    // jai_board_t test = make_mora(b70);
-    // validate_single_verbose(test, s70, NULL);
-    // return 0;
-
+void validate_test_puzzles() {
     int p_count = sizeof(puzzles) / sizeof(puzzles[0]);
     int s_count = sizeof(solutions) / sizeof(solutions[0]);
     validation_results_t *res = validate_all(p_count, puzzles, s_count, solutions);
@@ -24,5 +20,15 @@ int main()
             char *final = mora_to_str(res->final_states[70]);
             printf("First failed: puzzle %s, final state %s\n", puzzle, final);
         }
+    }
+}
+
+int main()
+{
+    validate_test_puzzles();
+
+    jaios_t* os = init();
+    if (!os) {
+        return 1;
     }
 }

@@ -113,12 +113,12 @@ void SetRGBSingle(uint32_t index, uint32_t color)
 {
 }
 
-void SetColorMatrix(BtnColor_t *colors)
+void SetColorMatrix(BUTTON_COLOR *colors)
 {
     return SetRGBMatrix((uint32_t *)colors);
 }
 
-void SetColorSingle(uint32_t index, BtnColor_t color)
+void SetColorSingle(uint32_t index, BUTTON_COLOR color)
 {
     return SetRGBSingle(index, (uint32_t)color);
 }
@@ -176,7 +176,7 @@ uint32_t GetBatteryPercentage()
 }
 
 // TODO: can we set an interrupt on PWR_GOOD to detect cable plug/unplug?
-BatteryState_t GetBatteryState()
+BATTERY_STATE GetBatteryState()
 {
     int pwr_good_val = digitalRead(PWR_GOOD_PIN);
 
@@ -211,7 +211,7 @@ BatteryState_t GetBatteryState()
     }
 }
 
-LatchState_t GetLastLatchState()
+LATCH_STATE GetLastLatchState()
 {
     // report if latch is open or closed (read latch state file value)
     // if (!LittleFS.begin(true))
@@ -224,7 +224,7 @@ LatchState_t GetLastLatchState()
     if (!file)
     {
         DEBUG_LOG("Failed to open latch state file for reading\n");
-        return UNKNOWN;
+        return LATCH_UNKNOWN;
     }
 
     DEBUG_LOG("File Content:\n");
@@ -238,7 +238,7 @@ LatchState_t GetLastLatchState()
     // If unreadable or other error, return UNKNOWN
 
     file.close();
-    return UNKNOWN; // TODO: remove when finished
+    return LATCH_UNKNOWN; // TODO: remove when finished
 }
 
 void SetupServo()

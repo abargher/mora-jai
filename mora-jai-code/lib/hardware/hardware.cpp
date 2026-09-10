@@ -7,6 +7,9 @@
 #include <hardware.hpp>
 #include <hardware_private.hpp>
 #include <debug.h>
+#include <jaios.h>
+
+volatile jaios_t OS_CTX = {};
 
 /* For OS only, do not call from user code */
 void SetupEventLocks()
@@ -47,7 +50,7 @@ void ExecuteCallbacks(button_update_t data)
         xSemaphoreGive(lock);
         if (callback != NULL)
         {
-            callback(data);
+            callback((void *)&OS_CTX, data);
         }
     }
 }
@@ -85,12 +88,12 @@ int _UnregisterCallback(volatile BUTTON_CALLBACK *callback_set, SemaphoreHandle_
     return EXIT_SUCCESS;
 }
 
-int RegisterButtonDownCallback(BUTTON_CALLBACK handler)
+bool RegisterButtonDownCallback(BUTTON_CALLBACK handler)
 {
     return _RegisterCallback(btn_down_callbacks, btn_down_callback_lock_handle, handler);
 }
 
-int RegisterButtonUpCallback(BUTTON_CALLBACK handler)
+bool RegisterButtonUpCallback(BUTTON_CALLBACK handler)
 {
     return _RegisterCallback(btn_up_callbacks, btn_up_callback_lock_handle, handler);
 }

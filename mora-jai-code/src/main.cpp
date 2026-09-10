@@ -79,7 +79,7 @@ void ButtonPollTask(void *parameter)
             if (readings[i] != buttonsState[i])
             {
                 buttonsState[i] = readings[i];
-                button_update_t updateEvent = {i, (bool)readings[i]};
+                button_update_t updateEvent = {(BUTTON_NAME)i, (bool)readings[i]};
                 xQueueSend(buttonUpdateQueue, &updateEvent, 0); // 0 returns immediate if queue is full
                 Serial.printf("sent event: button %d changed to %d\n", i, readings[i]);
             }

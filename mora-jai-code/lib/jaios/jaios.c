@@ -8,12 +8,14 @@ const STATE_CALLBACK callbacks[3] = {
     st_puzzle_solved_callback,
     st_puzzle_pack_browse_callback};
 
-void init(jaios_t *os)
+void jaios_init(jaios_t *os)
 {
     if (!os)
     {
         return;
     }
+    RegisterButtonDownCallback(on_button_pressed);
+    RegisterButtonUpCallback(on_button_pressed);
 
     memset(os, 0, sizeof(jaios_t));
 
@@ -54,49 +56,49 @@ BUTTON_COLOR color_to_hardware(COLOR color, bool preview)
     {
         switch (color)
         {
-        case GRAY:
+        case MORA_GRAY:
             return BTN_GRAY;
-        case BLACK:
+        case MORA_BLACK:
             return BTN_BLACK_PREVIEW;
-        case GREEN:
+        case MORA_GREEN:
             return BTN_GREEN_PREVIEW;
-        case PINK:
+        case MORA_PINK:
             return BTN_PINK_PREVIEW;
-        case YELLOW:
+        case MORA_YELLOW:
             return BTN_YELLOW_PREVIEW;
-        case VIOLET:
+        case MORA_VIOLET:
             return BTN_VIOLET_PREVIEW;
-        case WHITE:
+        case MORA_WHITE:
             return BTN_WHITE_PREVIEW;
-        case RED:
+        case MORA_RED:
             return BTN_RED_PREVIEW;
-        case ORANGE:
+        case MORA_ORANGE:
             return BTN_ORANGE_PREVIEW;
-        case BLUE:
+        case MORA_BLUE:
             return BTN_BLUE_PREVIEW;
         }
     }
     switch (color)
     {
-    case GRAY:
+    case MORA_GRAY:
         return BTN_GRAY;
-    case BLACK:
+    case MORA_BLACK:
         return BTN_BLACK;
-    case GREEN:
+    case MORA_GREEN:
         return BTN_GREEN;
-    case PINK:
+    case MORA_PINK:
         return BTN_PINK;
-    case YELLOW:
+    case MORA_YELLOW:
         return BTN_YELLOW;
-    case VIOLET:
+    case MORA_VIOLET:
         return BTN_VIOLET;
-    case WHITE:
+    case MORA_WHITE:
         return BTN_WHITE;
-    case RED:
+    case MORA_RED:
         return BTN_RED;
-    case ORANGE:
+    case MORA_ORANGE:
         return BTN_ORANGE;
-    case BLUE:
+    case MORA_BLUE:
         return BTN_BLUE;
     }
     return BTN_GRAY;

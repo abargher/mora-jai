@@ -8,25 +8,25 @@ char color_to_char(COLOR c)
 {
     switch (c)
     {
-    case GRAY:
+    case MORA_GRAY:
         return 'G';
-    case BLACK:
+    case MORA_BLACK:
         return 'B';
-    case GREEN:
+    case MORA_GREEN:
         return 'E';
-    case PINK:
+    case MORA_PINK:
         return 'P';
-    case YELLOW:
+    case MORA_YELLOW:
         return 'Y';
-    case VIOLET:
+    case MORA_VIOLET:
         return 'V';
-    case WHITE:
+    case MORA_WHITE:
         return 'W';
-    case RED:
+    case MORA_RED:
         return 'R';
-    case ORANGE:
+    case MORA_ORANGE:
         return 'O';
-    case BLUE:
+    case MORA_BLUE:
         return 'U';
     }
     return ' ';
@@ -38,61 +38,61 @@ COLOR char_to_color(char c)
     {
     case 'G':
     case 'g':
-        return GRAY;
+        return MORA_GRAY;
     case 'B':
     case 'b':
-        return BLACK;
+        return MORA_BLACK;
     case 'E':
     case 'e':
-        return GREEN;
+        return MORA_GREEN;
     case 'P':
     case 'p':
-        return PINK;
+        return MORA_PINK;
     case 'Y':
     case 'y':
-        return YELLOW;
+        return MORA_YELLOW;
     case 'V':
     case 'v':
-        return VIOLET;
+        return MORA_VIOLET;
     case 'W':
     case 'w':
-        return WHITE;
+        return MORA_WHITE;
     case 'R':
     case 'r':
-        return RED;
+        return MORA_RED;
     case 'O':
     case 'o':
-        return ORANGE;
+        return MORA_ORANGE;
     case 'U':
     case 'u':
-        return BLUE;
+        return MORA_BLUE;
     }
-    return GRAY;
+    return MORA_GRAY;
 }
 
 char *color_to_str(COLOR c)
 {
     switch (c)
     {
-    case GRAY:
+    case MORA_GRAY:
         return "GRAY";
-    case BLACK:
+    case MORA_BLACK:
         return "BLACK";
-    case GREEN:
+    case MORA_GREEN:
         return "GREEN";
-    case PINK:
+    case MORA_PINK:
         return "PINK";
-    case YELLOW:
+    case MORA_YELLOW:
         return "YELLOW";
-    case VIOLET:
+    case MORA_VIOLET:
         return "VIOLET";
-    case WHITE:
+    case MORA_WHITE:
         return "WHITE";
-    case RED:
+    case MORA_RED:
         return "RED";
-    case ORANGE:
+    case MORA_ORANGE:
         return "ORANGE";
-    case BLUE:
+    case MORA_BLUE:
         return "BLUE";
     }
     return "";
@@ -188,9 +188,9 @@ static inline jai_board_t _swap_ANY_gray(jai_board_t board, uint8_t move, COLOR 
     COLOR temp = mora_get(board, move);
     if (temp == target)
     {
-        return mora_set(board, move, GRAY);
+        return mora_set(board, move, MORA_GRAY);
     }
-    else if (temp == GRAY)
+    else if (temp == MORA_GRAY)
     {
         return mora_set(board, move, target);
     }
@@ -352,7 +352,7 @@ static inline jai_board_t move_violet(jai_board_t board, uint8_t move)
 static inline jai_board_t move_white(jai_board_t board, uint8_t move)
 {
     COLOR self_color = mora_get(board, move);
-    board = mora_set(board, move, GRAY);
+    board = mora_set(board, move, MORA_GRAY);
     ITER_ORTHO_NEIGHBORS(board, move, i)
     {
         board = _swap_ANY_gray(board, i, self_color);
@@ -371,11 +371,11 @@ static inline jai_board_t move_red(jai_board_t board, uint8_t move)
     for (int i = 0; i < 9; i++)
     {
         COLOR curr = mora_get(board, i);
-        if (curr == WHITE)
+        if (curr == MORA_WHITE)
         {
-            board = mora_set(board, i, BLACK);
+            board = mora_set(board, i, MORA_BLACK);
         }
-        else if (curr == BLACK)
+        else if (curr == MORA_BLACK)
         {
             board = mora_set(board, i, red);
         }
@@ -423,29 +423,29 @@ static inline jai_board_t move_orange(jai_board_t board, uint8_t move)
 static inline jai_board_t move_blue(jai_board_t board, uint8_t move)
 {
     COLOR center = mora_get(board, 4);
-    if (center == BLUE)
+    if (center == MORA_BLUE)
     {
         return board;
     }
     switch (center)
     {
-    case GRAY:
+    case MORA_GRAY:
         return move_gray(board, move);
-    case BLACK:
+    case MORA_BLACK:
         return move_black(board, move);
-    case GREEN:
+    case MORA_GREEN:
         return move_green(board, move);
-    case PINK:
+    case MORA_PINK:
         return move_pink(board, move);
-    case YELLOW:
+    case MORA_YELLOW:
         return move_yellow(board, move);
-    case VIOLET:
+    case MORA_VIOLET:
         return move_violet(board, move);
-    case WHITE:
+    case MORA_WHITE:
         return move_white(board, move);
-    case RED:
+    case MORA_RED:
         return move_red(board, move);
-    case ORANGE:
+    case MORA_ORANGE:
         return move_orange(board, move);
     default:
         return board;
@@ -456,25 +456,25 @@ jai_board_t mora_move(jai_board_t board, uint8_t move)
 {
     switch (mora_get(board, move))
     {
-    case GRAY:
+    case MORA_GRAY:
         return move_gray(board, move);
-    case BLACK:
+    case MORA_BLACK:
         return move_black(board, move);
-    case GREEN:
+    case MORA_GREEN:
         return move_green(board, move);
-    case PINK:
+    case MORA_PINK:
         return move_pink(board, move);
-    case YELLOW:
+    case MORA_YELLOW:
         return move_yellow(board, move);
-    case VIOLET:
+    case MORA_VIOLET:
         return move_violet(board, move);
-    case WHITE:
+    case MORA_WHITE:
         return move_white(board, move);
-    case RED:
+    case MORA_RED:
         return move_red(board, move);
-    case ORANGE:
+    case MORA_ORANGE:
         return move_orange(board, move);
-    case BLUE:
+    case MORA_BLUE:
         return move_blue(board, move);
     }
     return board;

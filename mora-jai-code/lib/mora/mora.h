@@ -7,16 +7,16 @@
 
 typedef enum
 {
-    GRAY = 0,
-    BLACK,
-    GREEN,
-    PINK,
-    YELLOW,
-    VIOLET,
-    WHITE,
-    RED,
-    ORANGE,
-    BLUE,
+    MORA_GRAY = 0,
+    MORA_BLACK,
+    MORA_GREEN,
+    MORA_PINK,
+    MORA_YELLOW,
+    MORA_VIOLET,
+    MORA_WHITE,
+    MORA_RED,
+    MORA_ORANGE,
+    MORA_BLUE
 } COLOR;
 
 #define MORA_COLOR_COUNT 10
@@ -78,7 +78,7 @@ static inline COLOR mora_get(jai_board_t board, uint8_t idx)
 {
     if (idx > 8)
     {
-        return GRAY;
+        return MORA_GRAY;
     }
     uint8_t pair = board.bits[idx >> 1];
     if (idx & 1)

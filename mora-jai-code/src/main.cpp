@@ -8,6 +8,7 @@
 
 #include <pins.h>
 #include <hardware.hpp>
+#include <jaios.h>
 #include <debug.h>
 
 #define INPUT_POLL_WAIT_MS 100

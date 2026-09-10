@@ -27,7 +27,8 @@ int main()
 {
     validate_test_puzzles();
 
-    jaios_t* os = init();
+    jaios_t* os = calloc(sizeof(jaios_t), 1);
+    init(os);
     if (!os) {
         return 1;
     }

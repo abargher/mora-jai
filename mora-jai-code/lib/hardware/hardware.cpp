@@ -24,7 +24,7 @@ void SetupEventLocks()
 }
 
 /* For OS only, do not call from user code */
-void ExecuteCallbacks(buttonUpdate_t data)
+void ExecuteCallbacks(button_update_t data)
 {
     volatile BUTTON_CALLBACK *callbacks;
     SemaphoreHandle_t lock;

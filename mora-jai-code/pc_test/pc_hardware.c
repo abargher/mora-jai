@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 #include "../lib/hardware/hardware.hpp"
+#include "../lib/jaios/jaios.h"
 
 #define MAX_BUTTON_CALLBACKS 16
 
@@ -12,6 +13,8 @@ bool latch_closed = false;
 
 BUTTON_COLOR button_colors[9];
 BUTTON_COLOR goal_colors[4];
+
+jaios_t* os;
 
 bool register_callbacks(BUTTON_CALLBACK handler, BUTTON_CALLBACK list[]) {
     for (int i = 0; i < MAX_BUTTON_CALLBACKS; i++) {
@@ -56,7 +59,7 @@ void SetupEventLocks() {}
  * Note that for now, PC emulation will not separately handle button down
  * and button up events
 */
-void ExecuteCallbacks(buttonUpdate_t data) {
+void ExecuteCallbacks(button_update_t data) {
     BUTTON_CALLBACK* list;
     if (data.isPressed) {
         list = down_callbacks;
@@ -65,7 +68,7 @@ void ExecuteCallbacks(buttonUpdate_t data) {
     }
     for (int i = 0; i < MAX_BUTTON_CALLBACKS; i++) {
         if (list[i] != NULL) {
-            list[i](data);
+            list[i](os, data);
         }
     }
 }

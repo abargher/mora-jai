@@ -8,14 +8,35 @@
 extern "C" {
 #endif
 
+typedef enum {
+    BT_FACE_0,
+    BT_FACE_1,
+    BT_FACE_2,
+    BT_FACE_3,
+    BT_FACE_4,
+    BT_FACE_5,
+    BT_FACE_6,
+    BT_FACE_7,
+    BT_FACE_8,
+
+    BT_CORNER_TL,
+    BT_CORNER_TR,
+    BT_CORNER_BL,
+    BT_CORNER_BR,
+
+    BT_AUX_LEFT,
+    BT_AUX_MID,
+    BT_AUX_RIGHT,
+} BUTTON_NAME;
+
 /* Button input types and functions */
 typedef struct
 {
-    uint32_t buttonNum;
+    BUTTON_NAME button;
     bool isPressed; // pressed = true, released = false;
-} buttonUpdate_t;
+} button_update_t;
 
-typedef void (*BUTTON_CALLBACK)(buttonUpdate_t data);
+typedef void (*BUTTON_CALLBACK)(void* ctx, button_update_t data);
 
 /*
 Returns TRUE on success, else FALSE. Registered C++ functions MUST be declared with extern "C"
@@ -36,7 +57,7 @@ bool UnregisterButtonUpCallback(BUTTON_CALLBACK handler);
 
 void SetupServo();
 void SetupEventLocks();
-void ExecuteCallbacks(buttonUpdate_t data);
+void ExecuteCallbacks(button_update_t data);
 
 // TODO: determine and assign values for all colors
 typedef enum
@@ -73,7 +94,7 @@ typedef struct
 // TODO: logically couple the LEDs for each button together
 // e.g., there are only 13 addressable LED zones
 // Match the button orders with order in jai_board_t:
-// 0-8: face buttons, right to left, top to bottom
+// 0-8: face buttons, left to right, top to bottom
 // 9: top left
 // 10: top right
 // 11: bottom right

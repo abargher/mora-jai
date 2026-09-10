@@ -1,7 +1,7 @@
 #ifndef MAIN_PUZZLES_H
 #define MAIN_PUZZLES_H
 
-#define b00 "mora_ggggggggg_gggg" // Grey Test
+#define b00 "mora_ggggggggg_gggg" // Gray Test
 #define b01 "mora_wgwwggggw_wwww" // Master Bedroom
 #define b02 "mora_egyeyeyge_eeee" // Solarium
 #define b03 "mora_gvggpgvvv_vvvv" // Clara Tomb
@@ -75,12 +75,12 @@
 #define b71 "mora_opogegugu_uuuu" // Blueprints 46th room (H5)
 #define b72 "mora_woreogoyo_oooo" // challenge_orange_1
 #define b73 "mora_oyggrorpw_bbbb" // challenge_black_1
-#define b74 "mora_rpowyworr_gggg" // challenge_grey_1
+#define b74 "mora_rpowyworr_gggg" // challenge_gray_1
 #define b75 "mora_ogrwevoeo_rrrr" // challenge_red
 #define b76 "mora_goovobore_rrro" // challenge_long_1
 #define b77 "mora_pgovggugp_pppp" // challenge_pink_1
 #define b78 "mora_oopuwwpev_pppp" // challenge_pink_2
-#define b79 "mora_uygruwoeo_gggg" // challenge_grey_2
+#define b79 "mora_uygruwoeo_gggg" // challenge_gray_2
 #define b80 "mora_bowevergu_eeee" // challenge_green
 #define b81 "mora_gwuoervue_uwvu" // challenge_misc_1
 #define b82 "mora_ruwwrreyp_epww" // challenge_misc_2

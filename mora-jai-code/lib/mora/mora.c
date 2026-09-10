@@ -8,7 +8,7 @@ char color_to_char(COLOR c)
 {
     switch (c)
     {
-    case GREY:
+    case GRAY:
         return 'G';
     case BLACK:
         return 'B';
@@ -38,7 +38,7 @@ COLOR char_to_color(char c)
     {
     case 'G':
     case 'g':
-        return GREY;
+        return GRAY;
     case 'B':
     case 'b':
         return BLACK;
@@ -67,15 +67,15 @@ COLOR char_to_color(char c)
     case 'u':
         return BLUE;
     }
-    return GREY;
+    return GRAY;
 }
 
 char *color_to_str(COLOR c)
 {
     switch (c)
     {
-    case GREY:
-        return "GREY";
+    case GRAY:
+        return "GRAY";
     case BLACK:
         return "BLACK";
     case GREEN:
@@ -179,18 +179,18 @@ char *print_mora(jai_board_t board)
 }
 
 #pragma region Move Helpers
-/// @brief Swap grey <--> ANY at given location
+/// @brief Swap gray <--> ANY at given location
 /// @param board
 /// @param move
 /// @return
-static inline jai_board_t _swap_ANY_grey(jai_board_t board, uint8_t move, COLOR target)
+static inline jai_board_t _swap_ANY_gray(jai_board_t board, uint8_t move, COLOR target)
 {
     COLOR temp = mora_get(board, move);
     if (temp == target)
     {
-        return mora_set(board, move, GREY);
+        return mora_set(board, move, GRAY);
     }
-    else if (temp == GREY)
+    else if (temp == GRAY)
     {
         return mora_set(board, move, target);
     }
@@ -247,7 +247,7 @@ static int8_t neighbors[][8] = {
 /// @brief Does nothing
 /// @param board
 /// @param move
-static inline jai_board_t move_grey(jai_board_t board, uint8_t move)
+static inline jai_board_t move_gray(jai_board_t board, uint8_t move)
 {
     return board;
 }
@@ -345,17 +345,17 @@ static inline jai_board_t move_violet(jai_board_t board, uint8_t move)
     return board;
 }
 
-/// @brief Swap grey <--> white at given location and ortho adjacents
+/// @brief Swap gray <--> white at given location and ortho adjacents
 /// @param board
 /// @param move
 /// @return
 static inline jai_board_t move_white(jai_board_t board, uint8_t move)
 {
     COLOR self_color = mora_get(board, move);
-    board = mora_set(board, move, GREY);
+    board = mora_set(board, move, GRAY);
     ITER_ORTHO_NEIGHBORS(board, move, i)
     {
-        board = _swap_ANY_grey(board, i, self_color);
+        board = _swap_ANY_gray(board, i, self_color);
     }
     return board;
 }
@@ -429,8 +429,8 @@ static inline jai_board_t move_blue(jai_board_t board, uint8_t move)
     }
     switch (center)
     {
-    case GREY:
-        return move_grey(board, move);
+    case GRAY:
+        return move_gray(board, move);
     case BLACK:
         return move_black(board, move);
     case GREEN:
@@ -456,8 +456,8 @@ jai_board_t mora_move(jai_board_t board, uint8_t move)
 {
     switch (mora_get(board, move))
     {
-    case GREY:
-        return move_grey(board, move);
+    case GRAY:
+        return move_gray(board, move);
     case BLACK:
         return move_black(board, move);
     case GREEN:

@@ -122,7 +122,7 @@ void ButtonEventConsumerTask(void *parameter)
     }
 }
 
-void ToggleLights(button_update_t updateEvent)
+void ToggleLights(void *_ctx, button_update_t updateEvent)
 {
     uint32_t buttonIndex = updateEvent.button;
     bool isButtonPressed = updateEvent.isPressed;

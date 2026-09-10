@@ -1,7 +1,7 @@
 #ifndef MAIN_PUZZLES_H
 #define MAIN_PUZZLES_H
 
-#define b00 "mora_ggggggggg_gggg" // Grey Test
+#define b00 "mora_ggggggggg_gggg" // Gray Test
 #define b01 "mora_wgwwggggw_wwww" // Master Bedroom
 #define b02 "mora_egyeyeyge_eeee" // Solarium
 #define b03 "mora_gvggpgvvv_vvvv" // Clara Tomb
@@ -75,12 +75,12 @@
 #define b71 "mora_opogegugu_uuuu" // Blueprints 46th room (H5)
 #define b72 "mora_woreogoyo_oooo" // challenge_orange_1
 #define b73 "mora_oyggrorpw_bbbb" // challenge_black_1
-#define b74 "mora_rpowyworr_gggg" // challenge_grey_1
+#define b74 "mora_rpowyworr_gggg" // challenge_gray_1
 #define b75 "mora_ogrwevoeo_rrrr" // challenge_red
 #define b76 "mora_goovobore_rrro" // challenge_long_1
 #define b77 "mora_pgovggugp_pppp" // challenge_pink_1
 #define b78 "mora_oopuwwpev_pppp" // challenge_pink_2
-#define b79 "mora_uygruwoeo_gggg" // challenge_grey_2
+#define b79 "mora_uygruwoeo_gggg" // challenge_gray_2
 #define b80 "mora_bowevergu_eeee" // challenge_green
 #define b81 "mora_gwuoervue_uwvu" // challenge_misc_1
 #define b82 "mora_ruwwrreyp_epww" // challenge_misc_2
@@ -94,17 +94,98 @@
 #define b90 "mora_owobouwyo_oooo" // challenge_orange_2
 #define b91 "mora_ogurvrbwy_ygbo" // challenge_longer
 
-const char* os_test_puzzles[92] = {
+const char *os_test_puzzles[92] = {
     b00,
-    b01, b02, b03, b04, b05, b06, b07, b08, b09, b10,
-    b11, b12, b13, b14, b15, b16, b17, b18, b19, b20,
-    b21, b22, b23, b24, b25, b26, b27, b28, b29, b30,
-    b31, b32, b33, b34, b35, b36, b37, b38, b39, b40,
-    b41, b42, b43, b44, b45, b46, b47, b48, b49, b50,
-    b51, b52, b53, b54, b55, b56, b57, b58, b59, b60,
-    b61, b62, b63, b64, b65, b66, b67, b68, b69, b70,
-    b71, b72, b73, b74, b75, b76, b77, b78, b79, b80,
-    b81, b82, b83, b84, b85, b86, b87, b88, b89, b90,
+    b01,
+    b02,
+    b03,
+    b04,
+    b05,
+    b06,
+    b07,
+    b08,
+    b09,
+    b10,
+    b11,
+    b12,
+    b13,
+    b14,
+    b15,
+    b16,
+    b17,
+    b18,
+    b19,
+    b20,
+    b21,
+    b22,
+    b23,
+    b24,
+    b25,
+    b26,
+    b27,
+    b28,
+    b29,
+    b30,
+    b31,
+    b32,
+    b33,
+    b34,
+    b35,
+    b36,
+    b37,
+    b38,
+    b39,
+    b40,
+    b41,
+    b42,
+    b43,
+    b44,
+    b45,
+    b46,
+    b47,
+    b48,
+    b49,
+    b50,
+    b51,
+    b52,
+    b53,
+    b54,
+    b55,
+    b56,
+    b57,
+    b58,
+    b59,
+    b60,
+    b61,
+    b62,
+    b63,
+    b64,
+    b65,
+    b66,
+    b67,
+    b68,
+    b69,
+    b70,
+    b71,
+    b72,
+    b73,
+    b74,
+    b75,
+    b76,
+    b77,
+    b78,
+    b79,
+    b80,
+    b81,
+    b82,
+    b83,
+    b84,
+    b85,
+    b86,
+    b87,
+    b88,
+    b89,
+    b90,
     b91,
 };
 

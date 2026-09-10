@@ -79,7 +79,7 @@ void ButtonPollTask(void *parameter)
             if (readings[i] != buttonsState[i])
             {
                 buttonsState[i] = readings[i];
-                buttonUpdate_t updateEvent = {i, (bool)readings[i]};
+                button_update_t updateEvent = {i, (bool)readings[i]};
                 xQueueSend(buttonUpdateQueue, &updateEvent, 0); // 0 returns immediate if queue is full
                 Serial.printf("sent event: button %d changed to %d\n", i, readings[i]);
             }
@@ -114,7 +114,7 @@ void ButtonEventConsumerTask(void *parameter)
     // dispatch corresponding LED Update events
     while (true)
     {
-        buttonUpdate_t updateEvent;
+        button_update_t updateEvent;
         if (xQueueReceive(buttonUpdateQueue, &updateEvent, portMAX_DELAY))
         {
             ExecuteCallbacks(updateEvent);
@@ -122,9 +122,9 @@ void ButtonEventConsumerTask(void *parameter)
     }
 }
 
-void ToggleLights(buttonUpdate_t updateEvent)
+void ToggleLights(button_update_t updateEvent)
 {
-    uint32_t buttonIndex = updateEvent.buttonNum;
+    uint32_t buttonIndex = updateEvent.button;
     bool isButtonPressed = updateEvent.isPressed;
     if (buttonIndex < 4 && isButtonPressed)
     {
@@ -246,7 +246,7 @@ void setup()
     }
 
     // setup queues
-    buttonUpdateQueue = xQueueCreate(QUEUE_SIZE, sizeof(buttonUpdate_t));
+    buttonUpdateQueue = xQueueCreate(QUEUE_SIZE, sizeof(button_update_t));
     if (buttonUpdateQueue == NULL)
     {
         Serial.println("failed to create button queue!");

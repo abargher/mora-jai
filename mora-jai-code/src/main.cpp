@@ -4,6 +4,7 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 #include <LittleFS.h>
+#include <ESP32Servo.h>
 
 #include <pins.h>
 #include <hardware.hpp>
@@ -213,6 +214,10 @@ void SetupDisplay()
 
 void setup()
 {
+    ESP32PWM::allocateTimer(0);
+    ESP32PWM::allocateTimer(1);
+    ESP32PWM::allocateTimer(2);
+    ESP32PWM::allocateTimer(3);
     Serial.begin(115200);
 
     analogSetAttenuation(ADC_0db); // 0db attenuation for batt. voltage reading

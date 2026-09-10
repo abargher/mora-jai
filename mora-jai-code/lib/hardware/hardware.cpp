@@ -248,10 +248,6 @@ LATCH_STATE GetLastLatchState()
 
 void SetupServo()
 {
-    ESP32PWM::allocateTimer(0);
-    ESP32PWM::allocateTimer(1);
-    ESP32PWM::allocateTimer(2);
-    ESP32PWM::allocateTimer(3);
     servo.setPeriodHertz(50);
     servo.attach(SERVO_CTRL_PIN, SERVO_MIN, SERVO_MAX);
 }

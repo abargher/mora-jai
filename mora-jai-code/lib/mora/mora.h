@@ -21,7 +21,7 @@ typedef enum
 
 #define MORA_COLOR_COUNT 10
 
-typedef union jai_board
+typedef union
 {
     struct board
     {

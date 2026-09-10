@@ -62,7 +62,7 @@ void ExecuteCallbacks(button_update_t data);
 // TODO: determine and assign values for all colors
 typedef enum
 {
-    BTN_GRAY = 0x3A3A3A,
+    BTN_GREY = 0x3A3A3A,
     BTN_WHITE = 0xFFFFFF,
     BTN_VIOLET = 0x000000,
     BTN_YELLOW = 0xFFFF00,

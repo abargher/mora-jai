@@ -9,7 +9,7 @@
 
 typedef enum {
     ST_PUZZLE,
-    ST_PUZZLE_SOLVE,
+    ST_PUZZLE_SOLVED,
     ST_PUZZLE_PACK_BROWSE
 } STATE;
 
@@ -27,15 +27,6 @@ typedef struct {
     } evt_data;
 } event_data_t;
 
-//State callbacks
-typedef STATE (*STATE_CALLBACK)(jaios_t* os, event_data_t evt_data);
-
-STATE st_puzzle_callback(jaios_t* os, event_data_t evt_data);
-STATE st_puzzle_solve_callback(jaios_t* os, event_data_t evt_data);
-STATE st_puzzle_pack_browse_callback(jaios_t* os, event_data_t evt_data);
-
-extern const STATE_CALLBACK callbacks[3];
-
 //Per-state state structs
 #define CORNERS_SOLVED 0b1111
 #define CORNERS_RESET 0
@@ -51,10 +42,19 @@ typedef struct {
     bool is_locked;
 
     //TEMP vars
-    uint8_t curr_puzzle;
+    uint8_t curr_puzzle_idx;
 
     st_puzzle_t puzzle;
 } jaios_t;
+
+//State callbacks
+typedef STATE (*STATE_CALLBACK)(jaios_t* os, event_data_t evt_data);
+
+STATE st_puzzle_callback(jaios_t* os, event_data_t evt_data);
+STATE st_puzzle_solved_callback(jaios_t* os, event_data_t evt_data);
+STATE st_puzzle_pack_browse_callback(jaios_t* os, event_data_t evt_data);
+
+extern const STATE_CALLBACK callbacks[3];
 
 
 void init(jaios_t* os);
@@ -62,5 +62,11 @@ void init(jaios_t* os);
 void on_button_pressed(void* ctx, button_update_t button);
 
 void process_event(jaios_t* os, event_data_t evt);
+
+//OS helper functions
+
+BUTTON_COLOR color_to_hardware(COLOR color, bool preview);
+
+void push_led_state(jai_board_t board, uint8_t corners);
 
 #endif

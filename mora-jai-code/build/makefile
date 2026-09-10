@@ -21,7 +21,7 @@ _LIBS = mora.c
 _LIB_PATH = ../lib/mora/
 LIBS = $(patsubst %.c, $(_LIB_PATH)/%.c, $(_LIBS))
 
-_OS = jaios.c
+_OS = jaios.c state_puzzle.c state_puzzle_solved.c state_pack_browse.c
 _OS_PATH = ../lib/jaios/
 OS = $(patsubst %.c, $(_OS_PATH)/%.c, $(_OS))
 

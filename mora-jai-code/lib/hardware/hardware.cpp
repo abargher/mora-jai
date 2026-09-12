@@ -3,13 +3,22 @@
 #include <semphr.h>
 #include <LittleFS.h>
 
+extern "C"
+{
+#include <jaios.h>
+}
+
 #include <pins.h>
 #include <hardware.hpp>
 #include <hardware_private.hpp>
 #include <debug.h>
-#include <jaios.h>
 
 volatile jaios_t OS_CTX = {};
+
+void SetupJaiOS()
+{
+    jaios_init((jaios_t *)&OS_CTX);
+}
 
 /* For OS only, do not call from user code */
 void SetupEventLocks()

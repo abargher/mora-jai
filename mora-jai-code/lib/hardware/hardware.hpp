@@ -60,6 +60,7 @@ extern "C"
     void SetupServo();
     void SetupEventLocks();
     void ExecuteCallbacks(button_update_t data);
+    void SetupJaiOS();
 
     // TODO: determine and assign values for all colors
     typedef enum

@@ -7,8 +7,13 @@
 #include <ESP32Servo.h>
 
 #include <pins.h>
+
+// pure C headers, must import with extern "C"
+extern "C"
+{
 #include <hardware.hpp>
 #include <jaios.h>
+}
 #include <debug.h>
 
 #define INPUT_POLL_WAIT_MS 100
@@ -267,19 +272,20 @@ void setup()
             ;
     }
 
-    RegisterButtonDownCallback(ToggleLights);
-    RegisterButtonUpCallback(ToggleLights);
+    // RegisterButtonDownCallback(ToggleLights);
+    // RegisterButtonUpCallback(ToggleLights);
+    SetupJaiOS();
 
     // setup tasks
-    xTaskCreatePinnedToCore(
-        ButtonEventConsumerTask,        // Task function
-        "ButtonEventConsumerTask",      // Task name
-        3000,                           // Stack size (bytes)
-        NULL,                           // Parameters
-        1,                              // Priority
-        &ButtonEventConsumerTaskHandle, // Task handle
-        1                               // Core 1
-    );
+    // xTaskCreatePinnedToCore(
+    //     ButtonEventConsumerTask,        // Task function
+    //     "ButtonEventConsumerTask",      // Task name
+    //     3000,                           // Stack size (bytes)
+    //     NULL,                           // Parameters
+    //     1,                              // Priority
+    //     &ButtonEventConsumerTaskHandle, // Task handle
+    //     1                               // Core 1
+    // );
 
     xTaskCreatePinnedToCore(
         LEDUpdateTask,        // Task function

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "jaios.h"
+#include <jaios.h>
 
 const STATE_CALLBACK callbacks[3] = {
     st_puzzle_callback,

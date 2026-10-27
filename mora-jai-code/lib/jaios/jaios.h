@@ -4,8 +4,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-#include "../mora/mora.h"
-#include "../hardware/hardware.hpp"
+#include <mora.h>
+#include <hardware.hpp>
 
 typedef enum
 {

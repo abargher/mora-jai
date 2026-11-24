@@ -8,7 +8,7 @@
 
 #define LATCH_STATE_FILEPATH "/lockstate.txt"
 #define LATCH_LOCKED_ANGLE 90
-#define LATCH_UNLOCKED_ANGLE 0
+#define LATCH_UNLOCKED_ANGLE 180
 
 #define MAX_BTN_CALLBACKS 5
 
